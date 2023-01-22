@@ -2,7 +2,7 @@
 
 # W&M DATA 340 4 Natural Language Processing, Spring 2023 Syllabus
 
-[Schedule](##Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
+[Schedule](#Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
 
 ## Course overview:
 
