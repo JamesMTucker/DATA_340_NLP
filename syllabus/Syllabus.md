@@ -2,7 +2,7 @@
 
 # W&M DATA 340 4 Natural Language Processing, Spring 2023 Syllabus
 
-[Schedule](#Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
+[Schedule](##Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
 
 ## Course overview:
 
@@ -63,20 +63,58 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 * Course preparation (15%) - It is expected that the student will come to class with having read the assigned readings and/or other additional code documentation.
 * See below for extra-credit opportunities
 
+
+## Schedule
+
+| Date      | Topic                                                                | Assignments | Project Milestones   |
+| --------- | -------------------------------------------------------------------- | ----------- | ------------------------- |
+| Th Jan 26 | Introductions & Syllabus                                             |             |                           |
+| T Jan 31  | Natural Language Processing, Data Science, and Large Language Models | Join discord |                           |
+| Th Feb 02 | Linguistic background & properties of language                       |             | Research interest         |
+| T Feb 07  | Statistics and Information theory                                    | ChatGPT Linguistics lecture |           |
+| Th Feb 09 | GitHub, Jupyter Notebooks, R Markdown, Code documentation            |             |                           |
+| T Feb 14  | Data set creation: Regular Expressions & Web scraping                |             | GitHub repo README.md     |
+| Th Feb 16 | Data set creation: Web scraping, APIs, & Social media                | Notebook essentials |                   |
+| T Feb 21  | Text normalization: lexicons and syntax                              |             |                           |
+| Th Feb 23 | Text normalization: tokens, sentences, discourse units               | Web scraper | Data set creation & documentation |
+| T Feb 28  | N-gram language models                                               |             |                           |
+| Th Mar 02 | Naive Bayes classification I                                         |             |                           |
+| T Mar 07  | Naive Bayes classification II                                        |             | Data set normalization and analysis |
+| Th Mar 09 | Evaluating language models                                           | Naive Bayes |                           |
+| T Mar 14  | No class - Spring break                                              |             |                           |
+| Th Mar 16 | No class - Spring break                                              |             |                           |
+| T Mar 21  | Logistic regression models I                                         |             |                           |
+| Th Mar 23 | Logistic regression models II                                        |             | Revise code & docs        |
+| T Mar 28  | Vector semantics I (Static & contextualized vectors)                 | Logistic regression |                   |
+| Th Mar 30 | Vector semantics II (Similarity & Weigthing)                         |             |                           |
+| T Apr 04  | Introduction to Deep Neural Networks                                 |             |                           |
+| Th Apr 06 | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    | Word embeddings | Embeddings of data set |
+| T Apr 11  | Introduction to Transformers                                         |             |      |
+| Th Apr 13 | Transfomers: 'Attenion is all you need'                              |             | Red team two classmates projects|
+| T Apr 18  | Applied NLP: Named Entity Recognition & Ontologies                   |             |  |
+| Th Apr 20 | Applied NLP: Text generation                                         |             |                           |
+| T Apr 25  | Project presentations                                                |             |                           |
+| Th Apr 27 | Project presentations                                                |             |                           |
+| T May 02  | Project presentations                                                |             |                           |
+| Th May 04 | Project presentations                                                |             |                           |
+| T May 09  | Final exams                                                          |             |                           |
+| Th May 11 | Final exams                                                          |             |                           |
+| T May 16  | Final exams                                                          |             | Final project due         |
+
 ## Course Policies
 
 Please read and take notice of the following:
 
 ### Grade scale
 
-|  | Mark | |  | Mark |
-| --- | --- | --- | --- | --- |
-| 93 - 100 | A | | 73 - 76 | C |
-| 90 - 92 | A- | | 70 - 72 | C- |
-| 87 - 89 | B+ | | 67 - 69 | D+ |
-| 83 - 86 | B| | 63 - 66 | D |
-| 80 - 82 | B- | | 60 - 62 | D- |
-| 77 - 79 | C+ | | 00 - 59 | F |
+|  | Mark |  | Mark |
+| --- | --- | --- | --- |
+| 93 - 100 | A | 73 - 76 | C |
+| 90 - 92 | A- | 70 - 72 | C- |
+| 87 - 89 | B+ | 67 - 69 | D+ |
+| 83 - 86 | B | 63 - 66 | D |
+| 80 - 82 | B- | 60 - 62 | D- |
+| 77 - 79 | C+ | 00 - 59 | F |
 
 
 ### Grading appeals
