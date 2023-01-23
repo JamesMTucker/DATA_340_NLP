@@ -1,6 +1,6 @@
 <img align="left" width="120" height="120" src="./imgs/wm_vertical_stacked_full_color.png" alt="wm_vertical_stacked_full_color">
 
-# W&M DATA 340 4 Natural Language Processing, Spring 2023 Syllabus
+# W&M DATA 340 3 Natural Language Processing, Spring 2023 Syllabus
 
 [Schedule](#Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
 
