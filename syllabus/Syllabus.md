@@ -140,6 +140,14 @@ If you are absent please email me and let me know or send me a text message. Cou
 
 Throughout the semester, I will post at least 10 NLP related coding challenges to the discord channel. You can earn an extra point for every assignment by submitting code that provides a correct answer along with a short description of your thought process and how you came to your solution.
 
+### Mental Well-Being
+
+William & Mary recognizes that students juggle different responsibilities and can face challenges that make learning difficult. There are many resources available at W&M to help students navigate emotional/psychological, physical/medical, material/accessibility concerns, including:  
+
+* The W&M Counseling Center at (757) 221-3620.  Services are free and confidential.  
+* The W&M Health Center at (757) 221-4386.  
+* For additional support or resources & questions, Contact the Dean of Students at 757-221-2510. 
+
 ### Important dates
 
 * Add/drop deadline: Feb. 3
