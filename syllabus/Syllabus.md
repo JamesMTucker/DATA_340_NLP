@@ -86,11 +86,11 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 | T Mar 21  | Logistic regression models I                                         |                                   | Jurafsky & Martin 5    |                  |
 | Th Mar 23 | Logistic regression models II                                        |                                   | Jurafsky & Martin 5    | Revise code & docs |
 | T Mar 28  | Vector semantics I (Static & contextualized vectors)                 | Logistic regression               | Jurafsky & Martin 6    |                  |
-| Th Mar 30 | Vector semantics II (Similarity & Weigthing)                         |                                   | Jurafsky & Martin 6    |                  |
+| Th Mar 30 | Vector semantics II (Similarity & Weighting)                         |                                   | Jurafsky & Martin 6    |                  |
 | T Apr 04  | Introduction to Deep Neural Networks                                 |                                   | Jurafsky & Martin 7; Kinsley et al.     | |
 | Th Apr 06 | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    | Word embeddings                   | Jurafsky & Martin 8/9   | Embeddings of data set |
 | T Apr 11  | Introduction to Transformers                                         |                                   | Jurafsky & Martin 10    |                 |
-| Th Apr 13 | Transfomers: 'Attenion is all you need'                              |                                   | Jurafsky & Martin 11    | Red team two classmates projects |
+| Th Apr 13 | Transfomers: 'Attention is all you need'                              |                                   | Jurafsky & Martin 11    | Red team two classmates projects |
 | T Apr 18  | Applied NLP: Named Entity Recognition & Ontologies                   |                                   | Tunstall et al.         |                      |
 | Th Apr 20 | Applied NLP: Text generation                                         |                                   | Tunstall et al.         |                      |
 | T Apr 25  | Project presentations                                                |                                   |                         |                      |
