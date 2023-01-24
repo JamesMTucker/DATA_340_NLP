@@ -23,14 +23,14 @@ This course is designed to introduce students to Natural Language Processing (NL
 
 This course is language agnostic. You can submit your homework and project in whatever programming language you prefer. In class lectures, we will use Python or R for the most part.
 
-## Course Objectives:
+## Course objectives:
 
 * Understand the basics of natural language processing techniques and how they can be used to build programs that model human use of language and generate human language.
 * Learn how to use natural language processing tools and libraries to perform tasks such as text classification, sentiment analysis, and text generation.
 * Develop the ability and experience to design and implement natural language processing systems for real-world applications
 * Explore ethical and social implications of natural language processing and artificial intelligence
 
-## Course Topics:
+## Course topics:
 
 1.  Introduction to natural language processing
 2.  Data set creation and documentation
@@ -102,7 +102,7 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 | T May 16  | Final exams                                                          |                                   |                         | Final project due    |
 
 
-## Course Policies
+## Course policies
 
 Please read and take notice of the following:
 
@@ -161,6 +161,10 @@ William & Mary recognizes that students juggle different responsibilities and ca
 * Final Exams: May 8 – 12, 15 – 16
 * Commencement: May 18 – 20
 
-### W&M Honor Code
+### Spring 2023 academic calendar
+
+* [PDF](https://www.wm.edu/offices/registrar/documents/calendars/cal22-23.pdf)
+
+### W&M honor code
 
 Students are expected to conduct themselves according to the [Honor Code](https://www.wm.edu/offices/deanofstudents/services/communityvalues/studenthandbook/honor_system/index.php).
