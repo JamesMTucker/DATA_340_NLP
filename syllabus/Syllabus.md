@@ -66,40 +66,40 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 
 ## Schedule
 
-| Date      | Topic                                                                | Assignments                       | Reading    | Project Milestones                  |
-| --------- | -------------------------------------------------------------------- | --------------------------------- | ---------- | ----------------------------------- |
-| Th Jan 26 | Introductions & Syllabus                                             |                                   |            |                                     |
-| T Jan 31  | Natural Language Processing, Data Science, and Large Language Models | Join discord                      |            |                                     |
-| Th Feb 02 | Linguistic background & properties of language                       |                                   | Manning and Schütze | Research interest   |
-| T Feb 07  | Statistics and Information theory                                    |                                   | Shannon (optional)    |                   |
-| Th Feb 09 | GitHub, Jupyter Notebooks, R Markdown, Code documentation            | ChatGPT Linguistics essay         |            |                                     |
-| T Feb 14  | Data set creation: Regular Expressions & Web scraping                |                                   | Grimmer et al.; Jurafsky & Martin 2  | GitHub repo README.md |
-| Th Feb 16 | Data set creation: Web scraping, APIs, & Social media                | Notebook essentials               | van Atteveldt et al. 6    |               |
-| T Feb 21  | Text normalization: lexicons and syntax                              |                                   | Jurafsky & Martin 2    |                  |
-| Th Feb 23 | Text normalization: tokens, sentences, discourse units               | Web scraper                       | Jurafsky & Martin 2    | Data set creation & documentation   |
-| T Feb 28  | N-gram language models                                               |                                   | Jurafsky & Martin 3    |                  |
-| Th Mar 02 | Naive Bayes classification I                                         | Exploratory Data Analysis & NLP   | Jurafsky & Martin 4    |                  |
-| T Mar 07  | Naive Bayes classification II                                        |                                   | Jurafsky & Martin 4    | Data set normalization and analysis |
-| Th Mar 09 | Evaluating language models                                           | Naive Bayes                       | Jurafsky & Martin 4    |                  |
-| T Mar 14  | No class - Spring break                                              |                                   |                        |                  |
-| Th Mar 16 | No class - Spring break                                              |                                   |                        |                  |
-| T Mar 21  | Logistic regression models I                                         |                                   | Jurafsky & Martin 5    |                  |
-| Th Mar 23 | Logistic regression models II                                        |                                   | Jurafsky & Martin 5    | Revise code & docs |
-| T Mar 28  | Vector semantics I (Static & contextualized vectors)                 | Logistic regression               | Jurafsky & Martin 6    |                  |
-| Th Mar 30 | Vector semantics II (Similarity & Weighting)                         |                                   | Jurafsky & Martin 6    |                  |
-| T Apr 04  | Introduction to Deep Neural Networks                                 |                                   | Jurafsky & Martin 7; Kinsley et al.     | |
-| Th Apr 06 | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    | Word embeddings                   | Jurafsky & Martin 8/9   | Embeddings of data set |
-| T Apr 11  | Introduction to Transformers                                         |                                   | Jurafsky & Martin 10    |                 |
-| Th Apr 13 | Transfomers: 'Attention is all you need'                              |                                   | Jurafsky & Martin 11    | Red team two classmates projects |
-| T Apr 18  | Applied NLP: Named Entity Recognition & Ontologies                   |                                   | Tunstall et al.         |                      |
-| Th Apr 20 | Applied NLP: Text generation                                         |                                   | Tunstall et al.         |                      |
-| T Apr 25  | Project presentations                                                |                                   |                         |                      |
-| Th Apr 27 | Project presentations                                                |                                   |                         |                      |
-| T May 02  | Project presentations                                                |                                   |                         |                      |
-| Th May 04 | Project presentations                                                |                                   |                         |                      |
-| T May 09  | Final exams                                                          |                                   |                         |                      |
-| Th May 11 | Final exams                                                          |                                   |                         |                      |
-| T May 16  | Final exams                                                          |                                   |                         | Final project due    |
+| Date      | Topic                                                                | Assignments                       | Reading                                   | Project Milestones                  | Notebooks |
+| --------- | -------------------------------------------------------------------- | --------------------------------- | ----------------------------------------- | ----------------------------------- | --------- |
+| Th Jan 26 | Introductions & Syllabus                                             |                                   |                                           |                                     | [Link](https://colab.research.google.com/drive/1KZ4EWcDdnglUuxSr1E5ZOo-ZWlGs8ciD#scrollTo=i7XHXeIEhnlT) |
+| T Jan 31  | Natural Language Processing, Data Science, and Large Language Models | Join discord                      |                                           |                                     | |
+| Th Feb 02 | Linguistic background & properties of language                       |                                   | Manning and Schütze                       | Research interest                   | |
+| T Feb 07  | Statistics and Information theory                                    |                                   | Shannon (optional)                        |                                     | |
+| Th Feb 09 | GitHub, Jupyter Notebooks, R Markdown, Code documentation            | ChatGPT Linguistics essay         |                                           |                                     | |
+| T Feb 14  | Data set creation: Regular Expressions & Web scraping                |                                   | Grimmer et al.; Jurafsky & Martin 2       | GitHub repo README.md               | |
+| Th Feb 16 | Data set creation: Web scraping, APIs, & Social media                | Notebook essentials               | van Atteveldt et al. 6                    |                                     | |
+| T Feb 21  | Text normalization: lexicons and syntax                              |                                   | Jurafsky & Martin 2                       |                                     | |
+| Th Feb 23 | Text normalization: tokens, sentences, discourse units               | Web scraper                       | Jurafsky & Martin 2                       | Data set creation & documentation   | |
+| T Feb 28  | N-gram language models                                               |                                   | Jurafsky & Martin 3                       |                                     | |
+| Th Mar 02 | Naive Bayes classification I                                         | Exploratory Data Analysis & NLP   | Jurafsky & Martin 4                       |                                     | |
+| T Mar 07  | Naive Bayes classification II                                        |                                   | Jurafsky & Martin 4                       | Data set normalization and analysis | |
+| Th Mar 09 | Evaluating language models                                           | Naive Bayes                       | Jurafsky & Martin 4                       |                                     | |
+| T Mar 14  | No class - Spring break                                              |                                   |                                           |                                     | |
+| Th Mar 16 | No class - Spring break                                              |                                   |                                           |                                     | |
+| T Mar 21  | Logistic regression models I                                         |                                   | Jurafsky & Martin 5                       |                                     | |
+| Th Mar 23 | Logistic regression models II                                        |                                   | Jurafsky & Martin 5                       | Revise code & docs                  | |
+| T Mar 28  | Vector semantics I (Static & contextualized vectors)                 | Logistic regression               | Jurafsky & Martin 6                       |                                     | |
+| Th Mar 30 | Vector semantics II (Similarity & Weighting)                         |                                   | Jurafsky & Martin 6                       |                                     | |
+| T Apr 04  | Introduction to Deep Neural Networks                                 |                                   | Jurafsky & Martin 7; Kinsley et al.       |                                     | |
+| Th Apr 06 | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    | Word embeddings                   | Jurafsky & Martin 8/9                     | Embeddings of data set              | |
+| T Apr 11  | Introduction to Transformers                                         |                                   | Jurafsky & Martin 10                      |                                     | |
+| Th Apr 13 | Transfomers: 'Attention is all you need'                             |                                   | Jurafsky & Martin 11                      | Red team two classmates projects    | |
+| T Apr 18  | Applied NLP: Named Entity Recognition & Ontologies                   |                                   | Tunstall et al.                           |                                     | |
+| Th Apr 20 | Applied NLP: Text generation                                         |                                   | Tunstall et al.                           |                                     | |
+| T Apr 25  | Project presentations                                                |                                   |                                           |                                     | |
+| Th Apr 27 | Project presentations                                                |                                   |                                           |                                     | |
+| T May 02  | Project presentations                                                |                                   |                                           |                                     | |
+| Th May 04 | Project presentations                                                |                                   |                                           |                                     | |
+| T May 09  | Final exams                                                          |                                   |                                           |                                     | |
+| Th May 11 | Final exams                                                          |                                   |                                           |                                     | |
+| T May 16  | Final exams                                                          |                                   |                                           | Final project due                   | |
 
 
 ## Course policies
@@ -122,7 +122,6 @@ Please read and take notice of the following:
 
 To appeal a grade, schedule a meeting to discuss it with me.
 
-
 ### Communications
 
 The [discord channel](https://discord.gg/rwy2QpZU) provides an additional way to collaborate with our Natural Language Processing community. You are highly encouraged to participate in discussions on the discord channel. If you ask for help, please provide code examples so that the community can better help and understand.
@@ -136,7 +135,7 @@ For each lecture, I will share a Google Colaboratory notebook with you. You are 
 
 ### Absences
 
-If you are absent please email me and let me know or send me a text message. Course work is due as detailed in the course schedule. Late work is penalized 2% of the final grade for every day it is late. If you are absent on a day that an assignment or project milestone is due, please make sure to turn it in early. If you are ill, please communicate with me regarding an extension.
+If you are absent please email me and let me know or send me a text message. Course work is due as detailed in the course schedule. Late work is penalized 2% of the earned mark for every day it is late. If you are absent on a day that an assignment or project milestone is due, please make sure to turn it in early. If you are ill, please communicate with me regarding an extension.
 
 ### Extra-credit
 
