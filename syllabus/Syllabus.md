@@ -15,7 +15,7 @@ This course is designed to introduce students to Natural Language Processing (NL
 
 ## Instructor contact and office hours
 
-* email: jmtucker@wm.edu or james.tucker@lexicalintelligence.com
+* email: jmtucker02@wm.edu or james.tucker@lexicalintelligence.com
 * website: https://jamesmtucker.com
 * Office hours by appointment only
 
