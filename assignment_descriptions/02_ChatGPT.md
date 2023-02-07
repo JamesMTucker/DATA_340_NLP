@@ -2,7 +2,7 @@
 
 ## Due date
 
-Feburary 14, 2023
+February 14, 2023
 
 ## Assignment description
 
