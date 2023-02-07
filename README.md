@@ -6,11 +6,11 @@
 
 ## [Course Syllabus](./syllabus/Syllabus.md)
 
-## [Homework](./Spring_2023/HOMEWORK/)
+## [Homework](/Homework/)
 
-## [Reading](./Spring_2023/READINGS/)
+## [Reading](/course_readings/)
 
-## [Extra-Credit](./Spring_2023/EXTRA_CREDIT/)
+## [Extra-Credit](/Extra_Credit/)
 
 
 
