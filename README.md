@@ -6,7 +6,7 @@
 
 ## [Course Syllabus](./syllabus/Syllabus.md)
 
-## [Homework](/Homework/)
+## [Homework](/assignment_descriptions/)
 
 ## [Reading](/course_readings/)
 
