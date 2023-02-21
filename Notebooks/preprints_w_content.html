@@ -1,0 +1,2018 @@
+<html prefix="og: http://ogp.me/ns#" lang="en-us"><head><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style id="ace_editor.css">.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_editor {position: relative;overflow: hidden;padding: 0;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;contain: style size layout;font-variant-ligatures: no-common-ligatures;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;contain: style size layout;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {position: absolute;top: 0;left: 0;right: 0;padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {contain: strict;position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;contain: strict;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: transparent;color: inherit;z-index: 1000;opacity: 1;}.ace_composition_placeholder { color: transparent }.ace_composition_marker { border-bottom: 1px solid;position: absolute;border-radius: 0;margin-top: 1px;}[ace_nocontext=true] {transform: none!important;filter: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;height: 1000000px;contain: style size layout;}.ace_text-layer {font: inherit !important;position: absolute;height: 1000000px;width: 1000000px;contain: style size layout;}.ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group {contain: style size layout;position: absolute;top: 0;left: 0;right: 0;}.ace_hidpi .ace_text-layer,.ace_hidpi .ace_gutter-layer,.ace_hidpi .ace_content,.ace_hidpi .ace_gutter {contain: strict;will-change: transform;}.ace_hidpi .ace_text-layer > .ace_line, .ace_hidpi .ace_text-layer > .ace_line_group {contain: strict;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_hasPlaceholder .ace_hidden-cursors .ace_cursor {opacity: 0;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_animate-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: step-end;animation-name: blink-ace-animate;animation-iteration-count: infinite;}.ace_animate-blinking.ace_smooth-blinking .ace_cursor {animation-duration: 1000ms;animation-timing-function: ease-in-out;animation-name: blink-ace-animate-smooth;}@keyframes blink-ace-animate {from, to { opacity: 1; }60% { opacity: 0; }}@keyframes blink-ace-animate-smooth {from, to { opacity: 1; }45% { opacity: 1; }60% { opacity: 0; }85% { opacity: 0; }}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_error_bracket {position: absolute;border-bottom: 1px solid #DE5555;border-radius: 0;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_mobile-menu {position: absolute;line-height: 1.5;border-radius: 4px;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;background: white;box-shadow: 1px 3px 2px grey;border: 1px solid #dcdcdc;color: black;}.ace_dark > .ace_mobile-menu {background: #333;color: #ccc;box-shadow: 1px 3px 2px grey;border: 1px solid #444;}.ace_mobile-button {padding: 2px;cursor: pointer;overflow: hidden;}.ace_mobile-button:hover {background-color: #eee;opacity:1;}.ace_mobile-button:active {background-color: #ddd;}.ace_placeholder {font-family: arial;transform: scale(0.9);transform-origin: left;white-space: pre;opacity: 0.7;margin: 0 10px;}
+/*# sourceURL=ace/css/ace_editor.css */</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+
+    
+<meta name="preprint-service/config/environment" content="%7B%22modulePrefix%22%3A%22preprint-service%22%2C%22appName%22%3A%22Preprints%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22authorizationType%22%3A%22cookie%22%2C%22sentryDSN%22%3A%22https%3A//1c750075c71a41988dc01ef55519393b@sentry2-client.cos.io/4%22%2C%22sentryOptions%22%3A%7B%22release%22%3A%227794709b2c4e1d07101cacebad442aa0709db7dd%22%2C%22ignoreErrors%22%3A%5B%22TransitionAborted%22%5D%7D%2C%22ember-simple-auth%22%3A%7B%22authorizer%22%3A%22authorizer%3Aosf-cookie%22%2C%22authenticator%22%3A%22authenticator%3Aosf-cookie%22%7D%2C%22providerAssetsURL%22%3A%22local%22%2C%22providerAssetsPath%22%3A%22osf-assets/files/preprints-assets%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22LOG_VIEW_LOOKUPS%22%3Atrue%2C%22name%22%3A%22preprint-service%22%2C%22version%22%3A%220.141.2%22%7D%2C%22SHARE%22%3A%7B%22baseUrl%22%3A%22https%3A//share.osf.io/%22%2C%22searchUrl%22%3A%22https%3A//share.osf.io/api/v2/search/creativeworks/_search%22%7D%2C%22moment%22%3A%7B%22outputFormat%22%3A%22YYYY-MM-DD%20hh%3Amm%20a%22%7D%2C%22PREPRINTS%22%3A%7B%22defaultProvider%22%3A%22osf%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en%22%7D%2C%22metricsAdapters%22%3A%5B%7B%22name%22%3A%22GoogleAnalytics%22%2C%22environments%22%3A%5B%22production%22%5D%2C%22config%22%3A%7B%22id%22%3A%22UA-26813616-1%22%2C%22setFields%22%3A%7B%22anonymizeIp%22%3Atrue%7D%7D%2C%22dimensions%22%3A%7B%22authenticated%22%3A%22dimension1%22%2C%22resource%22%3A%22dimension2%22%2C%22isPublic%22%3A%22dimension3%22%2C%22isWithdrawn%22%3A%22dimension4%22%2C%22version%22%3A%22dimension5%22%7D%7D%5D%2C%22chronosProviders%22%3A%5B%22psyarxiv%22%5D%2C%22approvedChronosJournalIds%22%3A%5B%220147-7307%22%2C%221099-9809%22%2C%221948-1985%22%2C%221984-3054%22%2C%221082-989X%22%2C%222160-4134%22%2C%221196-1961%22%5D%2C%22plauditWidgetUrl%22%3A%22https%3A//plaudit.pub/embed/endorsements.js%22%2C%22OSF%22%3A%7B%22clientId%22%3Anull%2C%22scope%22%3A%22osf.full_read%20osf.full_write%22%2C%22apiNamespace%22%3A%22v2%22%2C%22backend%22%3A%22prod%22%2C%22redirectUri%22%3A%22http%3A//localhost%3A5000/login/%3Fnext%3D%252Fpreprints%252F%22%2C%22institutionsLandingFlag%22%3A%22institutions_nav_bar%22%2C%22apiHeaders%22%3A%7B%22ACCEPT%22%3A%22application/vnd.api+json%3B%20version%3D2.6%22%7D%2C%22cookies%22%3A%7B%22csrf%22%3A%22api-csrf%22%7D%2C%22url%22%3A%22https%3A//osf.io/%22%2C%22apiUrl%22%3A%22https%3A//api.osf.io%22%2C%22mfrUrl%22%3A%22https%3A//mfr.osf.io/%22%2C%22renderUrl%22%3A%22https%3A//mfr.osf.io/render%22%2C%22waterbutlerUrl%22%3A%22https%3A//files.osf.io/%22%2C%22helpUrl%22%3A%22http%3A//help.osf.io%22%2C%22cookieLoginUrl%22%3A%22https%3A//accounts.osf.io/login%22%2C%22oauthUrl%22%3A%22https%3A//accounts.osf.io/oauth2/authorize%22%2C%22shareBaseUrl%22%3A%22https%3A//share.osf.io/%22%2C%22shareApiUrl%22%3A%22https%3A//share.osf.io/api/v2%22%2C%22shareSearchUrl%22%3A%22https%3A//share.osf.io/api/v2/search/creativeworks/_search%22%2C%22isLocal%22%3Afalse%2C%22metricsStartDate%22%3A%222019-01-01%22%7D%2C%22ASSET_SUFFIX%22%3A%227794709b2c4e1d07101cacebad442aa0709db7dd%22%2C%22ember-collapsible-panel%22%3A%7B%22hasLiquidFire%22%3A%220.27.3%22%7D%2C%22contentSecurityPolicy%22%3A%7B%22style-src%22%3A%22%27self%27%20%27unsafe-inline%27%20%27unsave-eval%27%22%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-faker%22%3A%7B%7D%2C%22FB_APP_ID%22%3A%221022273774556662%22%7D">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+
+    
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config;executed=true">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true},
+            skipStartupTypeset: true
+        });
+    </script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/basic.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.1.1/min/dropzone.min.js"></script>
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><link rel="stylesheet" href="/preprints/assets/vendor-7794709b2c4e1d07101cacebad442aa0709db7dd.css"><link rel="stylesheet" href="/preprints/assets/preprint-service-7794709b2c4e1d07101cacebad442aa0709db7dd.css"><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><meta name="ember-cli-head-start"><title>OSF Preprints | Search</title>
+  <link rel="shortcut icon" href="/preprints/assets/osf-assets/files/preprints-assets/osf/favicon-7794709b2c4e1d07101cacebad442aa0709db7dd.ico" id="ember496" class="ember-view">
+<meta name="ember-cli-head-end">
+</head>
+  <body class="ember-application"><div id="MathJax_Message" style="display: none;"></div>
+    <noscript>
+        <p>
+        For full functionality of this site it is necessary to enable JavaScript.
+        Here are
+            <a href='https://www.enable-javascript.com/' target='_blank'> instructions for enabling JavaScript in your web browser</a>.
+        </p>
+    </noscript>
+
+    <script> window.prerenderReady = false; </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/2.18.0/ember.min.js"></script>
+
+    <script>
+        (function() {
+            var encodedConfig = document.head.querySelector("meta[name$='/config/environment']").content;
+            var config = JSON.parse(unescape(encodedConfig));
+            var assetSuffix = config.ASSET_SUFFIX ? '-' + config.ASSET_SUFFIX : '';
+            var origin = window.location.origin;
+            window.isProviderDomain = !~config.OSF.url.indexOf(origin);
+            var prefix = '/' + (window.isProviderDomain ? '' : 'preprints/') + 'assets/';
+            [
+                'vendor',
+                'preprint-service'
+            ].forEach(function (name) {
+                var script = document.createElement('script');
+                script.src = prefix + name + assetSuffix + '.js';
+                script.async = false;
+                document.body.appendChild(script);
+
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = prefix + name + assetSuffix + '.css';
+                document.head.appendChild(link);
+            });
+        })();
+    </script><script src="/preprints/assets/vendor-7794709b2c4e1d07101cacebad442aa0709db7dd.js"></script><script src="/preprints/assets/preprint-service-7794709b2c4e1d07101cacebad442aa0709db7dd.js"></script>
+
+    <script src="https://cdn.ravenjs.com/3.22.1/ember/raven.min.js"></script>
+                    <script>
+                        var encodedConfig = document.head.querySelector("meta[name$='/config/environment']").content;
+                        var config = JSON.parse(unescape(encodedConfig));
+                        if (config.sentryDSN) {
+                            Raven.config(config.sentryDSN, config.sentryOptions || {}).install();
+                        }
+                    </script>
+
+    <div id="ember-basic-dropdown-wormhole"></div>
+<div id="ember-bootstrap-wormhole"></div>
+  
+
+<div id="ember499" class="ember-view">
+<!---->
+
+    <div id="ember538" class="__new-osf-navbar__b7554 ember-view"><div class="osf-nav-wrapper">
+    <nav id="navbarScope" role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" aria-label="Go home" class="navbar-brand">
+                    <span class="osf-navbar-logo"></span>
+                </a>
+
+                <div class="service-name">
+                    <a href="https://osf.io/preprints/">
+                        <span class="hidden-xs"> OSF </span>
+                        <span class="current-service"><strong>PREPRINTS</strong></span>
+                    </a>
+                </div>
+
+                <div class="dropdown primary-nav">
+                    <button data-toggle="dropdown" role="button" aria-expanded="false" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link" data-ember-action="" data-ember-action-555="555" data-ember-action-556="556">
+                        <span class="fa fa-caret-down fa-2x"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu service-dropdown">
+                            <li><a href="https://osf.io/">OSF<b>HOME</b></a></li>
+                            <li><a href="https://osf.io/preprints/">OSF<b>PREPRINTS</b></a></li>
+                            <li><a href="https://osf.io/registries/">OSF<b>REGISTRIES</b></a></li>
+                            <li><a href="https://osf.io/meetings/">OSF<b>MEETINGS</b></a></li>
+                            <li><a href="https://osf.io/institutions/">OSF<b>INSTITUTIONS</b></a></li>
+                    </ul>
+                </div>
+                <a type="button" role="button" data-toggle="collapse" data-target="#secondary-navigation" aria-label="Toggle secondary navigation" class="navbar-toggle collapsed">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <div id="secondary-navigation" class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="https://osf.io/preprints/submit/">
+                                            Add a Preprint
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://osf.io/preprints/discover/">
+                                            Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://help.osf.io/">
+                                            Support
+                                    </a>
+                                </li>
+                                <li class="navbar-donate-button">
+                                    <a href="https://cos.io/donate">
+                                        Donate
+                                    </a>
+                                </li>
+                        <li class="dropdown sign-in">
+            <div>
+                <a href="https://osf.io/register?campaign=osf-preprints&amp;next=https%3A%2F%2Fosf.io%2Fpreprints%2Fdiscover%3Fsubject%3Dbepress%257CSocial%2520and%2520Behavioral%2520Sciences%257CLinguistics" style="line-height:1.7" class="btn btn-success btn-top-signup m-l-sm m-r-xs">Sign Up</a>
+                <a role="button" class="btn btn-info btn-top-login m-r-xs" data-ember-action="" data-ember-action-615="615">Sign In</a>
+            </div>
+    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!----></div>
+</div>
+
+<div hidden="" id="ember622" class="alert alert-dismissible alert-maintenance alert-info ember-view"><button type="button" data-dismiss="alert" aria-label="Close" class="close" data-ember-action="" data-ember-action-623="623">
+    <span aria-hidden="true">x</span>
+</button>
+<strong>Notice:</strong>
+<span>
+        The site will undergo maintenance between
+        <strong>
+            <time>Feb 21, 2023 8:35 AM</time>
+            and
+            <time>Feb 21, 2023 8:35 AM</time>
+        </strong>
+        (-0500 UTC).
+        Thank you for your patience.
+</span>
+</div>
+
+
+
+<div id="ember666" class="discover-page __discover-page__56614 ember-view"><div class="search-header">
+    <div class="container">
+        <div class="row m-v-md">
+            <div class="col-xs-12 text-center">
+<!---->                <div>
+                    <div class="registries-brand m-t-lg"></div>
+                        <h1> Preprint Archive Search </h1>
+                    <p class="lead">
+                        powered by
+                        <a href="https://share.osf.io/" id="share-logo" title="SHARE" class="share-logo"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-t-md m-b-lg text-center">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="input-group input-group-lg">
+                    <span class="searchBoxOverride">
+                        <input type="text" placeholder="Search preprints..." aria-label="Search" id="searchBox" class="form-control ember-text-field ember-view">
+                    </span>
+                    <span class="input-group-btn">
+                        <button type="button" aria-label="Lucene search help" class="btn btn-default" data-ember-action="" data-ember-action-693="693">
+                            <i class="fa fa-question text-muted"></i>
+                        </button>
+                        <button type="button" class="btn btn-default" data-ember-action="" data-ember-action-694="694">
+                            Search
+                        </button>
+                    </span>
+                </div>
+                <div id="ember701" class="ember-view"><div id="ember-bootstrap-modal-container">
+<div id="ember712" class="ember-view"><!----></div></div>
+</div>
+
+                    <div id="ember717" class="ember-view">    <p class="p-l-md text-left">
+        <span class="f-w-lg">2,373,123 searchable </span>
+        <span>as of February 21, 2023</span>
+    </p>
+</div>
+            </div>
+        </div>
+
+            <div class="row m-t-xs m-b-md">
+                <div class="col-xs-10 col-xs-offset-1 text-center">
+                        <h3>Partner Repositories</h3>
+                        <div class="row">
+                            <div id="ember726" class="ember-view"><div id="providerCarousel" data-ride="carousel" data-interval="false" class="carousel slide">
+    <div role="listbox" aria-label="Select service" class="carousel-inner">
+            <div class="item active">
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="/preprints/africarxiv/discover" title="AfricArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/africarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-africarxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/agrixiv/discover" title="AgriXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/agrixiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-agrixiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://arabixiv.org/discover" title="Arabixiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/arabixiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-arabixiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://biohackrxiv.org/discover" title="BioHackrXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/biohackrxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-biohackrxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/bodoarxiv/discover" title="BodoArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/bodoarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-bodoarxiv-dark"></div>
+                            </a>
+                        </div>
+            </div>
+            <div class="item">
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="/preprints/coppreprints/discover" title="CoP" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/coppreprints/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-coppreprints-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/eartharxiv/discover" title="EarthArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/eartharxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-eartharxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/ecoevorxiv/discover" title="EcoEvoRxiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/ecoevorxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-ecoevorxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://ecsarxiv.org/discover" title="ECSarXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/ecsarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-ecsarxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://edarxiv.org/discover" title="EdArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/edarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-edarxiv-dark"></div>
+                            </a>
+                        </div>
+            </div>
+            <div class="item">
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="https://engrxiv.org/discover" title="engrXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/engrxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-engrxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/focusarchive/discover" title="FocUS Archive" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/focusarchive/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-focusarchive-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/frenxiv/discover" title="Frenxiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/frenxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-frenxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/inarxiv/discover" title="INA-Rxiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/inarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-inarxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/indiarxiv/discover" title="IndiaRxiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/indiarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-indiarxiv-dark"></div>
+                            </a>
+                        </div>
+            </div>
+            <div class="item">
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="/preprints/lawarxiv/discover" title="LawArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/lawarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-lawarxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/lissa/discover" title="LIS Scholarship Archive" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/lissa/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-lissa-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/marxiv/discover" title="MarXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/marxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-marxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://mediarxiv.org/discover" title="MediArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/mediarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-mediarxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/metaarxiv/discover" title="MetaArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/metaarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-metaarxiv-dark"></div>
+                            </a>
+                        </div>
+            </div>
+            <div class="item">
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="https://mindrxiv.org/discover" title="MindRxiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/mindrxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-mindrxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/nutrixiv/discover" title="NutriXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/nutrixiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-nutrixiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://paleorxiv.org/discover" title="PaleorXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/paleorxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-paleorxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://psyarxiv.com/discover" title="PsyArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/psyarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-psyarxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="/preprints/socarxiv/discover" title="SocArXiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/socarxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-socarxiv-dark"></div>
+                            </a>
+                        </div>
+            </div>
+            <div class="item">
+                        <div class="col-sm-2 col-sm-offset-1">
+                            <a href="/preprints/sportrxiv/discover" title="SportRxiv" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/sportrxiv/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-sportrxiv-dark"></div>
+                            </a>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="https://thesiscommons.org/discover" title="Thesis Commons" role="option">
+                                    <div style="background-image: url('/preprints/assets/osf-assets/files/preprints-assets/thesiscommons/wide_black-7794709b2c4e1d07101cacebad442aa0709db7dd.png')" class="discover-provider-logo provider-thesiscommons-dark"></div>
+                            </a>
+                        </div>
+            </div>
+    </div>
+        <a href="#providerCarousel" role="button" data-slide="prev" class="left carousel-control">
+            <span class="icon-prev fa fa-angle-left dark-control"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#providerCarousel" role="button" data-slide="next" class="right carousel-control">
+            <span class="icon-next fa fa-angle-right dark-control"></span>
+            <span class="sr-only">Next</span>
+        </a>
+</div>
+</div>
+                        </div>
+                </div>
+            </div>
+
+        <div class="row p-v-sm">
+<!---->
+            <div class="col-sm-6 pull-right">
+                <div class="dropdown pull-right">
+                    <button type="button" id="sortBy" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle">
+                            Sort by: Relevance
+                        <span class="caret">
+                        </span>
+                    </button>
+                    <ul id="sortByOptionList" aria-labelledby="sortBy" class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <button class="btn btn-link listOption" data-ember-action="" data-ember-action-773="773">
+                                    Relevance
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn btn-link listOption" data-ember-action="" data-ember-action-775="775">
+                                    Modified Date (oldest to newest)
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn btn-link listOption" data-ember-action="" data-ember-action-777="777">
+                                    Modified Date (newest to oldest)
+                                </button>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="search-main results-top">
+    <div class="container p-v-xl">
+        <div class="row search-results-section">
+            <div class="col-sm-4 col-xs-12 search-sidebar">
+                    <div id="activeFilters" class="well well-sm p-md">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4>Active Filters:</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <span class="pull-right">
+                                    <button type="button" class="btn btn-default btn-sm" data-ember-action="" data-ember-action-784="784">
+                                        Clear filters
+                                        <i aria-hidden="true" id="ember791" class="fa fa-remove ember-view"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="activeFiltersList">
+<!---->                                <span class="preprint-filter subject-filter">
+                                    Linguistics
+                                    <span aria-label="Remove subject" class="removeActiveFilter">
+                                        <button id="ember796" class="fa fa-times-circle ember-view"></button>
+                                    </span>
+                                </span>
+<!---->                        </div>
+                    </div>
+
+                    <h4>Refine your search by</h4>
+                    <div id="ember805" class="__faceted-search__e509c ember-view"><div class="p-t-md">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Providers
+            </div>
+            <div class="panel-body individual-facet">
+                <div id="ember811" class="ember-view"><div>
+    <ul>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    OSF Preprints
+                    <small>(55,058)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    AfricArXiv
+                    <small>(413)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    AgriXiv
+                    <small>(426)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Arabixiv
+                    <small>(328)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    arXiv
+                    <small>(1,324,848)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    BioHackrXiv
+                    <small>(42)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    bioRxiv
+                    <small>(48,109)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    BodoArXiv
+                    <small>(114)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Cogprints
+                    <small>(283)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    CoP
+                    <small>(5)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    EarthArXiv
+                    <small>(1,755)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    EcoEvoRxiv
+                    <small>(940)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    ECSarXiv
+                    <small>(256)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    EdArXiv
+                    <small>(1,169)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    engrXiv
+                    <small>(2,088)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    FocUS Archive
+                    <small>(53)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Frenxiv
+                    <small>(148)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    INA-Rxiv
+                    <small>(16,554)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    IndiaRxiv
+                    <small>(148)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    LawArXiv
+                    <small>(1,366)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    LIS Scholarship Archive
+                    <small>(310)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    MarXiv
+                    <small>(456)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    MediArXiv
+                    <small>(210)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    MetaArXiv
+                    <small>(480)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    MindRxiv
+                    <small>(291)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    NutriXiv
+                    <small>(84)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    PaleorXiv
+                    <small>(224)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    PeerJ
+                    <small>(4,747)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Preprints.org
+                    <small>(21,880)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    PsyArXiv
+                    <small>(27,412)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    RePEc
+                    <small>(848,335)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    SocArXiv
+                    <small>(12,259)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    SportRxiv
+                    <small>(386)</small>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    Thesis Commons
+                    <small>(1,909)</small>
+                </label>
+            </li>
+<!---->    </ul>
+</div>
+</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Subject
+            </div>
+            <div class="panel-body individual-facet">
+                <div id="ember818" class="ember-view"><div class="search-facet-taxonomy">
+    <ul>
+            <li>
+                <button aria-label="Expand Architecture" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1008="1008">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Architecture
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Arts and Humanities" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1014="1014">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Arts and Humanities
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Business" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1020="1020">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Business
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Education" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1026="1026">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Education
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Engineering" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1032="1032">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Engineering
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Law" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1038="1038">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Law
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Life Sciences" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1044="1044">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Life Sciences
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Medicine and Health Sciences" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1050="1050">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Medicine and Health Sciences
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Expand Physical Sciences and Mathematics" class="pointer m-r-xs taxonomy-caret-button " data-ember-action="" data-ember-action-1056="1056">
+                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Physical Sciences and Mathematics
+                </label>
+            </li>
+<!---->            <li>
+                <button aria-label="Collapse Social and Behavioral Sciences" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1062="1062">
+                    <i class="taxonomy-caret fa fa-caret-down"></i>
+                </button>
+                <label class="taxonomy-checkbox">
+                    <input type="checkbox">
+                    Social and Behavioral Sciences
+                </label>
+            </li>
+                <ul>
+                        <li>
+                                <button aria-label="Expand Agricultural and Resource Economics" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1115="1115">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Agricultural and Resource Economics
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Animal Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Anthropology" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1122="1122">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Anthropology
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Communication" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1128="1128">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Communication
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Counseling" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1134="1134">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Counseling
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Economics" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1140="1140">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Economics
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Environmental Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Food Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Geography" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1148="1148">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Geography
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand International and Area Studies" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1154="1154">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                International and Area Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Leadership Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Legal Studies" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1161="1161">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Legal Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Leisure Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Library and Information Science" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1168="1168">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Library and Information Science
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Linguistics" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1174="1174">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Linguistics
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Organization Development
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Political Science" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1181="1181">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Political Science
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Psychology" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1187="1187">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Psychology
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Public Affairs, Public Policy and Public Administration" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1193="1193">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Public Affairs, Public Policy and Public Administration
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Science and Technology Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Social Statistics
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Social Work
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <button aria-label="Expand Sociology" class="pointer m-r-xs taxonomy-caret-button taxonomy-show-children" data-ember-action="" data-ember-action-1202="1202">
+                                    <i class="taxonomy-caret fa fa-caret-right"></i>
+                                </button>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Sociology
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Sports Studies
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Urban Studies and Planning
+                            </label>
+                        </li>
+<!---->                        <li>
+                                <span class="taxonomy-right-padding"></span>
+                            <label class="taxonomy-checkbox">
+                                <input type="checkbox">
+                                Other Social and Behavioral Sciences
+                            </label>
+                        </li>
+<!---->                </ul>
+    </ul>
+</div>
+</div>
+            </div>
+        </div>
+</div>
+</div>
+
+                    <div id="ember823" class="ember-view"><div class="osf-box p-md m-b-lg clearfix m-t-xl">
+    <p>Do you want to add your own research as a preprint?</p>
+<a href="/preprints/submit" id="ember832" class="btn btn-success btn-lg ember-view">            Add a preprint
+</a></div>
+
+</div>
+
+            </div>
+
+            <div class="col-sm-8 col-xs-12">
+                            <div id="ember1214" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1219" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1228" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fthesiscommons.org%2F36xk8%2F&amp;text=Imagined+Interdependence%3A+Manipulating+Discourse+Changes+How+People+Construe+Interdependence&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1233" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fthesiscommons.org%2F36xk8%2F&amp;mini=true&amp;title=Imagined+Interdependence%3A+Manipulating+Discourse+Changes+How+People+Construe+Interdependence&amp;summary=I+use+experimental+psychological+methods+to+test+predictions+based+upon+previous+discourse+analysis.+I+test+whether+different+discourses+used+in+constructing+HIV%2FAIDS+epidemics+in+Sub-Saharan+Africa+result+in+different+perceptions+of+interdependence.&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1238" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=Imagined+Interdependence%3A+Manipulating+Discourse+Changes+How+People+Construe+Interdependence&amp;body=https%3A%2F%2Fthesiscommons.org%2F36xk8%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1243" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://thesiscommons.org/36xk8/">
+                            Imagined Interdependence: Manipulating Discourse Changes How People Construe Interdependence
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1249" class="ember-view">Jiří Münich</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Political Science
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Discourse and Text Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Social Psychology
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             I use experimental psychological methods to test predictions based upon previous discourse analysis. I test whether different discourses used in constructing HIV/AIDS epidemics in Sub-Saharan Africa result in different perceptions of interdependence.
+<!---->                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        Thesis Commons
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1265="1265">
+            <i id="ember1266" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1268" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1269" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1274" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fosf.io%2F6w2se%2F&amp;text=The+N400's+3+As%3A+Association%2C+Automaticity%2C+Attenuation+(and+Some+Semantics+Too)&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1279" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Fosf.io%2F6w2se%2F&amp;mini=true&amp;title=The+N400's+3+As%3A+Association%2C+Automaticity%2C+Attenuation+(and+Some+Semantics+Too)&amp;summary=The+N400+waveform+carries+new+insight+into+the+nature+of+linguistic+processing+and+may+shed+light+into+the+automaticity+of+priming+word+relationships.+We+investigated+semantic+and+associative+word+pairs+in+classic+lexical+decision+and+letter+search+tasks+t&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1284" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=The+N400's+3+As%3A+Association%2C+Automaticity%2C+Attenuation+(and+Some+Semantics+Too)&amp;body=http%3A%2F%2Fosf.io%2F6w2se%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1289" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+<a href="/6w2se" id="ember1290" class="ember-view">                        The N400's 3 As: Association, Automaticity, Attenuation (and Some Semantics Too)
+</a><!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1304" class="ember-view">Erin Michelle Buchanan</li><li id="ember1306" class="ember-view">John E. Scofield</li><li id="ember1308" class="ember-view">Nathan Nunley</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognition and Perception
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Semantics and Pragmatics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psycholinguistics and Neurolinguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognitive Psychology
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             The N400 waveform carries new insight into the nature of linguistic processing and may shed light into the automaticity of priming word relationships. We investigated semantic and associative word pairs in classic lexical decision and letter search tasks to examine their differences in cognitive pro
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        OSF Preprints
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1325="1325">
+            <i id="ember1326" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1328" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1329" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1334" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2Fdymc8%2F&amp;text=Learning+distributions+as+they+come%3A+Particle+filter+models+for+online+distributional+learning+of+phonetic+categories&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1339" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2Fdymc8%2F&amp;mini=true&amp;title=Learning+distributions+as+they+come%3A+Particle+filter+models+for+online+distributional+learning+of+phonetic+categories&amp;summary=Human+infants+have+the+remarkable+ability+to+learn+any+human+language.+One+proposed+mechanism+for+this+ability+is+distributional+learning%2C+where+learners+infer+the+underlying+cluster+structure+from+unlabeled+input.+Computational+models+of+distributional+le&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1344" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=Learning+distributions+as+they+come%3A+Particle+filter+models+for+online+distributional+learning+of+phonetic+categories&amp;body=https%3A%2F%2Fpsyarxiv.com%2Fdymc8%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1349" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/dymc8/">
+                            Learning distributions as they come: Particle filter models for online distributional learning of phonetic categories
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1351" class="ember-view">Dave Kleinschmidt</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Computational Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Phonetics and Phonology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognitive Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognition and Perception
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             Human infants have the remarkable ability to learn any human language. One proposed mechanism for this ability is distributional learning, where learners infer the underlying cluster structure from unlabeled input. Computational models of distributional learning have historically been principled but
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1368="1368">
+            <i id="ember1369" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1371" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1372" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1377" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2Fhy42g%2F&amp;text=Look+before+you+speak%3A+Children%E2%80%99s+integration+of+visual+information+into+informative+referring+expressions.&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1382" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2Fhy42g%2F&amp;mini=true&amp;title=Look+before+you+speak%3A+Children%E2%80%99s+integration+of+visual+information+into+informative+referring+expressions.&amp;summary=Children%E2%80%99s+ability+to+refer+is+underpinned+by+their+developing+cognitive+skills.+Using+a+production+task+(n%3D57)%2C+we+examined+pre-articulatory+visual+fixations+to+contrast+objects+(e.g.+to+a+large+apple+when+the+target+was+a+small+one)+to+investigate+how+&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1387" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=Look+before+you+speak%3A+Children%E2%80%99s+integration+of+visual+information+into+informative+referring+expressions.&amp;body=https%3A%2F%2Fpsyarxiv.com%2Fhy42g%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1392" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/hy42g/">
+                            Look before you speak: Children’s integration of visual information into informative referring expressions.
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1394" class="ember-view">Catherine Davies</li><li id="ember1396" class="ember-view">Helene Kreysa</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Nov 30, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            First and Second Language Acquisition
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Child Psychology
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             Children’s ability to refer is underpinned by their developing cognitive skills. Using a production task (n=57), we examined pre-articulatory visual fixations to contrast objects (e.g. to a large apple when the target was a small one) to investigate how visual scanning drives informativeness across 
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1411="1411">
+            <i id="ember1412" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1414" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1415" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1420" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2F7ywzd%2F&amp;text=Making+predictable+unpredictable+with+style+%E2%80%93+Behavioral+and+electrophysiological+evidence+for+the+critical+role+of+prosodic+expectations+in+the+perception+of+prominence+in+speech&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1425" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2F7ywzd%2F&amp;mini=true&amp;title=Making+predictable+unpredictable+with+style+%E2%80%93+Behavioral+and+electrophysiological+evidence+for+the+critical+role+of+prosodic+expectations+in+the+perception+of+prominence+in+speech&amp;summary=Perceptual+prominence+of+linguistic+units+such+as+words+has+been+earlier+connected+to+the+concepts+of+predictability+and+attentional+orientation.+One+hypothesis+is+that+low-probability+prosodic+or+lexical+content+is+perceived+as+prominent+due+to+the+surpri&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1430" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=Making+predictable+unpredictable+with+style+%E2%80%93+Behavioral+and+electrophysiological+evidence+for+the+critical+role+of+prosodic+expectations+in+the+perception+of+prominence+in+speech&amp;body=https%3A%2F%2Fpsyarxiv.com%2F7ywzd%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1435" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/7ywzd/">
+                            Making predictable unpredictable with style – Behavioral and electrophysiological evidence for the critical role of prosodic expectations in the perception of prominence in speech
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1437" class="ember-view">Sofoklis Kakouros</li><li id="ember1439" class="ember-view">Nelli Salminen</li><li id="ember1441" class="ember-view">Okko Räsänen</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognition and Perception
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Engineering
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Life Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Neuroscience and Neurobiology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognitive Neuroscience
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Phonetics and Phonology
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             Perceptual prominence of linguistic units such as words has been earlier connected to the concepts of predictability and attentional orientation. One hypothesis is that low-probability prosodic or lexical content is perceived as prominent due to the surprisal and high information value associated wi
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1460="1460">
+            <i id="ember1461" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1463" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1464" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1469" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fosf.io%2Fmv9da%2F&amp;text=The+Use+of+Code+Switching+by+Lecturers+in+Teaching+Process+at+University+of+Muhammadiyah+Sorong&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1474" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Fosf.io%2Fmv9da%2F&amp;mini=true&amp;title=The+Use+of+Code+Switching+by+Lecturers+in+Teaching+Process+at+University+of+Muhammadiyah+Sorong&amp;summary=Code+Switching+is+a+process+of+language+which+intentionally+or+unintentionally+people+talk+affected+by+situation+and+topic+with+inserted+other+language+when+speaking+their+language.+There+were+three+main+problems+of+this+research+(1).+How+often+do+the+lect&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1479" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=The+Use+of+Code+Switching+by+Lecturers+in+Teaching+Process+at+University+of+Muhammadiyah+Sorong&amp;body=http%3A%2F%2Fosf.io%2Fmv9da%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1484" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+<a href="/mv9da" id="ember1485" class="ember-view">                        The Use of Code Switching by Lecturers in Teaching Process at University of Muhammadiyah Sorong
+</a><!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1487" class="ember-view">Hasanudin Hasanudin</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Education
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Other Linguistics
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             Code Switching is a process of language which intentionally or unintentionally people talk affected by situation and topic with inserted other language when speaking their language. There were three main problems of this research (1). How often do the lecturers make code switching in the learning pr
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        OSF Preprints
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1501="1501">
+            <i id="ember1502" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1504" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1505" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1510" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2Fu3bj6%2F&amp;text=Differentiating+scalar+implicature+from+exclusion+inferences+in+language+acquisition&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1515" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2Fu3bj6%2F&amp;mini=true&amp;title=Differentiating+scalar+implicature+from+exclusion+inferences+in+language+acquisition&amp;summary=When+acquiring+language%2C+children+must+not+only+learn+the+meanings+of+words%2C+but+also+how+to+interpret+them+in+context.+For+example%2C+children+must+learn+both+the+logical+semantics+of+the+scalar+quantifier+some+and+its+pragmatically+enriched+meaning%3A+%E2%80%98som&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1520" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=Differentiating+scalar+implicature+from+exclusion+inferences+in+language+acquisition&amp;body=https%3A%2F%2Fpsyarxiv.com%2Fu3bj6%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1525" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/u3bj6/">
+                            Differentiating scalar implicature from exclusion inferences in language acquisition
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1527" class="ember-view">Jess Sullivan</li><li id="ember1529" class="ember-view">Kathryn Davidson</li><li id="ember1531" class="ember-view">Shirlene Wade</li><li id="ember1533" class="ember-view">David Barner</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Child Psychology
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             When acquiring language, children must not only learn the meanings of words, but also how to interpret them in context. For example, children must learn both the logical semantics of the scalar quantifier some and its pragmatically enriched meaning: ‘some but not all’. Some studies have shown that t
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1547="1547">
+            <i id="ember1548" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1550" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1551" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1556" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2Fvru43%2F&amp;text=Differences+in+the+Emotional+Content+in+Different+Bible+Translations&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1561" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2Fvru43%2F&amp;mini=true&amp;title=Differences+in+the+Emotional+Content+in+Different+Bible+Translations&amp;summary=The+Christian+Holy+Bible+is+the+most+translated+document+of+all+time.+In+this+study%2C+we+used+sentiment+analysis+to+investigate+whether+common+English+translations+varied+in+their+emotionality%2C+comparing+how+positive+or+negative+they+were.+We+predicted+that&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1566" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=Differences+in+the+Emotional+Content+in+Different+Bible+Translations&amp;body=https%3A%2F%2Fpsyarxiv.com%2Fvru43%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1571" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/vru43/">
+                            Differences in the Emotional Content in Different Bible Translations
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1573" class="ember-view">Robert Franklin</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Dec 5, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Discourse and Text Linguistics
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             The Christian Holy Bible is the most translated document of all time. In this study, we used sentiment analysis to investigate whether common English translations varied in their emotionality, comparing how positive or negative they were. We predicted that more dynamic translations, which are not as
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1587="1587">
+            <i id="ember1588" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1590" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1591" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1596" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2Fptwfk%2F&amp;text=How+to+Create+Shared+Symbols&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1601" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2Fptwfk%2F&amp;mini=true&amp;title=How+to+Create+Shared+Symbols&amp;summary=Human+cognition+and+behaviour+is+dominated+by+symbol+use.+This+paper+examines+the+social+learning+strategies+that+give+rise+to+symbolic+communication.+Experiment+1+contrasts+an+individual-level+account%2C+based+on+observational+learning+and+cognitive+bias%2C+w&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1606" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=How+to+Create+Shared+Symbols&amp;body=https%3A%2F%2Fpsyarxiv.com%2Fptwfk%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1611" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/ptwfk/">
+                            How to Create Shared Symbols
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1613" class="ember-view">Nicolas Fay</li><li id="ember1615" class="ember-view">Bradley Walker</li><li id="ember1617" class="ember-view">Nik Swoboda</li><li id="ember1619" class="ember-view">Simon Garrod</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Jul 2, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognitive Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Semantics and Pragmatics
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             Human cognition and behaviour is dominated by symbol use. This paper examines the social learning strategies that give rise to symbolic communication. Experiment 1 contrasts an individual-level account, based on observational learning and cognitive bias, with an inter-individual account, based on so
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1634="1634">
+            <i id="ember1635" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                            <div id="ember1637" class="__search-result__3ede2 ember-view"><div class="search-result p-sm">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="ember1638" class="__sharing-icons-popover__e9e88 ember-view">    <div class="dropdown pull-right">
+        <button data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" aria-label="Toggle primary navigation" class="dropdown-toggle btn-link share-popover-button">
+            <span class="fa fa-share-alt"></span>
+        </button>
+        <div role="menu" class="dropdown-menu share-popover">
+            <div id="ember1643" class="ember-view"><a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpsyarxiv.com%2Feqvmg%2F&amp;text=The+multiplex+structure+of+the+mental+lexicon+influences+picture+naming+in+people+with+aphasia&amp;via=OSFramework" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1648" class="fa fa-twitter-square fa-2x ember-view"></i>
+</a>
+<!----><a aria-label="LinkedIn" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fpsyarxiv.com%2Feqvmg%2F&amp;mini=true&amp;title=The+multiplex+structure+of+the+mental+lexicon+influences+picture+naming+in+people+with+aphasia&amp;summary=An+emerging+area+of+research+in+cognitive+science+is+the+utilization+of+networks+to+model+the+structure+and+processes+of+the+mental+lexicon+in+healthy+and+clinical+populations%2C+like+aphasia.+Previous+research+has+focused+on+only+one+type+of+word+similarity&amp;source=OSF" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1653" class="fa fa-linkedin-square fa-2x ember-view"></i>
+</a>
+<a aria-label="Email" href="mailto:?subject=The+multiplex+structure+of+the+mental+lexicon+influences+picture+naming+in+people+with+aphasia&amp;body=https%3A%2F%2Fpsyarxiv.com%2Feqvmg%2F" class="m-r-xs text-smaller">
+    <i aria-hidden="true" id="ember1658" class="fa fa-envelope-square fa-2x ember-view"></i>
+</a>
+</div>
+        </div>
+    </div>
+</div>
+            <h4>
+                        <a href="https://psyarxiv.com/eqvmg/">
+                            The multiplex structure of the mental lexicon influences picture naming in people with aphasia
+                        </a>
+                <!---->            </h4>
+
+            <div>
+                <ul class="comma-list"><li id="ember1660" class="ember-view">Nichol Castro</li><li id="ember1662" class="ember-view">Massimo Stella</li>                </ul>
+<!---->            </div>
+
+                <div class="m-t-sm">
+                    <em> Last edited: Oct 17, 2018 UTC </em>
+                </div>
+
+                <div class="m-t-sm">
+                        <span role="button" class="subject-preview pointer">
+                            Social and Behavioral Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognition and Perception
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Health Psychology
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Life Sciences
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Psycholinguistics and Neurolinguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Computational Linguistics
+                        </span>
+                        <span role="button" class="subject-preview pointer">
+                            Cognitive Psychology
+                        </span>
+                </div>
+<!---->
+            <p>
+                <div data-test-search-description="" class="m-t-sm">
+                             An emerging area of research in cognitive science is the utilization of networks to model the structure and processes of the mental lexicon in healthy and clinical populations, like aphasia. Previous research has focused on only one type of word similarity at a time (e.g., semantic relationships), e
+                                 <span>...</span>
+                </div>
+            </p>
+
+            <div class="m-t-sm">
+                <span class="search-result-providers">
+                        PsyArXiv
+<!---->                </span>
+                <span class="pull-right">
+<!---->                </span>
+            </div>
+
+<!---->        </div>
+    </div>
+
+    <div class="text-center">
+        <button aria-label="Expand search result" class="toggleShowResult btn btn-link" data-ember-action="" data-ember-action-1681="1681">
+            <i id="ember1682" class="fa fa-caret-down fa-1x ember-view"></i>
+        </button>
+    </div>
+</div>
+</div>
+                        <div class="pull-right text-right">
+                            <nav aria-label="Page navigation" id="ember1685" class="ember-view"><ul class="pagination ">
+    <li class="previous disabled">
+      <a href="#" data-ember-action="" data-ember-action-1686="1686">«</a>
+    </li>
+
+      <li id="ember1691" class="active ember-view">  <a href="#" data-ember-action="" data-ember-action-1692="1692">1</a>
+</li>
+      <li id="ember1693" class="ember-view">  <a href="#" data-ember-action="" data-ember-action-1694="1694">2</a>
+</li>
+      <li id="ember1695" class="ember-view">  <a href="#" data-ember-action="" data-ember-action-1696="1696">3</a>
+</li>
+      <li id="ember1697" class="ember-view">  <a>…</a>
+</li>
+      <li id="ember1698" class="ember-view">  <a href="#" data-ember-action="" data-ember-action-1699="1699">204</a>
+</li>
+      <li id="ember1700" class="ember-view">  <a href="#" data-ember-action="" data-ember-action-1701="1701">205</a>
+</li>
+
+    <li class="next ">
+      <a href="#" data-ember-action="" data-ember-action-1702="1702">»</a>
+    </li>
+</ul>
+</nav>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    <div id="ember887" class="__cookie-banner__2a81b ember-view"><div class="flex-item flex-item-left">
+    This website relies on cookies to help provide a better user experience. By clicking Accept or continuing to use the site, you agree. For more information, see our <a href="https://github.com/CenterForOpenScience/cos.io/blob/master/PRIVACY_POLICY.md">Privacy Policy</a> and information on <a href="https://github.com/CenterForOpenScience/cos.io/blob/master/PRIVACY_POLICY.md#7-types-of-information-we-collect">cookie use</a>.
+</div>
+<div class="flex-item flex-item-right">
+    <button class="btn btn-default" data-ember-action="" data-ember-action-888="888">Accept</button>
+</div>
+
+</div>
+
+    <div id="ember897" class="__osf-footer__83e6b ember-view"><!-- template-lint triple-curlies=false -->
+<footer class="footer m-b-lg p-lg bg-color-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-3 col-md-offset-1">
+                <h4>OSF</h4>
+                <ul>
+                    <li><a href="https://osf.io/explore/activity/">Explore</a></li>
+                    <li>
+                        <a href="mailto:contact@osf.io" rel="nofollow">Contact</a>
+                    </li>
+                    <li><a href="https://help.osf.io/">FAQ/Guides</a></li>
+                    <li><a href="https://api.osf.io/v2/docs/">API</a></li>
+                    <li><a href="https://github.com/CenterForOpenScience/osf.io">Source Code</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-5 col-md-4">
+                <h4>Center for Open Science</h4>
+                <ul>
+                    <li><a href="http://cos.io">Home</a></li>
+                    <li><a href="/ezcuj/wiki/home/">Reproducibility Project: Psychology</a></li>
+                    <li><a href="/e81xl/wiki/home/">Reproducibility Project: Cancer Biology</a></li>
+                    <li><a href="http://cos.io/top/">TOP Guidelines</a></li>
+                    <li><a href="https://cos.io/about/donate-to-cos/">Donate</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <h4>Socialize</h4>
+                <a href="http://twitter.com/OSFramework" aria-label="Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/CenterForOpenScience/" aria-label="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="https://groups.google.com/forum/#!forum/openscienceframework" aria-label="Google Group"><i class="fa fa-group fa-2x"></i></a>
+                <a href="https://www.github.com/centerforopenscience" aria-label="GitHub"><i class="fa fa-github fa-2x"></i></a>
+                <a href="https://plus.google.com/104751442909573665859" aria-label="Google Plus" rel="publisher"><i class="fa fa-google-plus fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+    <div id="ember948" class="text-center ember-view"><div class="container copyright">
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <span class="copyright"> Copyright © 2011-2023</span>
+                <a href="https://cos.io">Center for Open Science</a> |
+                <a href="https://github.com/CenterForOpenScience/centerforopenscience.org/blob/master/TERMS_OF_USE.md">Terms of Use</a> |
+                <a href="https://github.com/CenterForOpenScience/centerforopenscience.org/blob/master/PRIVACY_POLICY.md">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+    <div id="ember967" class="__osf-mode-footer__08537 ember-view"><!----></div>
+</div></body></html>
