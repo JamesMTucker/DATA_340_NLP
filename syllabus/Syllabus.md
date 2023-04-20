@@ -89,17 +89,16 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 | Th Mar 30 | Vector semantics II (Similarity & Weighting)                         | [Logistic regression](../assignment_descriptions/07_Logistic_Regression.md)  | [Jurafsky & Martin 6](/course_readings/Jurafsky_Martin_chapter_6_111-141.pdf)   |           | |
 | T Apr 04  | Vector semantics III (PCA, t-SNE, & UMAP)                            |                                   | [Jurafsky & Martin 7](/course_readings/Jurafsky_Martin_chapter_7_142-167.pdf); Kinsley et al. |  | |
 | Th Apr 06 | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    |                                   | [Jurafsky & Martin 8](/course_readings/Jurafsky_Martin_chapter_8_168-192.pdf/) & [9](/course_readings/Jurafsky_Martin_chapter_9_193-218.pdf) | Embeddings of data set | |
-| T Apr 11  | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    | Word embeddings                   | [Jurafsky & Martin 10](/course_readings/Jurafsky_Martin_chapter_10_219-235.pdf) |           | |
+| T Apr 11  | Recurrent Neural Networks (RNN) and Long-Short Term Memory (LSTM)    | [Word embeddings](../assignment_descriptions/08_Word_Embeddings.md) | [Jurafsky & Martin 10](/course_readings/Jurafsky_Martin_chapter_10_219-235.pdf) |           | |
 | Th Apr 13 | Introduction to Transformers                                         |                                   | [Jurafsky & Martin 11](/course_readings/Jurafsky_Martin_chapter_11_236-251.pdf) | Red team two classmates projects    | |
-| T Apr 18  | Transformers: 'Attention is all you need'                            |                                   | Tunstall et al.                           |                                     | |
-| Th Apr 20 | Applied NLP: Named Entity Recognition & Ontologies                   |                                   | Tunstall et al.                           |                                     | |
+| T Apr 18  | Transformers: 'Attention is all you need'                            |                                   | Tunstall et al. (optional)                |                                     | |
+| Th Apr 20 | Applied NLP: Named Entity Recognition & Ontologies                   |                                   | Tunstall et al. (optional)                |                                     | |
 | T Apr 25  | Applied NLP: Text generation                                         |                                   |                                           |                                     | |
 | Th Apr 27 | Project presentations                                                |                                   |                                           |                                     | |
 | T May 02  | Project presentations                                                |                                   |                                           |                                     | |
 | Th May 04 | Project presentations                                                |                                   |                                           |                                     | |
-| T May 09  | Final exams                                                          |                                   |                                           |                                     | |
-| Th May 11 | Final exams                                                          |                                   |                                           |                                     | |
-| T May 16  | Final exams                                                          |                                   |                                           | Final project due                   | |
+| Th May 11 | Final Exam                                                           |                                   |                                           |                                     | |
+| T May 16  | End of semester                                                      |                                   |                                           | Final project due                   | |
 
 
 ## Course policies
