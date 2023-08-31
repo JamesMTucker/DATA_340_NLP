@@ -5,12 +5,9 @@
 [Contact Professor](mailto:jmtucker02@wm.edu;james.tucker@lexicalintelligence.com) | [Website](https://jamesmtucker.com)
 
 ## [Course Syllabus](./syllabus/Syllabus.md)
-
-## [Homework](/assignment_descriptions/)
-
-## [Reading](/course_readings/)
-
-## [Extra-Credit](/Extra_Credit/)
+    
+  * [Fall 2023](./syllabus/syllabus.md)
+  * [Spring 2023](./Spring_2023/syllabus/Syllabus.md)
 
 
 
