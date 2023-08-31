@@ -10,7 +10,7 @@ This course is designed to introduce students to Natural Language Processing (NL
 
 ## Course venue and time
 
-- Integrated Science Center, room 1111. Tuesdays (T) and Thursdays (Th) 5:00 - 6:20
+- Integrated Science Center, room 1280. Tuesdays (T) and Thursdays (Th) 5:00 - 6:20
 - Discord: https://discord.gg/rwy2QpZU
 
 ## Instructor contact and office hours
