@@ -62,3 +62,71 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 * See below for extra-credit opportunities
 
 ## Schedule
+
+
+
+## Course policies
+
+Please read and take notice of the following:
+
+### Grade scale
+
+|  | Mark |  | Mark |
+| --- | --- | --- | --- |
+| 93 - 100 | A | 73 - 76 | C |
+| 90 - 92 | A- | 70 - 72 | C- |
+| 87 - 89 | B+ | 67 - 69 | D+ |
+| 83 - 86 | B | 63 - 66 | D |
+| 80 - 82 | B- | 60 - 62 | D- |
+| 77 - 79 | C+ | 00 - 59 | F |
+
+
+### Grading appeals
+
+To appeal a grade, schedule a meeting to discuss it with me.
+
+### Communications
+
+The [discord channel](https://discord.gg/rwy2QpZU) provides an additional way to collaborate with our Natural Language Processing community. You are highly encouraged to participate in discussions on the discord channel. If you ask for help, please provide code examples so that the community can better help and understand.
+
+The course readings, data sets, and code are available on the course [GitHub repo](https://github.com/JamesMTucker/DATA_340_NLP).
+
+
+### Lecture notebooks
+
+For each lecture, I will share a Google Colaboratory notebook with you. You are welcome to ask questions during the lecture, but you are also encouraged to use the notebook to submit questions during or after the lecture. 
+
+### Absences
+
+If you are absent please email me and let me know or send me a text message. Course work is due as detailed in the course schedule. Late work is penalized 2% of the earned mark for every day it is late. If you are absent on a day that an assignment or project milestone is due, please make sure to turn it in early. If you are ill, please communicate with me regarding an extension.
+
+### Extra-credit
+
+Throughout the semester, I will post at least 10 NLP related coding challenges to the discord channel. You can earn an extra point for every assignment by submitting code that provides a correct answer along with a short description of your thought process and how you came to your solution.
+
+### Mental Well-Being
+
+William & Mary recognizes that students juggle different responsibilities and can face challenges that make learning difficult. There are many resources available at W&M to help students navigate emotional/psychological, physical/medical, material/accessibility concerns, including:  
+
+* The W&M Counseling Center at (757) 221-3620.  Services are free and confidential.  
+* The W&M Health Center at (757) 221-4386.  
+* For additional support or resources & questions, Contact the Dean of Students at 757-221-2510.
+
+### Important dates
+
+* Add/drop deadline: Feb. 3
+* Midterm grading period: March 6 – 26
+* Spring break: March 11 – 19
+* Withdraw deadline: March 27
+* Advising period: March 20 – 31
+* Last day of class: May 5
+* Final Exams: May 8 – 12, 15 – 16
+* Commencement: May 18 – 20
+
+### Fall 2023 academic calendar
+
+* [Web](https://www.wm.edu/offices/registrar/calendarsandexams/ugcalendars)
+
+### W&M honor code
+
+Students are expected to conduct themselves according to the [Honor Code](https://www.wm.edu/offices/deanofstudents/services/communityvalues/studenthandbook/honor_system/index.php).
