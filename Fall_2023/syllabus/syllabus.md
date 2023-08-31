@@ -4,7 +4,7 @@
 
 [Schedule](#Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
 
-## Course overview:
+## Course overview
 
 This course is designed to introduce students to Natural Language Processing (NLP) and its applications in academic research, data science, and industry. Students will learn how to use natural language processing techniques to gain a deeper understanding of a research question and/or topic. 
 
@@ -48,4 +48,17 @@ This course is language agnostic. You can submit your homework and project in wh
 ### Recommended
 
 * Arcila Calderon, Carlos, et al. _Computational Analysis of Communication_. United Kingdom, Wiley, 2022. [Google Books](https://www.google.com/books/edition/Computational_Analysis_of_Communication/0thjEAAAQBAJ?hl=en&gbpv=0)
-* Tunstall, Lewis, Leandro von Werra, and Thomas Wolf. _Natural Language Processing with Transformers_ O'Reilly Media, 2022. [Google Books](https://www.google.com/books/edition/Natural_Language_Processing_with_Transfo/nTxbEAAAQBAJ?hl=en&gbpv=0) 
+* Tunstall, Lewis, Leandro von Werra, and Thomas Wolf. _Natural Language Processing with Transformers_ O'Reilly Media, 2022. [Google Books](https://www.google.com/books/edition/Natural_Language_Processing_with_Transfo/nTxbEAAAQBAJ?hl=en&gbpv=0)
+
+## Assignments
+
+All assignments are posted cross posted on the [Discord channel](https://discord.gg/rwy2QpZU) and [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP).
+
+* Coding assignments (35%) - these are smaller bi-weekly assignments. These assignments reinforce the ideas discussed in lecture or the assigned reading.
+* Project (50%) - The student will develop a project related to their area of interest and use NLP techniques to explore a data set in consideration with some research questions.
+    * Project milestones (40% of the 50) - these are milestones in the overall development of the project. It is expected that the student will create a GitHub repo to host their code and documentation.
+    * Project presentation (10% of the 50) - In the final class sessions, each student will present a short presentation of their projects.
+* Course preparation (15%) - It is expected that the student will come to class with having read the assigned readings and/or other additional code documentation.
+* See below for extra-credit opportunities
+
+## Schedule
