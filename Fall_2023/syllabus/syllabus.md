@@ -6,7 +6,7 @@
 
 ## Course overview
 
-This course is designed to introduce students to Natural Language Processing (NLP) and its applications in academic research, data science, and industry. Students will learn how to use natural language processing techniques to gain a deeper understanding of a research question and/or topic. 
+This course is designed to introduce students to Natural Language Processing (NLP) and its applications in academic research, data science, and industry. Students will learn how to use natural language processing techniques to gain a deeper understanding of a research question and/or topic.
 
 ## Course venue and time
 
@@ -23,21 +23,21 @@ This course is designed to introduce students to Natural Language Processing (NL
 
 This course is language agnostic. You can submit your homework and project in whatever programming language you prefer. In class lectures, we will use Python, R, or Mojo � for the most part.
 
-## Course objectives:
+## Course objectives
 
-* Understand the basics of natural language processing techniques and how they can be used to build programs that model human use of language and generate human language.
-* Learn how to use natural language processing tools and libraries to perform tasks such as text classification, sentiment analysis, and text generation.
+* Understand the basics of natural language processing techniques and how they can be used to build programs that model human use of language and generate human language
+* Learn how to use natural language processing tools and libraries to perform tasks such as text classification, sentiment analysis, and text generation
 * Develop the ability and experience to design and implement natural language processing systems for real-world applications
 * Explore ethical and social implications of natural language processing and artificial intelligence
 
-## Course topics:
+## Course topics
 
-1.  Introduction to natural language processing
-2.  Data set creation and documentation
-3.  Text preprocessing and cleaning
-4.  Text classification and sentiment analysis
-5.  Neural Networks, Transformers, Large Language Models
-6.  Ethical and social implications of natural language processing and artificial intelligence
+1. Introduction to natural language processing
+2. Data set creation and documentation
+3. Text preprocessing and cleaning
+4. Text classification and sentiment analysis
+5. Neural Networks, Transformers, Large Language Models
+6. Ethical and social implications of natural language processing and artificial intelligence
 
 ## Textbook
 
@@ -56,8 +56,8 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 
 * Coding assignments (35%) - these are smaller bi-weekly assignments. These assignments reinforce the ideas discussed in lecture or the assigned reading.
 * Project (50%) - The student will develop a project related to their area of interest and use NLP techniques to explore a data set in consideration with some research questions.
-    * Project milestones (40% of the 50) - these are milestones in the overall development of the project. It is expected that the student will create a GitHub repo to host their code and documentation.
-    * Project presentation (10% of the 50) - In the final class sessions, each student will present a short presentation of their projects.
+  * Project milestones (40% of the 50) - these are milestones in the overall development of the project. It is expected that the student will create a GitHub repo to host their code and documentation.
+  * Project presentation (10% of the 50) - In the final class sessions, each student will present a short presentation of their projects.
 * Course preparation (15%) - It is expected that the student will come to class with having read the assigned readings and/or other additional code documentation.
 * See below for extra-credit opportunities
 
