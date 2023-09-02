@@ -102,7 +102,7 @@ def parse_dates(date_str: str, event: str = None) -> list:
     return [[ranges], len(ranges) * [event]]
 
 
-def main():
+def main() -> int:
     df = _fetch_calendar()
     academic_calendar = _format_academic_calendar(df)
     important_dates = academic_calendar['date'].values.tolist()
@@ -115,36 +115,33 @@ def main():
             d = d.replace(', 2024', '')
         # add the dates to the dataframe
         df = pd.concat([df, (pd.DataFrame(parse_dates(d, e)[1], index=parse_dates(d, e)[0], columns=['event']))])
-    df = df.sort_index()
-    df = df.reset_index()
+    # df = df.sort_index()
+    df = df.reset_index().rename(columns={'level_0': 'date'})
+    print(df.head())
     
     print(df.to_markdown('calendar.md'))
     
-   # Example usage
+    # fetch the course lecture dates
     lectures = next_tuesdays_thursdays("2023-08-31", "2023-12-31")
-    # Iterate through the lecture dates to check whether the date exists in the academic calendar
     
-    class_schedule = pd.DataFrame()
+    # generate the class calendar to coincide with the academic calendar
+    class_calendar = pd.DataFrame(columns=['date', 'day', 'topic', 'reading', 'academic calendar'])
     
+    # add the lectures and days to the class calendar
     for l_date, day in lectures:
-        if l_date in df.index.values:
-            # get the event name
-            event = df.iloc[l_date, 'event']
-            print(l_date, "is in the academic calendar")
-            # add the event to the class schedule and the day
-            class_schedule = pd.concat([class_schedule, pd.DataFrame([day, event], index=[l_date], columns=['day', 'event'])])
-        else:
-            print(l_date, "is not in the academic calendar")
-            # add the day and event to the class schedule
-            class_schedule = pd.concat([class_schedule, pd.DataFrame([day], index=[l_date], columns=['day'])])
-            
+        l_date = pd.to_datetime(l_date)
+        exists = l_date in df['date'].values
+        # add the lecture and day to the class calendar (no events in academic calendar)
+        if not exists:
+            class_calendar = pd.concat([class_calendar, pd.DataFrame([[l_date, day, '', '', '']], columns=['date', 'day', 'topic', 'reading', 'academic calendar'])])
+        # add the lecture and day to the class calendar (with events in academic calendar)
+        if exists:
+            class_calendar = pd.concat([class_calendar, pd.DataFrame([[l_date, day, '', '', df[df['date'] == l_date]['event'].values[0]]], columns=['date', 'day', 'topic', 'reading', 'academic calendar'])])
     
-    class_schedule['Topic'] = ''
-    class_schedule['Reading'] = ''
+    class_calendar = class_calendar.set_index('date')
+    class_calendar.to_markdown('class_calendar.md')
     
-    print(class_schedule.head(40))
-    # print the class schedule
-    class_schedule.to_markdown('class_schedule.md')
-
+    return 0
+    
 if __name__ == '__main__':
     raise SystemExit(main())
