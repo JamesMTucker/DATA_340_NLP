@@ -4,9 +4,9 @@
 
 [Schedule](#Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
 
-## Course overview:
+## Course overview
 
-This course is designed to introduce students to Natural Language Processing (NLP) and its applications in academic research, data science, and industry. Students will learn how to use natural language processing techniques to gain a deeper understanding of a research question and/or topic. 
+This course is designed to introduce students to Natural Language Processing (NLP) and its applications in academic research, data science, and industry. Students will learn how to use natural language processing techniques to gain a deeper understanding of a research question and/or topic.
 
 ## Course venue and time
 

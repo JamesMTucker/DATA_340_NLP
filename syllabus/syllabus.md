@@ -1,6 +1,6 @@
 <img align="left" width="120" height="120" src="./imgs/wm_vertical_stacked_full_color.png" alt="wm_vertical_stacked_full_color">
 
-# W&M DATA 340 3 Natural Language Processing, Spring 2023 Syllabus
+# W&M DATA 340 4 Natural Language Processing, Fall 2023 Syllabus
 
 [Schedule](#Schedule) | [Email Instructor](mailto:jmtucker02@wm.edu)
 
@@ -11,7 +11,7 @@ This course is designed to introduce students to Natural Language Processing (NL
 ## Course venue and time
 
 - Integrated Science Center, room 1280. Tuesdays (T) and Thursdays (Th) 5:00 - 6:20
-- Discord: https://discord.gg/rwy2QpZU
+- See course in Blackboard
 
 ## Instructor contact and office hours
 
@@ -21,7 +21,7 @@ This course is designed to introduce students to Natural Language Processing (NL
 
 ## Programming language
 
-This course is language agnostic. You can submit your homework and project in whatever programming language you prefer. In class lectures, we will use Python, R, or Mojo � for the most part.
+This course is language agnostic. You can submit your homework and project in whatever programming language you prefer. In class lectures, we will use Python, R, or Mojo for the most part.
 
 ## Course objectives
 
@@ -54,12 +54,11 @@ This course is language agnostic. You can submit your homework and project in wh
 
 All assignments are posted cross posted on the [Discord channel](https://discord.gg/rwy2QpZU) and [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP).
 
-- Coding assignments (35%) - these are smaller bi-weekly assignments. These assignments reinforce the ideas discussed in lecture or the assigned reading.
+- NLP Problem sets (35%) - these are smaller assignments designed to reinforce the ideas discussed in lecture or the assigned reading. These assignments will be posted on the course GitHub repo and Blackboard and are due at the specified date and time.
 - Project (50%) - The student will develop a project related to their area of interest and use NLP techniques to explore a data set in consideration with some research questions.
-  - Project milestones (40% of the 50) - these are milestones in the overall development of the project. It is expected that the student will create a GitHub repo to host their code and documentation.
+  - Project code, documentation, and report (40% of the 50) - in the overall development of the project. It is hoped that the student will create a GitHub repo to host their code and documentation. The student should expect to submit project code that is well-documented and reproducible. The research findings should be presented in a report that is well-written and well-organized.
   - Project presentation (10% of the 50) - In the final class sessions, each student will present a short presentation of their projects.
 - Course preparation (15%) - It is expected that the student will come to class with having read the assigned readings and/or other additional code documentation.
-- See below for extra-credit opportunities
 
 ## Schedule
 
@@ -84,12 +83,12 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 | 2023-10-26 | Th. | NLP & Neural nets (Pt. IV)                  | [JM 11]      | Midterm grading period                                                |
 | 2023-10-31 | Tu. | NLP & Neural nets (Pt. V)                   | [JM 11]      | Advising period                                                       |
 | 2023-11-02 | Th. | Vector semantics (Pt. III)                  |              | Advising period                                                       |
-| 2023-11-07 | Tu. | No class                                    |              | Election Day (offices closed, no classes)                             |
+| 2023-11-07 | Tu. | No class                                    |              | Election Day                             |
 | 2023-11-09 | Th. | Machine translation                         | [JM 13]      |                                                                       |
 | 2023-11-14 | Tu. | QA & Information retrieval                  | [JM 8, 14]   | Spring 2024 priority registration                                     |
 | 2023-11-16 | Th. | Named Entity Recognition (NER) & Ontologies |              | Spring 2024 priority registration                                     |
-| 2023-11-21 | Tu. | Vector semantics (Pt. IV)                   |              | Remote instruction days (courses in session remotely, offices closed) |
-| 2023-11-23 | Th. | No class                                    |              | Thanksgiving Break (offices closed, no classes)                       |
+| 2023-11-21 | Tu. | Vector semantics (Pt. IV)                   |              | Remote instruction days |
+| 2023-11-23 | Th. | No class                                    |              | Thanksgiving Break |
 | 2023-11-28 | Tu. | Vector semantics & Clustering               |              |                                                                       |
 | 2023-11-30 | Th. | Student presentations                       |              |                                                                       |
 | 2023-12-05 | Tu. | Student presentations                       |              |                                                                       |
@@ -153,8 +152,8 @@ William & Mary recognizes that students juggle different responsibilities and ca
 | 2023-08-30 | First day of classes Non-degree seeking registration begins                                                      |
 | 2023-09-04 | Labor Day (offices closed, no classes)                                                                           |
 | 2023-09-11 | Last day to add/drop                                                                                             |
-| 2023-09-12 | Withdrawal period begins UG Pass/Fail election form opens for social class juniors and seniors                   |
-| 2023-10-06 | Deadline for 2024 graduates to have social class changed prior to Spring 2024 registration                       |
+| 2023-09-12 | Withdrawal period begins UG Pass/Fail                   |
+| 2023-10-06 | Deadline for 2024 graduates to have social class changed                       |
 | 2023-10-09 | Midterm grading period                                                                                           |
 | 2023-10-10 | Midterm grading period                                                                                           |
 | 2023-10-11 | Midterm grading period                                                                                           |
@@ -189,12 +188,12 @@ William & Mary recognizes that students juggle different responsibilities and ca
 | 2023-10-29 | Midterm grading period                                                                                           |
 | 2023-10-29 | Advising period                                                                                                  |
 | 2023-10-30 | Advising period                                                                                                  |
-| 2023-10-30 | Last day to withdraw from a full-term course Last day to elect pass/fail for UG social class juniors and seniors |
+| 2023-10-30 | Last day to withdraw from a full-term course |
 | 2023-10-31 | Advising period                                                                                                  |
 | 2023-11-01 | Advising period                                                                                                  |
 | 2023-11-02 | Advising period                                                                                                  |
 | 2023-11-03 | Advising period                                                                                                  |
-| 2023-11-03 | Deadline to declare major/minor for guaranteed processing before Spring 2024 priority registration               |
+| 2023-11-03 | Deadline to declare major/minor               |
 | 2023-11-07 | Election Day (offices closed, no classes)                                                                        |
 | 2023-11-13 | Spring 2024 priority registration for continuing students                                                        |
 | 2023-11-14 | Spring 2024 priority registration for continuing students                                                        |
