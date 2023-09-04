@@ -52,7 +52,7 @@ This course is language agnostic. You can submit your homework and project in wh
 
 ## Assignments
 
-All assignments are posted cross posted on the [Discord channel](https://discord.gg/rwy2QpZU) and [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP).
+All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP) and links are provided in Blackboard.
 
 - NLP Problem sets (35%) - these are smaller assignments designed to reinforce the ideas discussed in lecture or the assigned reading. These assignments will be posted on the course GitHub repo and Blackboard and are due at the specified date and time.
 - Project (50%) - The student will develop a project related to their area of interest and use NLP techniques to explore a data set in consideration with some research questions.
@@ -97,7 +97,7 @@ All assignments are posted cross posted on the [Discord channel](https://discord
 | 2023-12-14 | Th. | Student presentations\*                     |              | Final exam periods                                                    |
 | 2023-12-19 | Tu. | Student presentations\*                     |              | Final exam periods                                                    |
 
-\* We will only meet on the once during the exam week to present final projects, if necessary.
+\* We will only meet once during the exam week to present final projects, if necessary.
 
 ## Course policies
 
@@ -120,9 +120,7 @@ To appeal a grade, schedule a meeting to discuss it with me.
 
 ### Communications
 
-The [discord channel](https://discord.gg/rwy2QpZU) provides an additional way to collaborate with our Natural Language Processing community. You are highly encouraged to participate in discussions on the discord channel. If you ask for help, please provide code examples so that the community can better help and understand.
-
-In addition to discord, we will use Blackboard to post grades and announcements. Please check Blackboard regularly for announcements.
+Course announcements will be posted in Blackboard. Please check Blackboard regularly for announcements.
 
 The course readings, data sets, and code are available on the course [GitHub repo](https://github.com/JamesMTucker/DATA_340_NLP).
 
