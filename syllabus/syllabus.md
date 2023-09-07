@@ -55,6 +55,10 @@ This course is language agnostic. You can submit your homework and project in wh
 All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP) and links are provided in Blackboard.
 
 - NLP Problem sets (35%) - these are smaller assignments designed to reinforce the ideas discussed in lecture or the assigned reading. These assignments will be posted on the course GitHub repo and Blackboard and are due at the specified date and time.
+  - Problem set 0: Exploratory Data Analysis (EDA) and Critical Reflection on the use of terms such as 'understanding' and 'intelligence' in the context of NLP
+  - Problem set 1: Machine Learning Models for NLP
+  - Problem set 2: Vector semantics
+  - Problem set 3: Neural Networks for NLP
 - Project (50%) - The student will develop a project related to their area of interest and use NLP techniques to explore a data set in consideration with some research questions.
   - Project code, documentation, and report (40% of the 50) - in the overall development of the project. It is hoped that the student will create a GitHub repo to host their code and documentation. The student should expect to submit project code that is well-documented and reproducible. The research findings should be presented in a report that is well-written and well-organized.
   - Project presentation (10% of the 50) - In the final class sessions, each student will present a short presentation of their projects.
@@ -62,40 +66,40 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 
 ## Schedule
 
-| date       | day | topic                                       | reading      | academic calendar                                                     |
-| :--------- | :-- | :------------------------------------------ | :----------- | :-------------------------------------------------------------------- |
-| 2023-08-31 | Th. | Introduction & Syllabus                     |              |                                                                       |
-| 2023-09-05 | Tu. | NLP, Data Science, & Large Language Models  |              |                                                                       |
-| 2023-09-07 | Th. | Stochastic Parrots & Human Communication    |              |                                                                       |
-| 2023-09-12 | Tu. | Statistics & Information Theory             |              | Withdrawal period begins                                              |
-| 2023-09-14 | Th. | Linguistic structure (Pt. I)                | [JM 17, 18]  |                                                                       |
-| 2023-09-19 | Tu. | Linguistic structure (Pt. II)               | [JM 17, 18]  |                                                                       |
-| 2023-09-21 | Th. | Datasets and Data Munging (Pt. I)           | [G] & [JM 2] |                                                                       |
-| 2023-09-26 | Tu. | Datasets and Data Munging (Pt. II)          | [vanA]       |                                                                       |
-| 2023-09-28 | Th. | Vector semantics (Pt. I)                    | [JM 6]       |                                                                       |
-| 2023-10-03 | Tu. | NLP & Machine learning (Pt. I)              | [JM 4, 5]    |                                                                       |
-| 2023-10-05 | Th. | NLP & Machine learning (Pt. II)             | [JM 4, 5]    |                                                                       |
-| 2023-10-10 | Tu. | NLP & Machine learning (Pt. III)            | [JM 4, 5]    | Midterm grading period                                                |
-| 2023-10-12 | Th. | Vector semantics (Pt. II)                   | [JM 6, 7]    | Midterm grading period                                                |
-| 2023-10-17 | Tu. | NLP & Neural nets (Pt. I)                   | [JM 7]       | Midterm grading period                                                |
-| 2023-10-19 | Th. | NLP & Neural nets (Pt. II)                  | [JM 7, 9]    | Midterm grading period                                                |
-| 2023-10-24 | Tu. | NLP & Neural nets (Pt. III)                 | [JM 10]      | Midterm grading period                                                |
-| 2023-10-26 | Th. | NLP & Neural nets (Pt. IV)                  | [JM 11]      | Midterm grading period                                                |
-| 2023-10-31 | Tu. | NLP & Neural nets (Pt. V)                   | [JM 11]      | Advising period                                                       |
-| 2023-11-02 | Th. | Vector semantics (Pt. III)                  |              | Advising period                                                       |
-| 2023-11-07 | Tu. | No class                                    |              | Election Day                             |
-| 2023-11-09 | Th. | Machine translation                         | [JM 13]      |                                                                       |
-| 2023-11-14 | Tu. | QA & Information retrieval                  | [JM 8, 14]   | Spring 2024 priority registration                                     |
-| 2023-11-16 | Th. | Named Entity Recognition (NER) & Ontologies |              | Spring 2024 priority registration                                     |
-| 2023-11-21 | Tu. | Vector semantics (Pt. IV)                   |              | Remote instruction days |
-| 2023-11-23 | Th. | No class                                    |              | Thanksgiving Break |
-| 2023-11-28 | Tu. | Vector semantics & Clustering               |              |                                                                       |
-| 2023-11-30 | Th. | Student presentations                       |              |                                                                       |
-| 2023-12-05 | Tu. | Student presentations                       |              |                                                                       |
-| 2023-12-07 | Th. | Student presentations                       |              |                                                                       |
-| 2023-12-12 | Tu. | Student presentations\*                     |              | Final exam periods                                                    |
-| 2023-12-14 | Th. | Student presentations\*                     |              | Final exam periods                                                    |
-| 2023-12-19 | Tu. | Student presentations\*                     |              | Final exam periods                                                    |
+| date       | day | topic                                       | reading      | academic calendar                 |
+| :--------- | :-- | :------------------------------------------ | :----------- | :-------------------------------- |
+| 2023-08-31 | Th. | Introduction & Syllabus                     |              |                                   |
+| 2023-09-05 | Tu. | NLP, Data Science, & Large Language Models  |              |                                   |
+| 2023-09-07 | Th. | Stochastic Parrots & Human Communication    |              |                                   |
+| 2023-09-12 | Tu. | Linguistic structure (Pt. I)                | [JM 17, 18]  | Withdrawal period begins          |
+| 2023-09-14 | Th. | Linguistic structure (Pt. II)               | [JM 17, 18]  |                                   |
+| 2023-09-19 | Tu. | Statistics & Information Theory             | [S]          |                                   |
+| 2023-09-21 | Th. | Datasets and Data Munging (Pt. I)           | [G] & [JM 2] |                                   |
+| 2023-09-26 | Tu. | Datasets and Data Munging (Pt. II)          | [vanA]       |                                   |
+| 2023-09-28 | Th. | Vector semantics (Pt. I)                    | [JM 6]       |                                   |
+| 2023-10-03 | Tu. | NLP & Machine learning (Pt. I)              | [JM 4, 5]    |                                   |
+| 2023-10-05 | Th. | NLP & Machine learning (Pt. II)             | [JM 4, 5]    |                                   |
+| 2023-10-10 | Tu. | NLP & Machine learning (Pt. III)            | [JM 4, 5]    | Midterm grading period            |
+| 2023-10-12 | Th. | Vector semantics (Pt. II)                   | [JM 6, 7]    | Midterm grading period            |
+| 2023-10-17 | Tu. | NLP & Neural nets (Pt. I)                   | [JM 7]       | Midterm grading period            |
+| 2023-10-19 | Th. | NLP & Neural nets (Pt. II)                  | [JM 7, 9]    | Midterm grading period            |
+| 2023-10-24 | Tu. | NLP & Neural nets (Pt. III)                 | [JM 10]      | Midterm grading period            |
+| 2023-10-26 | Th. | NLP & Neural nets (Pt. IV)                  | [JM 11]      | Midterm grading period            |
+| 2023-10-31 | Tu. | NLP & Neural nets (Pt. V)                   | [JM 11]      | Advising period                   |
+| 2023-11-02 | Th. | Vector semantics (Pt. III)                  |              | Advising period                   |
+| 2023-11-07 | Tu. | No class                                    |              | Election Day                      |
+| 2023-11-09 | Th. | Machine translation                         | [JM 13]      |                                   |
+| 2023-11-14 | Tu. | QA & Information retrieval                  | [JM 8, 14]   | Spring 2024 priority registration |
+| 2023-11-16 | Th. | Named Entity Recognition (NER) & Ontologies |              | Spring 2024 priority registration |
+| 2023-11-21 | Tu. | Vector semantics (Pt. IV)                   |              | Remote instruction days           |
+| 2023-11-23 | Th. | No class                                    |              | Thanksgiving Break                |
+| 2023-11-28 | Tu. | Vector semantics & Clustering               |              |                                   |
+| 2023-11-30 | Th. | Student presentations                       |              |                                   |
+| 2023-12-05 | Tu. | Student presentations                       |              |                                   |
+| 2023-12-07 | Th. | Student presentations                       |              |                                   |
+| 2023-12-12 | Tu. | Student presentations\*                     |              | Final exam periods                |
+| 2023-12-14 | Th. | Student presentations\*                     |              | Final exam periods                |
+| 2023-12-19 | Tu. | Student presentations\*                     |              | Final exam periods                |
 
 \* We will only meet once during the exam week to present final projects, if necessary.
 
@@ -138,85 +142,85 @@ William & Mary recognizes that students juggle different responsibilities and ca
 
 ### Important dates
 
-| date       | event                                                                                                            |
-| ---------- | :--------------------------------------------------------------------------------------------------------------- |
-| 2023-08-16 | Last day to accept non-degree seeking applications                                                               |
-| 2023-08-25 | New Student Orientation                                                                                          |
-| 2023-08-26 | New Student Orientation                                                                                          |
-| 2023-08-27 | New Student Orientation                                                                                          |
-| 2023-08-28 | New Student Orientation                                                                                          |
-| 2023-08-29 | New Student Orientation                                                                                          |
-| 2023-08-29 | Add/drop period begins at 1:00 p.m.                                                                              |
-| 2023-08-30 | First day of classes Non-degree seeking registration begins                                                      |
-| 2023-09-04 | Labor Day (offices closed, no classes)                                                                           |
-| 2023-09-11 | Last day to add/drop                                                                                             |
-| 2023-09-12 | Withdrawal period begins UG Pass/Fail                   |
-| 2023-10-06 | Deadline for 2024 graduates to have social class changed                       |
-| 2023-10-09 | Midterm grading period                                                                                           |
-| 2023-10-10 | Midterm grading period                                                                                           |
-| 2023-10-11 | Midterm grading period                                                                                           |
-| 2023-10-12 | Midterm grading period                                                                                           |
-| 2023-10-12 | Fall Break                                                                                                       |
-| 2023-10-13 | Midterm grading period                                                                                           |
-| 2023-10-13 | Fall Break                                                                                                       |
-| 2023-10-14 | Midterm grading period                                                                                           |
-| 2023-10-14 | Fall Break                                                                                                       |
-| 2023-10-15 | Midterm grading period                                                                                           |
-| 2023-10-15 | Fall Break                                                                                                       |
-| 2023-10-16 | Midterm grading period                                                                                           |
-| 2023-10-16 | Classes resume from Fall Break                                                                                   |
-| 2023-10-17 | Midterm grading period                                                                                           |
-| 2023-10-18 | Midterm grading period                                                                                           |
-| 2023-10-19 | Midterm grading period                                                                                           |
-| 2023-10-20 | Midterm grading period                                                                                           |
-| 2023-10-21 | Midterm grading period                                                                                           |
-| 2023-10-22 | Midterm grading period                                                                                           |
-| 2023-10-23 | Midterm grading period                                                                                           |
-| 2023-10-23 | Advising period                                                                                                  |
-| 2023-10-24 | Midterm grading period                                                                                           |
-| 2023-10-24 | Advising period                                                                                                  |
-| 2023-10-25 | Midterm grading period                                                                                           |
-| 2023-10-25 | Advising period                                                                                                  |
-| 2023-10-26 | Midterm grading period                                                                                           |
-| 2023-10-26 | Advising period                                                                                                  |
-| 2023-10-27 | Midterm grading period                                                                                           |
-| 2023-10-27 | Advising period                                                                                                  |
-| 2023-10-28 | Midterm grading period                                                                                           |
-| 2023-10-28 | Advising period                                                                                                  |
-| 2023-10-29 | Midterm grading period                                                                                           |
-| 2023-10-29 | Advising period                                                                                                  |
-| 2023-10-30 | Advising period                                                                                                  |
-| 2023-10-30 | Last day to withdraw from a full-term course |
-| 2023-10-31 | Advising period                                                                                                  |
-| 2023-11-01 | Advising period                                                                                                  |
-| 2023-11-02 | Advising period                                                                                                  |
-| 2023-11-03 | Advising period                                                                                                  |
-| 2023-11-03 | Deadline to declare major/minor               |
-| 2023-11-07 | Election Day (offices closed, no classes)                                                                        |
-| 2023-11-13 | Spring 2024 priority registration for continuing students                                                        |
-| 2023-11-14 | Spring 2024 priority registration for continuing students                                                        |
-| 2023-11-15 | Spring 2024 priority registration for continuing students                                                        |
-| 2023-11-16 | Spring 2024 priority registration for continuing students                                                        |
-| 2023-11-20 | Remote instruction days (courses in session remotely, offices closed)                                            |
-| 2023-11-21 | Remote instruction days (courses in session remotely, offices closed)                                            |
-| 2023-11-22 | Thanksgiving Break (offices closed, no classes)                                                                  |
-| 2023-11-23 | Thanksgiving Break (offices closed, no classes)                                                                  |
-| 2023-11-24 | Thanksgiving Break (offices closed, no classes)                                                                  |
-| 2023-11-25 | Thanksgiving Break (offices closed, no classes)                                                                  |
-| 2023-11-26 | Thanksgiving Break (offices closed, no classes)                                                                  |
-| 2023-11-27 | Classes resume from Thanksgiving Break                                                                           |
-| 2023-12-08 | Last day of classes                                                                                              |
-| 2023-12-09 | Reading periods                                                                                                  |
-| 2023-12-10 | Reading periods                                                                                                  |
-| 2023-12-11 | Final exam periods                                                                                               |
-| 2023-12-12 | Final exam periods                                                                                               |
-| 2023-12-13 | Final exam periods                                                                                               |
-| 2023-12-14 | Final exam periods                                                                                               |
-| 2023-12-15 | Final exam periods                                                                                               |
-| 2023-12-16 | Reading periods                                                                                                  |
-| 2023-12-17 | Reading periods                                                                                                  |
-| 2023-12-18 | Final exam periods                                                                                               |
-| 2023-12-19 | Final exam periods                                                                                               |
+| date       | event                                                                 |
+| ---------- | :-------------------------------------------------------------------- |
+| 2023-08-16 | Last day to accept non-degree seeking applications                    |
+| 2023-08-25 | New Student Orientation                                               |
+| 2023-08-26 | New Student Orientation                                               |
+| 2023-08-27 | New Student Orientation                                               |
+| 2023-08-28 | New Student Orientation                                               |
+| 2023-08-29 | New Student Orientation                                               |
+| 2023-08-29 | Add/drop period begins at 1:00 p.m.                                   |
+| 2023-08-30 | First day of classes Non-degree seeking registration begins           |
+| 2023-09-04 | Labor Day (offices closed, no classes)                                |
+| 2023-09-11 | Last day to add/drop                                                  |
+| 2023-09-12 | Withdrawal period begins UG Pass/Fail                                 |
+| 2023-10-06 | Deadline for 2024 graduates to have social class changed              |
+| 2023-10-09 | Midterm grading period                                                |
+| 2023-10-10 | Midterm grading period                                                |
+| 2023-10-11 | Midterm grading period                                                |
+| 2023-10-12 | Midterm grading period                                                |
+| 2023-10-12 | Fall Break                                                            |
+| 2023-10-13 | Midterm grading period                                                |
+| 2023-10-13 | Fall Break                                                            |
+| 2023-10-14 | Midterm grading period                                                |
+| 2023-10-14 | Fall Break                                                            |
+| 2023-10-15 | Midterm grading period                                                |
+| 2023-10-15 | Fall Break                                                            |
+| 2023-10-16 | Midterm grading period                                                |
+| 2023-10-16 | Classes resume from Fall Break                                        |
+| 2023-10-17 | Midterm grading period                                                |
+| 2023-10-18 | Midterm grading period                                                |
+| 2023-10-19 | Midterm grading period                                                |
+| 2023-10-20 | Midterm grading period                                                |
+| 2023-10-21 | Midterm grading period                                                |
+| 2023-10-22 | Midterm grading period                                                |
+| 2023-10-23 | Midterm grading period                                                |
+| 2023-10-23 | Advising period                                                       |
+| 2023-10-24 | Midterm grading period                                                |
+| 2023-10-24 | Advising period                                                       |
+| 2023-10-25 | Midterm grading period                                                |
+| 2023-10-25 | Advising period                                                       |
+| 2023-10-26 | Midterm grading period                                                |
+| 2023-10-26 | Advising period                                                       |
+| 2023-10-27 | Midterm grading period                                                |
+| 2023-10-27 | Advising period                                                       |
+| 2023-10-28 | Midterm grading period                                                |
+| 2023-10-28 | Advising period                                                       |
+| 2023-10-29 | Midterm grading period                                                |
+| 2023-10-29 | Advising period                                                       |
+| 2023-10-30 | Advising period                                                       |
+| 2023-10-30 | Last day to withdraw from a full-term course                          |
+| 2023-10-31 | Advising period                                                       |
+| 2023-11-01 | Advising period                                                       |
+| 2023-11-02 | Advising period                                                       |
+| 2023-11-03 | Advising period                                                       |
+| 2023-11-03 | Deadline to declare major/minor                                       |
+| 2023-11-07 | Election Day (offices closed, no classes)                             |
+| 2023-11-13 | Spring 2024 priority registration for continuing students             |
+| 2023-11-14 | Spring 2024 priority registration for continuing students             |
+| 2023-11-15 | Spring 2024 priority registration for continuing students             |
+| 2023-11-16 | Spring 2024 priority registration for continuing students             |
+| 2023-11-20 | Remote instruction days (courses in session remotely, offices closed) |
+| 2023-11-21 | Remote instruction days (courses in session remotely, offices closed) |
+| 2023-11-22 | Thanksgiving Break (offices closed, no classes)                       |
+| 2023-11-23 | Thanksgiving Break (offices closed, no classes)                       |
+| 2023-11-24 | Thanksgiving Break (offices closed, no classes)                       |
+| 2023-11-25 | Thanksgiving Break (offices closed, no classes)                       |
+| 2023-11-26 | Thanksgiving Break (offices closed, no classes)                       |
+| 2023-11-27 | Classes resume from Thanksgiving Break                                |
+| 2023-12-08 | Last day of classes                                                   |
+| 2023-12-09 | Reading periods                                                       |
+| 2023-12-10 | Reading periods                                                       |
+| 2023-12-11 | Final exam periods                                                    |
+| 2023-12-12 | Final exam periods                                                    |
+| 2023-12-13 | Final exam periods                                                    |
+| 2023-12-14 | Final exam periods                                                    |
+| 2023-12-15 | Final exam periods                                                    |
+| 2023-12-16 | Reading periods                                                       |
+| 2023-12-17 | Reading periods                                                       |
+| 2023-12-18 | Final exam periods                                                    |
+| 2023-12-19 | Final exam periods                                                    |
 
 - [Web](https://www.wm.edu/offices/registrar/calendarsandexams/ugcalendars)
 
