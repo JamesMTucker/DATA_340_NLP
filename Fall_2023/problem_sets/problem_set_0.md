@@ -33,7 +33,7 @@ Please assess the data accordingly and create a data visualization that you thin
 
 ### Part 0.0.2. Challenge
 
-Please use the Google YouTube API to retrieve the number of comments from each video and the number of views. Please add these columns to the `video_metadata.csv` file. Please also add a column that contains the number of comments per view. Please create a new data visualization that includes these new columns. Please consider any correlations between comments and views, comments per view, etc.
+Please use the Google YouTube API to retrieve the comments, number of comments on each video, and the number of views of each video. Please add these columns to the `video_metadata.csv` file. Please also add a column that contains the number of comments per view. Please create a new data visualization that includes these new columns. Please consider any correlations between comments and views, comments per view, etc.
 
 See the YouTube API documentation here: [YouTube API](https://developers.google.com/youtube/v3/docs)
 
