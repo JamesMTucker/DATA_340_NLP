@@ -7,6 +7,8 @@
 ## [Course Syllabus](./syllabus/Syllabus.md)
     
   * [Fall 2023](./syllabus/syllabus.md)
+    * [Lecture Slides](./Fall_2023/slide_decks)
+    * [Lecture Notebooks](./Fall_2023/notebooks)
   * [Spring 2023](./Spring_2023/syllabus/Syllabus.md)
 
 

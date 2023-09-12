@@ -55,10 +55,10 @@ This course is language agnostic. You can submit your homework and project in wh
 All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP) and links are provided in Blackboard.
 
 - NLP Problem sets (35%) - these are smaller assignments designed to reinforce the ideas discussed in lecture or the assigned reading. These assignments will be posted on the course GitHub repo and Blackboard and are due at the specified date and time.
-  - Problem set 0: Exploratory Data Analysis (EDA) and Critical Reflection on the use of terms such as 'understanding' and 'intelligence' in the context of NLP
-  - Problem set 1: Machine Learning Models for NLP
-  - Problem set 2: Vector semantics
-  - Problem set 3: Neural Networks for NLP
+  - [Problem set 0: Exploratory Data Analysis (EDA) or Critical Reflection on the use of terms such as 'understanding' and 'intelligence' in the context of NLP](../Fall_2023/problem_sets/problem_set_0.md) (5%)
+  - Problem set 1: Machine Learning Models for NLP (10%)
+  - Problem set 2: Vector semantics (10%)
+  - Problem set 3: Neural Networks for NLP (10%)
 - Project (50%) - The student will develop a project related to their area of interest and use NLP techniques to explore a data set in consideration with some research questions.
   - Project code, documentation, and report (40% of the 50) - in the overall development of the project. It is hoped that the student will create a GitHub repo to host their code and documentation. The student should expect to submit project code that is well-documented and reproducible. The research findings should be presented in a report that is well-written and well-organized.
   - Project presentation (10% of the 50) - In the final class sessions, each student will present a short presentation of their projects.
@@ -71,7 +71,7 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 | 2023-08-31 | Th. | Introduction & Syllabus                     |              |                                   |
 | 2023-09-05 | Tu. | NLP, Data Science, & Large Language Models  |              |                                   |
 | 2023-09-07 | Th. | Stochastic Parrots & Human Communication    |              |                                   |
-| 2023-09-12 | Tu. | Linguistic structure (Pt. I)                | [JM 17, 18]  | Withdrawal period begins          |
+| 2023-09-12 | Tu. | Linguistic structure (Pt. I)                | [JM [17](../course_readings/Jurafsky.pdf), [18](../course_readings/Jurafsky.pdf)]  | Withdrawal period begins          |
 | 2023-09-14 | Th. | Linguistic structure (Pt. II)               | [JM 17, 18]  |                                   |
 | 2023-09-19 | Tu. | Statistics & Information Theory             | [S]          |                                   |
 | 2023-09-21 | Th. | Datasets and Data Munging (Pt. I)           | [G] & [JM 2] |                                   |
