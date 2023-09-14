@@ -24,37 +24,50 @@ my $grimmer = '/media/james/Projects/GitHub/DATA_340_NLP/course_readings/Grimmer
 # 	&extract_sections($manning, $manning_author, $beginPage, $endPage);
 # };
 
-# my %jurafsky = (
-#     'Jurafsky_Martin_chapter_2' => '12:38',
-#     'Jurafsky_Martin_chapter_3' => '39:65',
-#     'Jurafsky_Martin_chapter_4' => '66:86',
-#     'Jurafsky_Martin_chapter_5' => '87:110',
-#     'Jurafsky_Martin_chapter_6' => '111:141',
-#     'Jurafsky_Martin_chapter_7' => '142:167',
-#     'Jurafsky_Martin_chapter_8' => '168:192',
-#     'Jurafsky_Martin_chapter_9' => '193:218',
-#     'Jurafsky_Martin_chapter_10' => '219:235',
-#     'Jurafsky_Martin_chapter_11' => '236:251',
-# );
+my %jurafsky = (
+    'Jurafsky_Martin_chapter_2' => '12:38',
+    'Jurafsky_Martin_chapter_3' => '39:65',
+    'Jurafsky_Martin_chapter_4' => '66:86',
+    'Jurafsky_Martin_chapter_5' => '87:110',
+    'Jurafsky_Martin_chapter_6' => '111:141',
+    'Jurafsky_Martin_chapter_7' => '142:167',
+    'Jurafsky_Martin_chapter_8' => '168:192',
+    'Jurafsky_Martin_chapter_9' => '193:218',
+    'Jurafsky_Martin_chapter_10' => '219:235',
+    'Jurafsky_Martin_chapter_11' => '236:251',
+	# 'Jurafsky_Martin_chapter_12' => '252:270', # Prompt Engineering Incomplete
+	'Jurafsky_Martin_chapter_13' => '255:276',
+	'Jurafsky_Martin_chapter_14' => '277:303',
+	'Jurafsky_Martin_chapter_15' => '304:336',
+	'Jurafsky_Martin_chapter_16' => '337:362',
+	'Jurafsky_Martin_chapter_17' => '363:388',
+	'Jurafsky_Martin_chapter_18' => '389:412',
+	'Jurafsky_Martin_chapter_19' => '413:435',
+	# 'Jurafsky_Martin_chapter_20' => '436:460',
+	'Jurafsky_Martin_chapter_21' => '437:453',
+	'Jurafsky_Martin_chapter_22' => '454:464',
 
-# my ($jurafsky_author, $jurafsky_pages);
 
-# while (($jurafsky_author, $jurafsky_pages) = each (%jurafsky)){
-#     my ($beginPage, $endPage) = split(/[,:-]+/, $jurafsky_pages);
-# 	&extract_sections($jurafsky, $jurafsky_author, $beginPage, $endPage);
-# };
-
-
-my %grimmer = (
-    'Grimmer' => '48:62'
 );
 
-my ($grimmer_author, $grimmer_pages);
+my ($jurafsky_author, $jurafsky_pages);
 
-while(($grimmer_author, $grimmer_pages) = each (%grimmer)){
-    my ($beginPage, $endPage) = split(/[,:-]+/, $grimmer_pages);
-    &extract_sections($grimmer, $grimmer_author, $beginPage, $endPage);
+while (($jurafsky_author, $jurafsky_pages) = each (%jurafsky)){
+    my ($beginPage, $endPage) = split(/[,:-]+/, $jurafsky_pages);
+	&extract_sections($jurafsky, $jurafsky_author, $beginPage, $endPage);
 };
+
+
+# my %grimmer = (
+#     'Grimmer' => '48:62'
+# );
+
+# my ($grimmer_author, $grimmer_pages);
+
+# while(($grimmer_author, $grimmer_pages) = each (%grimmer)){
+#     my ($beginPage, $endPage) = split(/[,:-]+/, $grimmer_pages);
+#     &extract_sections($grimmer, $grimmer_author, $beginPage, $endPage);
+# };
 
 
 
