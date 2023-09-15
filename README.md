@@ -5,11 +5,9 @@
 [Contact Professor](mailto:jmtucker02@wm.edu;james.tucker@lexicalintelligence.com) | [Website](https://jamesmtucker.com)
 
 ## [Course Syllabus](./syllabus/Syllabus.md)
-    
-  * [Fall 2023](./syllabus/syllabus.md)
-    * [Lecture Slides](./Fall_2023/slide_decks)
-    * [Lecture Notebooks](./Fall_2023/notebooks)
-  * [Spring 2023](./Spring_2023/syllabus/Syllabus.md)
 
-
-
+* [Fall 2023](./syllabus/syllabus.md)
+  * [Lecture Slides](./Fall_2023/slide_decks)
+  * [Lecture Notebooks](./Fall_2023/notebooks)
+  * [Tools/Aids](./Fall_2023/tools)
+* [Spring 2023](./Spring_2023/syllabus/Syllabus.md)
