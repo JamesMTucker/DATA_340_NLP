@@ -112,4 +112,13 @@ For reproducibility, especially in data science projects, you can use `requireme
 
 ---
 
+### **9. Additional resources**
+
+- [Python venv documentation](https://docs.python.org/3/library/venv.html)
+- [Virtualenv vs. venv](https://youtu.be/MGTX5qI2Jts?si=G1udx5L7LH0GpYpl)
+
+---
+
 Using `venv` provides a straightforward way to manage Python environments, especially for data science projects. By isolating project dependencies, you ensure a smoother development experience and reduce potential conflicts. Happy coding!
+
+---
