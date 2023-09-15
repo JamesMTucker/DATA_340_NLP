@@ -143,3 +143,8 @@ For data science projects, it's common to share and reproduce environments. This
 3. **Maintenance**: Regularly update your environments and packages to ensure you're using the latest versions. This can help in terms of performance, security, and bug fixes.
 
 ---
+
+### **8. Additional Resources**
+
+- [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/index.html)
+- [Anaconda Beginner's Guide](https://youtu.be/MUZtVEDKXsk?si=eH6o3iDUDRuGwXV3)
