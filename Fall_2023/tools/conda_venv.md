@@ -1,5 +1,7 @@
 # Miniconda for Data Science: A Quick Guide
 
+Python documentation: [HERE](https://docs.python.org/3/library/venv.html)
+
 ### **1. Introduction**
 
 Miniconda is a lightweight version of Anaconda, a popular distribution of Python and R for scientific computing and data science. Miniconda gives you the flexibility to create isolated environments for your projects, ensuring that dependencies don't conflict with each other.
