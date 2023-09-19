@@ -71,8 +71,8 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 | 2023-08-31 | Th. | Introduction & Syllabus                     |              |                                   |
 | 2023-09-05 | Tu. | NLP, Data Science, & Large Language Models  |              |                                   |
 | 2023-09-07 | Th. | Stochastic Parrots & Human Communication    |              |                                   |
-| 2023-09-12 | Tu. | Linguistic structure (Pt. I)                | [JM [17](../course_readings/Jurafsky.pdf), [18](../course_readings/Jurafsky.pdf)]  | Withdrawal period begins          |
-| 2023-09-14 | Th. | Linguistic structure (Pt. II)               | [JM 17, 18]  |                                   |
+| 2023-09-12 | Tu. | Linguistic structure (Pt. I)                | JM [17](../course_readings/Jurafsky_Martin_chapter_17_363-388.pdf), [18](../course_readings/Jurafsky_Martin_chapter_18_389-412.pdf)  | Withdrawal period begins          |
+| 2023-09-14 | Th. | Linguistic structure (Pt. II)               | JM [17](../course_readings/Jurafsky_Martin_chapter_17_363-388.pdf), [18](../course_readings/Jurafsky_Martin_chapter_18_389-412.pdf)  |                                   |
 | 2023-09-19 | Tu. | Statistics & Information Theory             | [S]          |                                   |
 | 2023-09-21 | Th. | Datasets and Data Munging (Pt. I)           | [G] & [JM 2] |                                   |
 | 2023-09-26 | Tu. | Datasets and Data Munging (Pt. II)          | [vanA]       |                                   |
