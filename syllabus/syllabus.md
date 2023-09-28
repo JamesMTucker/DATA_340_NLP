@@ -74,10 +74,10 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 | 2023-09-12 | Tu. | Linguistic structure (Pt. I)                | JM [17](../course_readings/Jurafsky_Martin_chapter_17_363-388.pdf), [18](../course_readings/Jurafsky_Martin_chapter_18_389-412.pdf)  | Withdrawal period begins          |
 | 2023-09-14 | Th. | Linguistic structure (Pt. II)               | JM [17](../course_readings/Jurafsky_Martin_chapter_17_363-388.pdf), [18](../course_readings/Jurafsky_Martin_chapter_18_389-412.pdf)  |                                   |
 | 2023-09-19 | Tu. | Statistics & Information Theory             | [S]          |                                   |
-| 2023-09-21 | Th. | Datasets and Data Munging (Pt. I)           | [G] & [JM 2] |                                   |
+| 2023-09-21 | Th. | Datasets and Data Munging (Pt. I)           | [G] & [JM 2](../course_readings/Jurafsky_Martin_chapter_2_12-38.pdf) |                                   |
 | 2023-09-26 | Tu. | Datasets and Data Munging (Pt. II)          | [vanA]       |                                   |
-| 2023-09-28 | Th. | Vector semantics (Pt. I)                    | [JM 6]       |                                   |
-| 2023-10-03 | Tu. | NLP & Machine learning (Pt. I)              | [JM 4, 5]    |                                   |
+| 2023-09-28 | Th. | Vector semantics (Pt. I)                    | [JM 6](../course_readings/Jurafsky_Martin_chapter_6_111-141.pdf)       |                                   |
+| 2023-10-03 | Tu. | NLP & Machine learning (Pt. I)              | [JM 4](../course_readings/Jurafsky_Martin_chapter_4_66-86.pdf), [5](../course_readings/Jurafsky_Martin_chapter_5_87-110.pdf)    |                                   |
 | 2023-10-05 | Th. | NLP & Machine learning (Pt. II)             | [JM 4, 5]    |                                   |
 | 2023-10-10 | Tu. | NLP & Machine learning (Pt. III)            | [JM 4, 5]    | Midterm grading period            |
 | 2023-10-12 | Th. | Vector semantics (Pt. II)                   | [JM 6, 7]    | Midterm grading period            |
