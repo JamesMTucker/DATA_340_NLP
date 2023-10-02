@@ -3,8 +3,13 @@ course_readings/Jurafsky.pdf
 course_readings/Manning.pdf
 course_readings/Grimmer.pdf
 
+# Virtual Environments
 venv
+.venv
 
 *tar.bz2
 
 *_JMT.ipynb
+
+# grades
+Fall_2023/grades/*
