@@ -7,6 +7,10 @@ course_readings/Grimmer.pdf
 venv
 .venv
 
+# IDE
+*.idea
+*.vscode
+
 *tar.bz2
 
 *_JMT.ipynb
