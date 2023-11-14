@@ -78,20 +78,20 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 | 2023-09-26 | Tu. | Datasets and Data Munging (Pt. II)          | [vanA]       |                                   |
 | 2023-09-28 | Th. | Vector semantics (Pt. I)                    | [JM 6](../course_readings/Jurafsky_Martin_chapter_6_111-141.pdf)       |                                   |
 | 2023-10-03 | Tu. | NLP & Machine learning (Pt. I)              | [JM 4](../course_readings/Jurafsky_Martin_chapter_4_66-86.pdf), [5](../course_readings/Jurafsky_Martin_chapter_5_87-110.pdf)    |                                   |
-| 2023-10-05 | Th. | NLP & Machine learning (Pt. II)             | [JM 4, 5]    |                                   |
-| 2023-10-10 | Tu. | NLP & Machine learning (Pt. III)            | [JM 4, 5]    | Midterm grading period            |
-| 2023-10-12 | Th. | Vector semantics (Pt. II)                   | [JM 6, 7]    | Midterm grading period            |
-| 2023-10-17 | Tu. | NLP & Neural nets (Pt. I)                   | [JM 7]       | Midterm grading period            |
-| 2023-10-19 | Th. | NLP & Neural nets (Pt. II)                  | [JM 7, 9]    | Midterm grading period            |
-| 2023-10-24 | Tu. | NLP & Neural nets (Pt. III)                 | [JM 10]      | Midterm grading period            |
-| 2023-10-26 | Th. | NLP & Neural nets (Pt. IV)                  | [JM 11]      | Midterm grading period            |
-| 2023-10-31 | Tu. | NLP & Neural nets (Pt. V)                   | [JM 11]      | Advising period                   |
+| 2023-10-05 | Th. | NLP & Machine learning (Pt. II)             | [JM 4](../course_readings/Jurafsky_Martin_chapter_4_66-86.pdf), [5](../course_readings/Jurafsky_Martin_chapter_5_87-110.pdf)    |                                   |
+| 2023-10-10 | Tu. | NLP & Machine learning (Pt. III)            | [JM 4](../course_readings/Jurafsky_Martin_chapter_4_66-86.pdf), [5](../course_readings/Jurafsky_Martin_chapter_5_87-110.pdf)    | Midterm grading period            |
+| 2023-10-12 | Th. | Vector semantics (Pt. II)                   | [JM 6](../course_readings/Jurafsky_Martin_chapter_6_111-141.pdf), [7](../course_readings/Jurafsky_Martin_chapter_7_142-167.pdf)    | Midterm grading period            |
+| 2023-10-17 | Tu. | NLP & Neural nets (Pt. I)                   | [JM 7](../course_readings/Jurafsky_Martin_chapter_7_142-167.pdf)       | Midterm grading period            |
+| 2023-10-19 | Th. | NLP & Neural nets (Pt. II)                  | [JM 7](../course_readings/Jurafsky_Martin_chapter_7_142-167.pdf), [9](../course_readings/Jurafsky_Martin_chapter_9_193-218.pdf)    | Midterm grading period            |
+| 2023-10-24 | Tu. | NLP & Neural nets (Pt. III)                 | [JM 10](../course_readings/Jurafsky_Martin_chapter_10_219-235.pdf)      | Midterm grading period            |
+| 2023-10-26 | Th. | NLP & Neural nets (Pt. IV)                  | [JM 11](../course_readings/Jurafsky_Martin_chapter_11_236-251.pdf)      | Midterm grading period            |
+| 2023-10-31 | Tu. | NLP & Neural nets (Pt. V)                   | [JM 11](../course_readings/Jurafsky_Martin_chapter_11_236-251.pdf)      | Advising period                   |
 | 2023-11-02 | Th. | Vector semantics (Pt. III)                  |              | Advising period                   |
 | 2023-11-07 | Tu. | No class                                    |              | Election Day                      |
-| 2023-11-09 | Th. | Machine translation                         | [JM 13]      |                                   |
-| 2023-11-14 | Tu. | QA & Information retrieval                  | [JM 8, 14]   | Spring 2024 priority registration |
+| 2023-11-09 | Th. | Machine translation                         | [JM 13](../course_readings/Jurafsky_Martin_chapter_13_255-276.pdf)      |                                   |
+| 2023-11-14 | Tu. | QA & Information retrieval                  | [JM 8](../course_readings/Jurafsky_Martin_chapter_8_168-192.pdf), [14](../course_readings/Jurafsky_Martin_chapter_14_277-303.pdf)   | Spring 2024 priority registration |
 | 2023-11-16 | Th. | Named Entity Recognition (NER) & Ontologies |              | Spring 2024 priority registration |
-| 2023-11-21 | Tu. | Vector semantics (Pt. IV)                   |              | Remote instruction days           |
+| 2023-11-21 | Tu. | Open discussion (Zoom)                      |              | Remote instruction days           |
 | 2023-11-23 | Th. | No class                                    |              | Thanksgiving Break                |
 | 2023-11-28 | Tu. | Vector semantics & Clustering               |              |                                   |
 | 2023-11-30 | Th. | Student presentations                       |              |                                   |
