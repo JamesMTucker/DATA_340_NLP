@@ -89,8 +89,8 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 | 2023-11-02 | Th. | Vector semantics (Pt. III)                  |              | Advising period                   |
 | 2023-11-07 | Tu. | No class                                    |              | Election Day                      |
 | 2023-11-09 | Th. | Machine translation                         | [JM 13](../course_readings/Jurafsky_Martin_chapter_13_255-276.pdf)      |                                   |
-| 2023-11-14 | Tu. | QA & Information retrieval                  | [JM 8](../course_readings/Jurafsky_Martin_chapter_8_168-192.pdf), [14](../course_readings/Jurafsky_Martin_chapter_14_277-303.pdf)   | Spring 2024 priority registration |
-| 2023-11-16 | Th. | Named Entity Recognition (NER) & Ontologies |              | Spring 2024 priority registration |
+| 2023-11-14 | Tu. | Introduction to transformers                | [JM 8](../course_readings/Jurafsky_Martin_chapter_8_168-192.pdf), [14](../course_readings/Jurafsky_Martin_chapter_14_277-303.pdf)   | Spring 2024 priority registration |
+| 2023-11-16 | Th. | NLP tasks using Transormers                 |              | Spring 2024 priority registration |
 | 2023-11-21 | Tu. | Open discussion (Zoom)                      |              | Remote instruction days           |
 | 2023-11-23 | Th. | No class                                    |              | Thanksgiving Break                |
 | 2023-11-28 | Tu. | Vector semantics & Clustering               |              |                                   |
