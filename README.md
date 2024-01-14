@@ -17,4 +17,4 @@ There are no official prerequisites for this course. We will delve into various 
 1. [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 2. [Essence of Calculus](https://www.youtube.com/playlist?list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x)
 3. [Missing Semester of your CS Education](https://missing.csail.mit.edu/)
-4. [Tools and tips]()
+4. [Tools and tips](./course_aids/README.md)
