@@ -12,8 +12,6 @@
 
 ## NLP Index of Terms
 
-nlp
-
 An index of Natural Language Processing (NLP) concepts serves as a foundational glossary for students beginning their journey into this complex field. Here are some key concepts:
 
 1. **Tokenization:** The process of splitting text into individual words or phrases.
@@ -41,7 +39,7 @@ An index of Natural Language Processing (NLP) concepts serves as a foundational 
 23. **Language Modeling:** The task of predicting the next word in a sentence given the previous words.
 24. **Machine Translation:** The task of automatically converting text from one language to another.
 25. **Text Classification:** The task of assigning predefined categories to text.
-26. **Sentiment Analysis:** The process of determining the emotional tone behind a series of words to gain an understanding of the attitudes, opinions, and emotions expressed.
+26. **Sentiment Analysis:** The process of determining the emotional tone within a series of words to gain an understanding of the attitudes, opinions, and emotions expressed.
 27. **Topic Modeling:** The task of identifying topics that best describe a set of documents.
 28. **Dialog Systems and Chatbots:** Computer systems designed to converse with human users via natural language.
 29. **Speech Recognition:** The process of converting spoken words into text.
