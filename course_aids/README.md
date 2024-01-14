@@ -4,6 +4,8 @@
 
 ## Numerical computing with Python (NumPy)
 
+## Parallel/Multithreading in Python
+
 ## A tutorial on Pandas
 
 ## A tutorial on PyTorch
