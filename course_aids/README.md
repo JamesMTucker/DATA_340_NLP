@@ -2,7 +2,11 @@
 
 ## Python tutorial
 
+See doc [here](./docs/python.md)
+
 ## Numerical computing with Python (NumPy)
+
+See doc [here](./docs/numpy.md)
 
 ## Parallel/Multithreading in Python
 
