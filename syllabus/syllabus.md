@@ -59,11 +59,11 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 - Understanding NLP (10pts) - A conversation with ChatGPT about Linguistics, NLP, and Data Science
 - NLP Problem sets (100pts) - these assignments are designed to reinforce the ideas discussed in lecture or the assigned reading. Whereas the student can expect to solve the problem sets from the topics covered in lecture, it is encouraged that the student explore additional solutions and creative thinking.
   
-  - Problem set 1: Exploratory Data Analysis in a NLP context - Distributions and Features
-  - Problem set 2: Semantic Search Engine - king is to queen as man is to ?
-  - Problem set 3: Author prediction - 
-  - Problem set 4: Clustering news articles - Retrieval augmented generation (RAG)
-  - Problem set 5: Fine-tuning a LLM on prompt engineering
+  - Problem set 0: Exploratory Data Analysis in a NLP context - Distributions and Features
+  - Problem set 1: Semantic Search Engine - king is to queen as man is to ?
+  - Problem set 2: Author prediction - Federalist Papers
+  - Problem set 3: Clustering news articles - Retrieval augmented generation (RAG)
+  - Problem set 4: Fine-tuning a LLM on prompt engineering
   
 - Final Exam (40pts) - Demonstrate your mastery of NLP concepts
 
