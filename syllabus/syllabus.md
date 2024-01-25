@@ -23,6 +23,10 @@ This course is designed to introduce students to Natural Language Processing (NL
 
 This course is language agnostic. You can submit your homework and project in whatever programming language you prefer. In class lectures, we will use Python, R, or Mojo for the most part.
 
+## Tools
+
+Students are encouraged to utilize generative AI tools when they are stuck on implementing code or ideating on topics for projects. If you copy code from a generative AI tool, like ChatGPT or GitHub CoPilot, please provide a comment in your programming language's comment syntax that you resourced a tool to solve your problem. If you resourced Stack Overflow or another source, please footnote your sources accordingly.
+
 ## Course objectives
 
 - Understand the basics of natural language processing techniques and how they can be used to in data driven decision models
@@ -52,22 +56,87 @@ This course is language agnostic. You can submit your homework and project in wh
 
 ## Assignments
 
+### Descriptions
+
 There are a possible 150 points to earn in this course.
 
 All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP) and links are provided in Blackboard.
 
 - Understanding NLP (10pts) - A conversation with ChatGPT about Linguistics, NLP, and Data Science
 - NLP Problem sets (100pts) - these assignments are designed to reinforce the ideas discussed in lecture or the assigned reading. Whereas the student can expect to solve the problem sets from the topics covered in lecture, it is encouraged that the student explore additional solutions and creative thinking.
-  
+
   - Problem set 0: Exploratory Data Analysis in a NLP context - Distributions and Features
-  - Problem set 1: Semantic Search Engine - king is to queen as man is to ?
-  - Problem set 2: Author prediction - Federalist Papers
+  - Problem set 1: Author prediction - Federalist Papers
+  - Problem set 2: Semantic Search Engine - king is to queen as man is to ?
   - Problem set 3: Clustering news articles - Retrieval augmented generation (RAG)
   - Problem set 4: Fine-tuning a LLM on prompt engineering
-  
-- Final Exam (40pts) - Demonstrate your mastery of NLP concepts
+
+- Final Project (40pts) - Demonstrate your mastery of NLP concepts with a topic of your choosing
+
+### Late time currency
+
+You get 4 days of late time. This means that if you cannot turn in an assignment on time, you can use your late time currency to extend a deadline by however many days are needed, not extending beyond 4. You get four days credit. Use the time wisely. If you need more than four days time, you can earn an additional day by completing a coding challenge:
+
+1. [Sparse matrix multiplication]()
+2. [Probability of disease]()
+3. [Distances]()
+4. [Regression tree]()
+5. [K-means]()
 
 ## Schedule
+
+| date       | day | topic                                        | assignment         | reading                                    | academic calendar  |
+| :--------- | :-- | :------------------------------------------- | :----------------- | :----------------------------------------- | :----------------- |
+| 2024-01-25 | Th. | Intro & syllabus                             |                    |                                            |                    |
+| 2024-01-30 | Tu. | NLP, Data science, and GenAI                 | [Problem Set 0: P] | [Lockhart][1]                              |                    |
+| 2024-02-01 | Th. | Vectorized computation, Data structures      |                    | van Atteveldt et al. [5][2] [6][3], [7][4] |                    |
+| 2024-02-06 | Tu. | Statistics and language                      | [Problem Set 0: D] | [Manning and Schütze][5]                   |                    |
+| 2024-02-08 | Th. | Documents as bags of words                   |                    | Jurafsky & Martin [3][10], Grimmer [3][8]  |                    |
+| 2024-02-13 | Tu. | N-gram language models                       | [Problem Set 1: P] | Jurafsky & Martin [4][6], [5][7]           |                    |
+| 2024-02-15 | Th. | N-gram langauge models                       |                    | Jurafsky & Martin [4][6], [5][7]           |                    |
+| 2024-02-20 | Tu. | Distributional semantics (Word2Vec, Doc2Vec) | [Problem Set 1: D] | Jurafsky & Martin [6][9]                   |                    |
+| 2024-02-22 | Th. | Training a Word2Vec/Doc2Vec Model            |                    | Jurafsky & Martin [6][9], [Gensim][10]     |                    |
+| 2024-02-27 | Tu. | Documents as sequences                       | [Problem Set 2: P] | Jurafsky & Martin [7][12]                  |                    |
+| 2024-02-29 | Th. | Data modeling, cleaning, optimizing          |                    | Jurafsky & Martin [2][13]                  |                    |
+| 2024-03-05 | Tu. | Neural networks architecture                 | [Problem Set 2: D] | Jurafsky & Martin [7][12]                  |                    |
+| 2024-03-07 | Th. | LLMs, Language, & Semantics                  |                    |                                            |                    |
+| 2024-03-12 | Tu. | No class                                     |                    |                                            | Spring Break       |
+| 2024-03-14 | Th. | No class                                     |                    |                                            | Spring Break       |
+| 2024-03-19 | Tu. | Recurrent neural networks (RNNs)             |                    | Jurafsky & Martin [9][14]                  |                    |
+| 2024-03-21 | Th. | Distrib. semantics contextual embeddings     |                    | Jurafsky & Martin [10][15]                 |                    |
+| 2024-03-26 | Tu. | Retrieval augmented generation               | [Problem Set 3: P] | Jurafsky & Martin [14][17]                 |                    |
+| 2024-03-28 | Th. | Clustering and visualizing embeddings        |                    |                                            |                    |
+| 2024-04-02 | Tu. | Transformer neural network                   | [Problem Set 3: D] | Jurafsky & Martin [10][15]                 |                    |
+| 2024-04-04 | Th. | Attention mechanism                          |                    | Jurafsky & Martin [10][15]                 |                    |
+| 2024-04-09 | Tu. | Fine-tuning pretrained models                | [Problem Set 4: P] | Jurafsky & Martin [11][16], Howard         |                    |
+| 2024-04-11 | Th. | Fine-tuning pretrained models                |                    | Jurafsky & Martin [11][16], Howard         |                    |
+| 2024-04-16 | Tu. | Quantifying sentiment as a feature           | [Problem Set 4: D] |                                            |                    |
+| 2024-04-18 | Th. | Quantifying Named Entities                   |                    |                                            |                    |
+| 2024-04-23 | Tu. | LLMs and knowledge graphs                    |                    |                                            |                    |
+| 2024-04-25 | Th. | LLMs and causal reasoning                    |                    |                                            |                    |
+| 2024-04-30 | Tu. | Debugging NLP models, ethics, data           |                    |                                            |                    |
+| 2024-05-02 | Th. | Open discussion & project highlights         |                    |                                            |                    |
+| 2024-05-07 | Tu. |                                              |                    |                                            | Final exam periods |
+| 2024-05-09 | Th. |                                              |                    |                                            | Final exam periods |
+| 2024-05-14 | Tu. |                                              |                    |                                            | Final exam periods |
+
+[1]: http://worrydream.com/refs/Lockhart-MathematiciansLament.pdf
+[2]: https://cssbook.net/chapter05.html
+[3]: https://cssbook.net/chapter06.html
+[4]: https://cssbook.net/chapter07.html
+[5]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Manning_Schutze_121-156.pdf
+[6]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_4_66-86.pdf
+[7]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_5_87-110.pdf
+[8]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Grimmer-Grimmer_48-62.pdf
+[9]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_6_111-141.pdf
+[10]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_3_39-65.pdf
+[11]: https://radimrehurek.com/gensim/
+[12]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_7_142-167.pdf
+[13]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_2_12-38.pdf
+[14]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_9_193-218.pdf
+[15]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_10_219-235.pdf
+[16]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_11_236-251.pdf
+[17]: https://github.com/JamesMTucker/DATA_340_NLP/blob/master/course_readings/Jurafsky_Martin_chapter_14_277-303.pdf
 
 ## Course policies
 
@@ -106,9 +175,44 @@ William & Mary recognizes that students juggle different responsibilities and ca
 - The W&M Health Center at (757) 221-4386.
 - For additional support or resources & questions, Contact the Dean of Students at 757-221-2510.
 
-### Important dates
+### [Important dates](https://www.wm.edu/offices/registrar/calendarsandexams/ugcalendars)
 
-- [Web](https://www.wm.edu/offices/registrar/calendarsandexams/ugcalendars)
+| date       | academic event                                                                             |
+| :--------- | :----------------------------------------------------------------------------------------- |
+| 2024-01-23 | Add/drop period begins at 1:00 pm                                                          |
+| 2024-01-24 | First day of classes Non-degree seeking registration begins                                |
+| 2024-02-02 | Last day to add/drop Deadline to file a minor declaration form for May or August graduates |
+| 2024-02-03 | Withdrawal period begins                                                                   |
+| 2024-03-04 | Midterm grading begins                                                                     |
+| 2024-03-09 | Spring Break                                                                               |
+| 2024-03-10 | Spring Break                                                                               |
+| 2024-03-11 | Spring Break                                                                               |
+| 2024-03-12 | Spring Break                                                                               |
+| 2024-03-13 | Spring Break                                                                               |
+| 2024-03-14 | Spring Break                                                                               |
+| 2024-03-15 | Spring Break                                                                               |
+| 2024-03-16 | Spring Break                                                                               |
+| 2024-03-17 | Spring Break                                                                               |
+| 2024-03-18 | Classes resume after Spring Break                                                          |
+| 2024-03-24 | Midterm grading ends at 11:59 p.m.                                                         |
+| 2024-03-25 | Last day to withdraw from a full-term course                                               |
+| 2024-05-03 | Last day of classes                                                                        |
+| 2024-05-04 | Reading periods                                                                            |
+| 2024-05-05 | Reading periods                                                                            |
+| 2024-05-11 | Reading periods                                                                            |
+| 2024-05-12 | Reading periods                                                                            |
+| 2024-05-06 | Final exam periods                                                                         |
+| 2024-05-07 | Final exam periods                                                                         |
+| 2024-05-08 | Final exam periods                                                                         |
+| 2024-05-09 | Final exam periods                                                                         |
+| 2024-05-10 | Final exam periods                                                                         |
+| 2024-05-13 | Final exam periods                                                                         |
+| 2024-05-14 | Final exam periods                                                                         |
+| 2024-05-16 | Spring grades due by 9 a.m. for graduating students                                        |
+| 2024-05-16 | Spring Degree Conferral and Commencement Ceremony                                          |
+| 2024-05-17 | Spring Degree Conferral and Commencement Ceremony                                          |
+| 2024-05-18 | Spring Degree Conferral and Commencement Ceremony                                          |
+| 2024-05-21 | Spring grades due by 9 a.m. for continuing students                                        |
 
 ### W&M honor code
 
