@@ -4,9 +4,10 @@
 
 [Contact Professor](mailto:jmtucker02@wm.edu;james.tucker@lexicalintelligence.com) | [Website](https://jamesmtucker.com)
 
-## [Course Syllabus](./syllabus/Syllabus.md)
+## [Course Syllabus](./syllabus/syllabus.md)
 
 * [Spring 2024](./syllabus/syllabus.md)
+  
 <!--
 * [Fall 2023](./syllabus/syllabus.md)
 * [Spring 2023](./Spring_2023/syllabus/Syllabus.md)
