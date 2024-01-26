@@ -88,31 +88,31 @@ You get 4 days of late time. This means that if you cannot turn in an assignment
 | date       | day | topic                                        | assignment         | reading                                    | academic calendar  |
 | :--------- | :-- | :------------------------------------------- | :----------------- | :----------------------------------------- | :----------------- |
 | 2024-01-25 | Th. | Intro & syllabus                             |                    |                                            |                    |
-| 2024-01-30 | Tu. | NLP, Data science, and GenAI                 | [Problem Set 0: P] | [Lockhart][1]                              |                    |
+| 2024-01-30 | Tu. | NLP, Data science, and GenAI                 | [ChatGPT: P]       | [Lockhart][1]                              |                    |
 | 2024-02-01 | Th. | Vectorized computation, Data structures      |                    | van Atteveldt et al. [5][2] [6][3], [7][4] |                    |
-| 2024-02-06 | Tu. | Statistics and language                      | [Problem Set 0: D] | [Manning and Schütze][5]                   |                    |
+| 2024-02-06 | Tu. | Statistics and language                      | [ChatGPT: D]       | [Manning and Schütze][5]                   |                    |
 | 2024-02-08 | Th. | Documents as bags of words                   |                    | Jurafsky & Martin [3][10], Grimmer [3][8]  |                    |
-| 2024-02-13 | Tu. | N-gram language models                       | [Problem Set 1: P] | Jurafsky & Martin [4][6], [5][7]           |                    |
+| 2024-02-13 | Tu. | N-gram language models                       | [Problem Set 0: P] | Jurafsky & Martin [4][6], [5][7]           |                    |
 | 2024-02-15 | Th. | N-gram langauge models                       |                    | Jurafsky & Martin [4][6], [5][7]           |                    |
-| 2024-02-20 | Tu. | Distributional semantics (Word2Vec, Doc2Vec) | [Problem Set 1: D] | Jurafsky & Martin [6][9]                   |                    |
+| 2024-02-20 | Tu. | Distributional semantics (Word2Vec, Doc2Vec) | [Problem Set 0: D] | Jurafsky & Martin [6][9]                   |                    |
 | 2024-02-22 | Th. | Training a Word2Vec/Doc2Vec Model            |                    | Jurafsky & Martin [6][9], [Gensim][10]     |                    |
-| 2024-02-27 | Tu. | Documents as sequences                       | [Problem Set 2: P] | Jurafsky & Martin [7][12]                  |                    |
+| 2024-02-27 | Tu. | Documents as sequences                       | [Problem Set 1: P] | Jurafsky & Martin [7][12]                  |                    |
 | 2024-02-29 | Th. | Data modeling, cleaning, optimizing          |                    | Jurafsky & Martin [2][13]                  |                    |
-| 2024-03-05 | Tu. | Neural networks architecture                 | [Problem Set 2: D] | Jurafsky & Martin [7][12]                  |                    |
+| 2024-03-05 | Tu. | Neural networks architecture                 | [Problem Set 1: D] | Jurafsky & Martin [7][12]                  |                    |
 | 2024-03-07 | Th. | LLMs, Language, & Semantics                  |                    |                                            |                    |
 | 2024-03-12 | Tu. | No class                                     |                    |                                            | Spring Break       |
 | 2024-03-14 | Th. | No class                                     |                    |                                            | Spring Break       |
-| 2024-03-19 | Tu. | Recurrent neural networks (RNNs)             |                    | Jurafsky & Martin [9][14]                  |                    |
+| 2024-03-19 | Tu. | Recurrent neural networks (RNNs)             | [Problem Set 2: P] | Jurafsky & Martin [9][14]                  |                    |
 | 2024-03-21 | Th. | Distrib. semantics contextual embeddings     |                    | Jurafsky & Martin [10][15]                 |                    |
-| 2024-03-26 | Tu. | Retrieval augmented generation               | [Problem Set 3: P] | Jurafsky & Martin [14][17]                 |                    |
+| 2024-03-26 | Tu. | Retrieval augmented generation               | [Problem Set 2: D] | Jurafsky & Martin [14][17]                 |                    |
 | 2024-03-28 | Th. | Clustering and visualizing embeddings        |                    |                                            |                    |
-| 2024-04-02 | Tu. | Transformer neural network                   | [Problem Set 3: D] | Jurafsky & Martin [10][15]                 |                    |
+| 2024-04-02 | Tu. | Transformer neural network                   | [Problem Set 3: P] | Jurafsky & Martin [10][15]                 |                    |
 | 2024-04-04 | Th. | Attention mechanism                          |                    | Jurafsky & Martin [10][15]                 |                    |
-| 2024-04-09 | Tu. | Fine-tuning pretrained models                | [Problem Set 4: P] | Jurafsky & Martin [11][16], Howard         |                    |
+| 2024-04-09 | Tu. | Fine-tuning pretrained models                | [Problem Set 3: D] | Jurafsky & Martin [11][16], Howard         |                    |
 | 2024-04-11 | Th. | Fine-tuning pretrained models                |                    | Jurafsky & Martin [11][16], Howard         |                    |
-| 2024-04-16 | Tu. | Quantifying sentiment as a feature           | [Problem Set 4: D] |                                            |                    |
+| 2024-04-16 | Tu. | Quantifying sentiment as a feature           | [Problem Set 4: P] |                                            |                    |
 | 2024-04-18 | Th. | Quantifying Named Entities                   |                    |                                            |                    |
-| 2024-04-23 | Tu. | LLMs and knowledge graphs                    |                    |                                            |                    |
+| 2024-04-23 | Tu. | LLMs and knowledge graphs                    | [Problem Set 4: D] |                                            |                    |
 | 2024-04-25 | Th. | LLMs and causal reasoning                    |                    |                                            |                    |
 | 2024-04-30 | Tu. | Debugging NLP models, ethics, data           |                    |                                            |                    |
 | 2024-05-02 | Th. | Open discussion & project highlights         |                    |                                            |                    |

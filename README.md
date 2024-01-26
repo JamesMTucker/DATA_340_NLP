@@ -6,9 +6,11 @@
 
 ## [Course Syllabus](./syllabus/Syllabus.md)
 
-* [Spring 2024](./Spring_2024/syllabus/syllabus.md)
+* [Spring 2024](./syllabus/syllabus.md)
+<!--
 * [Fall 2023](./syllabus/syllabus.md)
 * [Spring 2023](./Spring_2023/syllabus/Syllabus.md)
+-->
 
 ## Prerequisites
 
