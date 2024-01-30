@@ -58,11 +58,12 @@ Students are encouraged to utilize generative AI tools when they are stuck on im
 
 ### Descriptions
 
-There are a possible 150 points to earn in this course.
+There are a possible 165 points to earn in this course.
 
 All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_340_NLP) and links are provided in Blackboard.
 
 - Understanding NLP (10pts) - A conversation with ChatGPT about Linguistics, NLP, and Data Science
+- Course reading (15pts) - Please read the required readings listed in the course syllabus. Lecture topics will parallel the reading and the readings will help you comprehend the subject matter in greater detail.
 - NLP Problem sets (100pts) - these assignments are designed to reinforce the ideas discussed in lecture or the assigned reading. Whereas the student can expect to solve the problem sets from the topics covered in lecture, it is encouraged that the student explore additional solutions and creative thinking.
 
   - Problem set 0: Exploratory Data Analysis in a NLP context - Distributions and Features
