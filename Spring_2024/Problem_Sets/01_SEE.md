@@ -48,6 +48,7 @@ In this problem set, you will be exploring the properties of vector spaces and s
 
 ## Resources
 
+- [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [Gensim](https://radimrehurek.com/gensim/auto_examples/tutorials/run_word2vec.html)
 - [PyTorch](https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html)
 - [Tensorflow](https://www.tensorflow.org/tutorials/text/word2vec)
@@ -61,4 +62,5 @@ In this problem set, you will be exploring the properties of vector spaces and s
 - [Subspaces](https://en.wikipedia.org/wiki/Subspace_(linear_algebra))
 - [Word Vectors](https://en.wikipedia.org/wiki/Word_embedding)
 - [Vector Spaces](https://en.wikipedia.org/wiki/Vector_space)
-- 
+- [ELMo](https://allennlp.org/elmo)
+- [BERT](https://arxiv.org/pdf/1810.04805.pdf)
