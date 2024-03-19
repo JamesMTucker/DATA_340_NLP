@@ -67,8 +67,8 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
 - NLP Problem sets (100pts) - these assignments are designed to reinforce the ideas discussed in lecture or the assigned reading. Whereas the student can expect to solve the problem sets from the topics covered in lecture, it is encouraged that the student explore additional solutions and creative thinking.
 
   - Problem set 0: Exploratory Data Analysis in a NLP context - Distributions and Features
-  - Problem set 1: Author prediction - Federalist Papers
-  - Problem set 2: Semantic Search Engine - king is to queen as man is to ?
+  - Problem set 1: Semantic Search Engine - king is to queen as man is to ?
+  - Problem set 2: Author prediction - Federalist Papers
   - Problem set 3: Clustering news articles - Retrieval augmented generation (RAG)
   - Problem set 4: Fine-tuning a LLM on prompt engineering
 
@@ -103,19 +103,19 @@ You get 4 days of late time. This means that if you cannot turn in an assignment
 | 2024-03-07 | Th. | LLMs, Language, & Semantics                  |                    |                                            |                    |
 | 2024-03-12 | Tu. | No class                                     |                    |                                            | Spring Break       |
 | 2024-03-14 | Th. | No class                                     |                    |                                            | Spring Break       |
-| 2024-03-19 | Tu. | Recurrent neural networks (RNNs)             | [Problem Set 2: P] | Jurafsky & Martin [9][14]                  |                    |
+| 2024-03-19 | Tu. | Recurrent neural networks (RNNs)             |                    | Jurafsky & Martin [9][14]                  |                    |
 | 2024-03-21 | Th. | Distrib. semantics contextual embeddings     |                    | Jurafsky & Martin [10][15]                 |                    |
-| 2024-03-26 | Tu. | Retrieval augmented generation               | [Problem Set 2: D] | Jurafsky & Martin [14][17]                 |                    |
+| 2024-03-26 | Tu. | Retrieval augmented generation               | [Problem Set 2: P] | Jurafsky & Martin [14][17]                 |                    |
 | 2024-03-28 | Th. | Clustering and visualizing embeddings        |                    |                                            |                    |
-| 2024-04-02 | Tu. | Transformer neural network                   | [Problem Set 3: P] | Jurafsky & Martin [10][15]                 |                    |
+| 2024-04-02 | Tu. | Transformer neural network                   | [Problem Set 2: D] | Jurafsky & Martin [10][15]                 |                    |
 | 2024-04-04 | Th. | Attention mechanism                          |                    | Jurafsky & Martin [10][15]                 |                    |
-| 2024-04-09 | Tu. | Fine-tuning pretrained models                | [Problem Set 3: D] | Jurafsky & Martin [11][16], Howard         |                    |
+| 2024-04-09 | Tu. | Fine-tuning pretrained models                | [Problem Set 3: P] | Jurafsky & Martin [11][16], Howard         |                    |
 | 2024-04-11 | Th. | Fine-tuning pretrained models                |                    | Jurafsky & Martin [11][16], Howard         |                    |
-| 2024-04-16 | Tu. | Quantifying sentiment as a feature           | [Problem Set 4: P] |                                            |                    |
+| 2024-04-16 | Tu. | Quantifying sentiment as a feature           | [Problem Set 3: D] |                                            |                    |
 | 2024-04-18 | Th. | Quantifying Named Entities                   |                    |                                            |                    |
-| 2024-04-23 | Tu. | LLMs and knowledge graphs                    | [Problem Set 4: D] |                                            |                    |
+| 2024-04-23 | Tu. | LLMs and knowledge graphs                    | [Problem Set 4: P] |                                            |                    |
 | 2024-04-25 | Th. | LLMs and causal reasoning                    |                    |                                            |                    |
-| 2024-04-30 | Tu. | Debugging NLP models, ethics, data           |                    |                                            |                    |
+| 2024-04-30 | Tu. | Debugging NLP models, ethics, data           | [Problem Set 4: D]                   |                                            |                    |
 | 2024-05-02 | Th. | Open discussion & project highlights         |                    |                                            |                    |
 | 2024-05-07 | Tu. |                                              |                    |                                            | Final exam periods |
 | 2024-05-09 | Th. |                                              |                    |                                            | Final exam periods |
