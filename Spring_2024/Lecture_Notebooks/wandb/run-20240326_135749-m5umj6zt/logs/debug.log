@@ -1,0 +1,61 @@
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Configure stats pid to 1598279
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Loading settings from /home/james/.config/wandb/settings
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Loading settings from /media/james/Projects/GitHub/DATA_340_NLP/Spring_2024/Lecture_Notebooks/wandb/settings
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_init.py:_log_setup():528] Logging user logs to /media/james/Projects/GitHub/DATA_340_NLP/Spring_2024/Lecture_Notebooks/wandb/run-20240326_135749-m5umj6zt/logs/debug.log
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_init.py:_log_setup():529] Logging internal logs to /media/james/Projects/GitHub/DATA_340_NLP/Spring_2024/Lecture_Notebooks/wandb/run-20240326_135749-m5umj6zt/logs/debug-internal.log
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_init.py:init():568] calling init triggers
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'batch_size': 128, 'epochs': 10}
+2024-03-26 13:57:49,021 INFO    MainThread:1598279 [wandb_init.py:init():593] re-initializing run, found existing run on stack: hid9tzkc
+2024-03-26 13:57:49,022 INFO    MainThread:1598279 [wandb_run.py:_finish():1934] finishing run tucker_labs/mnist-classification/hid9tzkc
+2024-03-26 13:57:49,078 INFO    MainThread:1598279 [jupyter.py:save_history():445] not saving jupyter history
+2024-03-26 13:57:49,078 INFO    MainThread:1598279 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-03-26 13:57:49,079 INFO    MainThread:1598279 [wandb_init.py:_jupyter_teardown():456] cleaning up jupyter logic
+2024-03-26 13:57:49,079 INFO    MainThread:1598279 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2024-03-26 13:57:49,079 INFO    MainThread:1598279 [wandb_run.py:_restore():2151] restore
+2024-03-26 13:57:49,079 INFO    MainThread:1598279 [wandb_run.py:_restore():2157] restore done
+2024-03-26 13:57:51,248 INFO    MainThread:1598279 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-03-26 13:57:51,249 INFO    MainThread:1598279 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-03-26 13:57:51,250 INFO    MainThread:1598279 [wandb_run.py:_footer_sync_info():3558] logging synced files
+2024-03-26 13:57:51,373 INFO    MainThread:1598279 [wandb_init.py:init():618] starting backend
+2024-03-26 13:57:51,373 INFO    MainThread:1598279 [wandb_init.py:init():622] setting up manager
+2024-03-26 13:57:51,374 INFO    MainThread:1598279 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-03-26 13:57:51,374 INFO    MainThread:1598279 [wandb_init.py:init():628] backend started and connected
+2024-03-26 13:57:51,376 INFO    MainThread:1598279 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2024-03-26 13:57:51,376 INFO    MainThread:1598279 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-03-26 13:57:51,376 INFO    MainThread:1598279 [wandb_init.py:init():720] updated telemetry
+2024-03-26 13:57:51,380 INFO    MainThread:1598279 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-26 13:57:52,504 INFO    MainThread:1598279 [wandb_run.py:_on_init():2220] communicating current version
+2024-03-26 13:57:52,588 INFO    MainThread:1598279 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-26 13:57:52,588 INFO    MainThread:1598279 [wandb_init.py:init():804] starting run threads in backend
+2024-03-26 13:57:52,613 INFO    MainThread:1598279 [wandb_run.py:_console_start():2199] atexit reg
+2024-03-26 13:57:52,613 INFO    MainThread:1598279 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2024-03-26 13:57:52,613 INFO    MainThread:1598279 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2024-03-26 13:57:52,613 INFO    MainThread:1598279 [wandb_run.py:_redirect():2144] Redirects installed.
+2024-03-26 13:57:52,614 INFO    MainThread:1598279 [wandb_init.py:init():845] run started, returning control to user process
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Configure stats pid to 1598279
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Loading settings from /home/james/.config/wandb/settings
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Loading settings from /media/james/Projects/GitHub/DATA_340_NLP/Spring_2024/Lecture_Notebooks/wandb/settings
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_init.py:_log_setup():528] Logging user logs to /media/james/Projects/GitHub/DATA_340_NLP/Spring_2024/Lecture_Notebooks/wandb/run-20240326_140204-28i8iyya/logs/debug.log
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_init.py:_log_setup():529] Logging internal logs to /media/james/Projects/GitHub/DATA_340_NLP/Spring_2024/Lecture_Notebooks/wandb/run-20240326_140204-28i8iyya/logs/debug-internal.log
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_init.py:_jupyter_setup():474] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7622141b3580>
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_init.py:init():568] calling init triggers
+2024-03-26 14:02:04,594 INFO    MainThread:1598279 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'batch_size': 128, 'epochs': 10}
+2024-03-26 14:02:04,595 INFO    MainThread:1598279 [wandb_init.py:init():593] re-initializing run, found existing run on stack: m5umj6zt
+2024-03-26 14:02:04,595 INFO    MainThread:1598279 [wandb_run.py:_finish():1934] finishing run tucker_labs/mnist-classification/m5umj6zt
+2024-03-26 14:02:04,595 INFO    MainThread:1598279 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2024-03-26 14:02:04,596 INFO    MainThread:1598279 [wandb_run.py:_restore():2151] restore
+2024-03-26 14:02:04,596 INFO    MainThread:1598279 [wandb_run.py:_restore():2157] restore done
+2024-03-26 14:02:07,481 INFO    MainThread:1598279 [wandb_run.py:_footer_history_summary_info():3599] rendering history
+2024-03-26 14:02:07,481 INFO    MainThread:1598279 [wandb_run.py:_footer_history_summary_info():3631] rendering summary
+2024-03-26 14:02:07,482 INFO    MainThread:1598279 [wandb_run.py:_footer_sync_info():3558] logging synced files

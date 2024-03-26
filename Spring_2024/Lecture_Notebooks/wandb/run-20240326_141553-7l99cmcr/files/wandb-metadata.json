@@ -1,0 +1,207 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-03-26T18:15:57.832275",
+    "startedAt": "2024-03-26T18:15:53.084474",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "git@github.com:JamesMTucker/DATA_340_NLP.git",
+        "commit": "d79213191fde5ac0b346604f29c34222d40e88a3"
+    },
+    "email": "j.tucker@mail.utoronto.ca",
+    "root": "/media/james/Projects/GitHub/DATA_340_NLP",
+    "host": "workstation",
+    "username": "james",
+    "executable": "/media/james/Projects/GitHub/DATA_340_NLP/venv/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3994.9294374999995,
+        "min": 400.0,
+        "max": 5881.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 5504.261,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3338.808,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5240.352,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5228.281,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5472.044,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4750.79,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5526.038,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3663.465,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3501.415,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3529.317,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4603.897,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4895.067,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4224.859,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5010.84,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5554.682,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5547.999,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3136.677,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5152.609,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4616.127,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5314.178,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3135.467,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3282.17,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5265.125,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3491.211,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4308.894,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 3904.646,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5252.061,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 4955.088,
+            "min": 400.0,
+            "max": 5881.0
+        },
+        {
+            "current": 5303.329,
+            "min": 400.0,
+            "max": 5881.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1832.2072448730469,
+            "used": 572.7192344665527
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 124.9339485168457
+    }
+}

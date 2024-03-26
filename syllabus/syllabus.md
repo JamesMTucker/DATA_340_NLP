@@ -105,12 +105,12 @@ You get 4 days of late time. This means that if you cannot turn in an assignment
 | 2024-03-14 | Th. | No class                                     |                    |                                            | Spring Break       |
 | 2024-03-19 | Tu. | Recurrent neural networks (RNNs)             |                    | Jurafsky & Martin [9][14]                  |                    |
 | 2024-03-21 | Th. | Distrib. semantics contextual embeddings     |                    | Jurafsky & Martin [10][15]                 |                    |
-| 2024-03-26 | Tu. | Transformer neural networks                  | [Problem Set 2: P] | Jurafsky & Martin [14][17]                 |                    |
-| 2024-03-28 | Th. | Attention mechanism                          |                    |                                            |                    |
-| 2024-04-02 | Tu. | Clustering and visualizing embeddings        | [Problem Set 2: D] | Jurafsky & Martin [10][15]                 |                    |
+| 2024-03-26 | Tu. | Evaluation of Language Models                | [Problem Set 2: P] | Jurafsky & Martin [14][17]                 |                    |
+| 2024-03-28 | Th. | Transformer neural networks                  |                    |                                            |                    |
+| 2024-04-02 | Tu. | Fine-tuning pretrained models                | [Problem Set 2: D] | Jurafsky & Martin [10][15]                 |                    |
 | 2024-04-04 | Th. | Clustering and visualizing embeddings        |                    | Jurafsky & Martin [10][15]                 |                    |
 | 2024-04-09 | Tu. | Retrieval augmented generation               | [Problem Set 3: P] | Jurafsky & Martin [11][16], Howard         |                    |
-| 2024-04-11 | Th. | Fine-tuning pretrained models                |                    | Jurafsky & Martin [11][16], Howard         |                    |
+| 2024-04-11 | Th. | Information Extraction using NLP             |                    | Jurafsky & Martin [11][16], Howard         |                    |
 | 2024-04-16 | Tu. | Quantifying sentiment as a feature           | [Problem Set 3: D] |                                            |                    |
 | 2024-04-18 | Th. | Quantifying Named Entities                   |                    |                                            |                    |
 | 2024-04-23 | Tu. | LLMs and knowledge graphs                    | [Problem Set 4: P] |                                            |                    |
