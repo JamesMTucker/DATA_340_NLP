@@ -1,0 +1,1147 @@
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OSF | Search</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/ember_osf_web/assets/vendor-8ab80ae31a29ef5fe7d2b49ec00f70f6.css" class="notranslate">
+    <link rel="stylesheet" href="/ember_osf_web/assets/ember-osf-web-8bf6baf7f4c9eccaa06f925a61a1c953.css" class="notranslate">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-YE9BMGGWX8&amp;cx=c&amp;_slc=1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NDTC398"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/x-mathjax-config;executed=true">
+      MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true},
+          skipStartupTypeset: true
+      });
+    </script>
+    <script type="text/javascript" async="" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+<meta name="ember-osf-web/config/environment" content="%7B%22modulePrefix%22%3A%22ember-osf-web%22%2C%22cedarConfig%22%3A%7B%22viewerConfig%22%3A%7B%22showHeader%22%3Afalse%2C%22showFooter%22%3Afalse%2C%22expandedSampleTemplateLinks%22%3Afalse%2C%22showSampleTemplateLinks%22%3Afalse%2C%22defaultLanguage%22%3A%22en%22%2C%22showTemplateData%22%3Afalse%2C%22showInstanceData%22%3Afalse%7D%2C%22editorConfig%22%3A%7B%22defaultLanguage%22%3A%22en%22%2C%22expandedSampleTemplateLinks%22%3Atrue%2C%22showTemplateRenderingRepresentation%22%3Afalse%2C%22showMultiInstanceInfo%22%3Afalse%2C%22expandedInstanceDataFull%22%3Afalse%2C%22expandedInstanceDataCore%22%3Afalse%2C%22expandedMultiInstanceInfo%22%3Afalse%2C%22expandedTemplateRenderingRepresentation%22%3Afalse%2C%22expandedTemplateSourceData%22%3Afalse%2C%22collapseStaticComponents%22%3Afalse%2C%22showStaticText%22%3Afalse%2C%22showInstanceDataCore%22%3Afalse%2C%22showHeader%22%3Afalse%2C%22showFooter%22%3Afalse%2C%22terminologyIntegratedSearchUrl%22%3A%22https%3A//terminology.metadatacenter.org/bioportal/integrated-search%22%2C%22showInstanceDataFull%22%3Afalse%2C%22showTemplateSourceData%22%3Afalse%7D%7D%2C%22WATER_BUTLER_ENABLED%22%3Atrue%2C%22plauditWidgetUrl%22%3A%22https%3A//plaudit.pub/embed/endorsements.js%22%2C%22environment%22%3A%22production%22%2C%22lintOnBuild%22%3Afalse%2C%22testsEnabled%22%3Afalse%2C%22sourcemapsEnabled%22%3Atrue%2C%22showDevBanner%22%3Afalse%2C%22rootURL%22%3A%22/%22%2C%22assetsPrefix%22%3A%22/ember_osf_web/%22%2C%22locationType%22%3A%22auto%22%2C%22sentryDSN%22%3A%22https%3A//90af8984628e42799a5ec453ef6d6fc4@sentry2-client.cos.io/7%22%2C%22googleTagManagerId%22%3A%22GTM-NDTC398%22%2C%22sentryOptions%22%3A%7B%22release%22%3A%22a0794fbd70fd0ba467bfb1a93ca72cd1aeb8f314%22%2C%22ignoreErrors%22%3A%5B%22TransitionAborted%22%5D%7D%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-osf-web%22%2C%22version%22%3A%2224.03.0%22%7D%2C%22moment%22%3A%7B%22includeTimezone%22%3A%22all%22%2C%22outputFormat%22%3A%22YYYY-MM-DD%20h%3Amm%20A%20z%22%7D%2C%22metricsAdapters%22%3A%5B%7B%22name%22%3A%22GoogleAnalytics%22%2C%22environments%22%3A%5B%22production%22%5D%2C%22config%22%3A%7B%22id%22%3A%22UA-26813616-1%22%2C%22debug%22%3Afalse%2C%22trace%22%3Afalse%2C%22sendHitTask%22%3Atrue%2C%22setFields%22%3A%7B%22anonymizeIp%22%3Atrue%7D%7D%2C%22dimensions%22%3A%7B%22authenticated%22%3A%22dimension1%22%2C%22resource%22%3A%22dimension2%22%2C%22isPublic%22%3A%22dimension3%22%2C%22isWithdrawn%22%3A%22dimension4%22%2C%22version%22%3A%22dimension5%22%7D%7D%2C%7B%22name%22%3A%22GoogleTagManager%22%2C%22environments%22%3A%5B%22production%22%5D%2C%22config%22%3A%7B%22id%22%3A%22GTM-NDTC398%22%7D%7D%5D%2C%22OSF%22%3A%7B%22apiNamespace%22%3A%22v2%22%2C%22backend%22%3A%22prod%22%2C%22url%22%3A%22https%3A//osf.io/%22%2C%22apiUrl%22%3A%22https%3A//api.osf.io%22%2C%22apiVersion%22%3A%222.20%22%2C%22apiHeaders%22%3A%7B%22Accept%22%3A%22application/vnd.api+json%3B%20version%3D2.20%22%7D%2C%22learnMoreUrl%22%3A%22https%3A//cos.io/our-products/osf/%22%2C%22donateUrl%22%3A%22https%3A//cos.io/donate%22%2C%22renderUrl%22%3A%22https%3A//mfr.osf.io/render%22%2C%22mfrUrl%22%3A%22https%3A//mfr.osf.io/%22%2C%22waterbutlerUrl%22%3A%22https%3A//files.osf.io/%22%2C%22helpUrl%22%3A%22http%3A//help.osf.io%22%2C%22shareBaseUrl%22%3A%22https%3A//share.osf.io/%22%2C%22shareApiUrl%22%3A%22https%3A//share.osf.io/api/v2%22%2C%22shareSearchUrl%22%3A%22https%3A//share.osf.io/api/v2/search/creativeworks/_search%22%2C%22devMode%22%3Afalse%2C%22metricsStartDate%22%3A%222019-01-01%22%2C%22cookieDomain%22%3Anull%2C%22authenticator%22%3A%22authenticator%3Aosf-cookie%22%2C%22cookies%22%3A%7B%22status%22%3A%22osf_status%22%2C%22keenUserId%22%3A%22keenUserId%22%2C%22keenSessionId%22%3A%22keenSessionId%22%2C%22cookieConsent%22%3A%22osf_cookieconsent%22%2C%22newFeaturePopover%22%3A%22metadataFeaturePopover%22%2C%22maintenance%22%3A%22maintenance%22%2C%22csrf%22%3A%22api-csrf%22%2C%22authSession%22%3A%22embosf-auth-session%22%7D%2C%22localStorageKeys%22%3A%7B%22authSession%22%3A%22embosf-auth-session%22%2C%22joinBannerDismissed%22%3A%22slide%22%7D%2C%22casUrl%22%3A%22https%3A//accounts.osf.io%22%2C%22analyticsAttrs%22%3A%7B%22name%22%3A%22data-analytics-name%22%2C%22scope%22%3A%22data-analytics-scope%22%2C%22extra%22%3A%22data-analytics-extra%22%2C%22category%22%3A%22data-analytics-category%22%2C%22action%22%3A%22data-analytics-action%22%7D%2C%22doiUrlPrefix%22%3A%22https%3A//doi.org/%22%2C%22cookieLoginUrl%22%3A%22https%3A//accounts.osf.io/login%22%2C%22oauthUrl%22%3A%22https%3A//accounts.osf.io/oauth2/authorize%22%2C%22isLocal%22%3Afalse%2C%22keenProjectId%22%3A%225797b58fbcb79c2c0fa1a705%22%2C%22orcidClientId%22%3A%22APP-VGLDMYSOHONDWCV8%22%7D%2C%22social%22%3A%7B%22twitter%22%3A%7B%22viaHandle%22%3A%22OSFramework%22%7D%7D%2C%22signUpPolicy%22%3A%7B%22termsLink%22%3A%22https%3A//github.com/CenterForOpenScience/centerforopenscience.org/blob/master/TERMS_OF_USE.md%22%2C%22privacyPolicyLink%22%3A%22https%3A//github.com/CenterForOpenScience/centerforopenscience.org/blob/master/PRIVACY_POLICY.md%22%2C%22cookiesLink%22%3A%22https%3A//github.com/CenterForOpenScience/centerforopenscience.org/blob/master/PRIVACY_POLICY.md%23f-cookies%22%7D%2C%22footerLinks%22%3A%7B%22cos%22%3A%22https%3A//cos.io%22%2C%22statusPage%22%3A%22https%3A//status.cos.io/%22%2C%22apiDocs%22%3A%22https%3A//developer.osf.io/%22%2C%22topGuidelines%22%3A%22http%3A//cos.io/top/%22%2C%22rpp%22%3A%22https%3A//osf.io/ezcuj/wiki/home/%22%2C%22rpcb%22%3A%22https%3A//osf.io/collections/rpcb/discover%22%2C%22twitter%22%3A%22http%3A//twitter.com/OSFramework%22%2C%22facebook%22%3A%22https%3A//www.facebook.com/CenterForOpenScience/%22%2C%22googleGroup%22%3A%22https%3A//groups.google.com/forum/%23%21forum/openscienceframework%22%2C%22github%22%3A%22https%3A//www.github.com/centerforopenscience%22%7D%2C%22support%22%3A%7B%22preregUrl%22%3A%22https%3A//cos.io/prereg/%22%2C%22statusPageUrl%22%3A%22https%3A//status.cos.io%22%2C%22faqPageUrl%22%3A%22https%3A//help.osf.io%22%2C%22supportEmail%22%3A%22support@osf.io%22%2C%22contactEmail%22%3A%22contact@osf.io%22%2C%22consultationUrl%22%3A%22https%3A//cos.io/stats_consulting/%22%2C%22twitterUrl%22%3A%22https%3A//twitter.com/OSFSupport%22%2C%22mailingUrl%22%3A%22https%3A//groups.google.com/forum/%23%21forum/openscienceframework%22%2C%22facebookUrl%22%3A%22https%3A//www.facebook.com/CenterForOpenScience/%22%2C%22githubUrl%22%3A%22https%3A//github.com/centerforopenscience%22%7D%2C%22helpLinks%22%3A%7B%22linkToAProject%22%3A%22https%3A//help.osf.io/hc/en-us/articles/360019930313-Link-to-a-Project%22%7D%2C%22dashboard%22%3A%7B%22popularNode%22%3A%2257tnq%22%2C%22noteworthyNode%22%3A%22z3sg2%22%7D%2C%22featureFlagNames%22%3A%7B%22routes%22%3A%7B%22collections.moderation%22%3A%22collections_moderation%22%2C%22registries.branded%22%3A%22branded_registries%22%2C%22registries.branded.discover%22%3A%22branded_registries%22%2C%22guid-node.index%22%3A%22ember_project_detail_page%22%2C%22guid-node.drafts.index%22%3A%22ember_edit_draft_registration_page%22%2C%22guid-node.drafts.register%22%3A%22ember_edit_draft_registration_page%22%2C%22guid-user.index%22%3A%22ember_user_profile_page%22%2C%22guid-registration.index%22%3A%22ember_old_registration_detail_page%22%2C%22settings%22%3A%22ember_user_settings_page%22%2C%22settings.profile%22%3A%22ember_user_settings_page%22%2C%22settings.profile.education%22%3A%22ember_user_settings_page%22%2C%22settings.profile.employment%22%3A%22ember_user_settings_page%22%2C%22settings.profile.name%22%3A%22ember_user_settings_page%22%2C%22settings.profile.social%22%3A%22ember_user_settings_page%22%2C%22settings.account%22%3A%22ember_user_settings_account_page%22%2C%22settings.tokens%22%3A%22ember_user_settings_tokens_page%22%2C%22settings.tokens.index%22%3A%22ember_user_settings_tokens_page%22%2C%22settings.tokens.create%22%3A%22ember_user_settings_tokens_page%22%2C%22settings.tokens.edit%22%3A%22ember_user_settings_tokens_page%22%2C%22settings.developer-apps%22%3A%22ember_user_settings_apps_page%22%2C%22settings.developer-apps.index%22%3A%22ember_user_settings_apps_page%22%2C%22settings.developer-apps.create%22%3A%22ember_user_settings_apps_page%22%2C%22settings.developer-apps.edit%22%3A%22ember_user_settings_apps_page%22%2C%22register%22%3A%22ember_auth_register%22%2C%22registries.overview%22%3A%22ember_registries_detail_page%22%2C%22registries.overview.index%22%3A%22ember_registries_detail_page%22%2C%22registries.overview.comments%22%3A%22ember_registries_detail_page%22%2C%22registries.overview.contributors%22%3A%22ember_registries_detail_page%22%2C%22registries.overview.children%22%3A%22ember_registries_detail_page%22%2C%22registries.overview.links%22%3A%22ember_registries_detail_page%22%2C%22registries.start%22%3A%22ember_registries_submission_start%22%2C%22registries.drafts%22%3A%22ember_registries_submission_drafts%22%2C%22registries.drafts.index%22%3A%22ember_registries_submission_drafts%22%2C%22registries.drafts.draft.metadata%22%3A%22ember_edit_draft_registration_page%22%2C%22registries.drafts.draft.page%22%3A%22ember_edit_draft_registration_page%22%2C%22registries.drafts.draft.review%22%3A%22ember_edit_draft_registration_page%22%2C%22registries.forms%22%3A%22ember_registries_submission_forms%22%2C%22registries.forms.help%22%3A%22ember_registries_submission_forms%22%2C%22meetings.index%22%3A%22ember_meetings_page%22%2C%22meetings.detail%22%3A%22ember_meeting_detail_page%22%7D%2C%22navigation%22%3A%7B%22institutions%22%3A%22institutions_nav_bar%22%7D%2C%22storageI18n%22%3A%22storage_i18n%22%2C%22enableInactiveSchemas%22%3A%22enable_inactive_schemas%22%2C%22verifyEmailModals%22%3A%22ember_verify_email_modals%22%2C%22ABTesting%22%3A%7B%22homePageHeroTextVersionB%22%3A%22ab_testing_home_page_hero_text_version_b%22%7D%2C%22registrationFilesPage%22%3A%22ember_registration_files_page%22%2C%22egapAdmins%22%3A%22egap_admins%22%7D%2C%22gReCaptcha%22%3A%7B%22siteKey%22%3A%226Ld2hikTAAAAAAhExltkBtTplSAJCSwAjpvMnOhc%22%2C%22jsUrl%22%3A%22https%3A//recaptcha.net/recaptcha/api.js%3Frender%3Dexplicit%22%7D%2C%22home%22%3A%7B%22youtubeId%22%3A%222TV21gOzfhw%22%7D%2C%22secondaryNavbarId%22%3A%22__secondaryOSFNavbar__%22%2C%22engines%22%3A%7B%22collections%22%3A%7B%22enabled%22%3Atrue%7D%2C%22registries%22%3A%7B%22enabled%22%3Atrue%7D%2C%22handbook%22%3A%7B%22enabled%22%3Afalse%2C%22docGenerationEnabled%22%3Afalse%7D%7D%2C%22ember-cli-tailwind%22%3A%7B%22shouldIncludeStyleguide%22%3Afalse%7D%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22changeset-validations%22%3A%7B%22rawOutput%22%3Atrue%7D%2C%22mirageScenarios%22%3A%5B%22cedar%22%2C%22collections%22%2C%22dashboard%22%2C%22forks%22%2C%22loggedIn%22%2C%22meetings%22%2C%22preprints%22%2C%22registrations%22%2C%22settings%22%5D%2C%22defaultProvider%22%3A%22osf%22%2C%22pageTitle%22%3A%7B%22prepend%22%3Afalse%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-faker%22%3A%7B%7D%2C%22FB_APP_ID%22%3A%221022273774556662%22%2C%22microfeedback%22%3A%7B%22url%22%3A%22https%3A//microfeedback-osf.herokuapp.com/13209/3%22%2C%22pageParams%22%3A%7B%22QuickFiles%22%3A%7B%22componentID%22%3A%2213836%22%2C%22priorityID%22%3A%2210100%22%7D%7D%7D%7D">
+<meta name="analytics-page/config/environment" content="%7B%22modulePrefix%22%3A%22analytics-page%22%2C%22environment%22%3A%22production%22%7D">
+<meta name="collections/config/environment" content="%7B%22environment%22%3A%22production%22%2C%22hostAppName%22%3A%22collections%22%2C%22modulePrefix%22%3A%22collections%22%2C%22OSF%22%3A%7B%22shareSearchUrl%22%3A%22https%3A//share.osf.io/api/v2/search/creativeworks/_search%22%2C%22url%22%3A%22http%3A//localhost%3A5000/%22%7D%2C%22whiteListedProviders%22%3A%5B%22arXiv%22%2C%22bioRxiv%22%2C%22Cogprints%22%2C%22PeerJ%22%2C%22Research%20Papers%20in%20Economics%22%2C%22Preprints.org%22%5D%2C%22APP%22%3A%7B%7D%7D">
+<meta name="registries/config/environment" content="%7B%22environment%22%3A%22production%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%7D%2C%22hostAppName%22%3A%22registries%22%2C%22modulePrefix%22%3A%22registries%22%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%7D%2C%22shareBaseURL%22%3A%22https%3A//share.osf.io%22%2C%22shareSearchBaseURL%22%3A%22https%3A//share.osf.io/api/v2/search%22%2C%22indexPageRegistrationIds%22%3A%5B%226tsnj%22%2C%22aurjt%22%2C%22e94t8%22%2C%222tpy9%22%2C%222ds52%22%5D%2C%22externalRegistries%22%3A%5B%7B%22https%22%3Atrue%2C%22name%22%3A%22ClinicalTrials.gov%22%2C%22urlRegex%22%3A%22%5Ehttps%3F%3A//.*clinicaltrials%5C%5C.gov.*%24%22%7D%2C%7B%22https%22%3Atrue%2C%22name%22%3A%22Research%20Registry%22%2C%22urlRegex%22%3A%22%5Ehttps%3F%3A//.*researchregistry%5C%5C.com.*%24%22%7D%5D%2C%22externalLinks%22%3A%7B%22help%22%3A%22https%3A//help.osf.io%22%2C%22donate%22%3A%22https%3A//cos.io/donate%22%7D%2C%22defaultProviderId%22%3A%22osf%22%2C%22indexPageRegistrationsQuery%22%3A%226tsnj%20OR%20aurjt%20OR%20e94t8%20OR%202tpy9%20OR%202ds52%22%7D">
+    <meta name="ember-osf-web/config/asset-manifest" content="%7B%22bundles%22%3A%7B%22analytics-page%22%3A%7B%22assets%22%3A%5B%7B%22uri%22%3A%22/ember_osf_web/engines-dist/analytics-page/assets/engine-75602f651c7fef1546e5c0981b8ff839.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/analytics-page/assets/engine-a0be585cad6159bb64f0e5a4544b83de.css%22%2C%22type%22%3A%22css%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/analytics-page/assets/engine-vendor-13043aaa20ad33c843414027d3d17e1f.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/analytics-page/assets/engine-vendor-9fd291a4fa2be50d9dbc2b116bfd16bb.css%22%2C%22type%22%3A%22css%22%7D%5D%7D%2C%22collections%22%3A%7B%22assets%22%3A%5B%7B%22uri%22%3A%22/ember_osf_web/engines-dist/collections/assets/engine-8b40c8c8eb69ea335e52514c2b4964d0.css%22%2C%22type%22%3A%22css%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/collections/assets/engine-d8af6d21f54618dfc6b5b3d74d772749.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/collections/assets/engine-vendor-b14cd2386d26ce64743d17e6d9bad28a.js%22%2C%22type%22%3A%22js%22%7D%5D%7D%2C%22registries%22%3A%7B%22assets%22%3A%5B%7B%22uri%22%3A%22/ember_osf_web/engines-dist/registries/assets/engine-79bfc255474c68818d21bfcf3141eba3.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/registries/assets/engine-cd0e24eb741a2ef1ced5a87f49e7ce3c.css%22%2C%22type%22%3A%22css%22%7D%2C%7B%22uri%22%3A%22/ember_osf_web/engines-dist/registries/assets/engine-vendor-590584adfdb8514cf7a1fc077248b42c.js%22%2C%22type%22%3A%22js%22%7D%5D%7D%7D%7D">
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style id="inert-style">
+[inert] {
+  pointer-events: none;
+  cursor: default;
+}
+
+[inert], [inert] * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>  <meta name="ember-cli-head-start" content=""><!----><meta name="ember-cli-head-end" content="">
+</head>
+  <body class="ember-application"><div id="MathJax_Message" style="display: none;"></div>
+    <script>
+var configJson = document.head.querySelector("meta[name$='/config/environment']").content;
+var configObject = JSON.parse(unescape(configJson));
+if (configObject.googleTagManagerId) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+     gtag('config', configObject.googleTagManagerId);
+}
+                </script>
+    
+    <noscript>
+      <p>
+        For full functionality of this site it is necessary to enable JavaScript.
+        Here are
+        <a href='https://www.enable-javascript.com/' target='_blank'> instructions for enabling JavaScript in your web browser</a>.
+      </p>
+    </noscript>
+    <script> window.prerenderReady = false; </script>
+    
+
+    <script src="/ember_osf_web/assets/vendor-191095f7a4687cc6a49b4a7cd3f0a6e8.js"></script>
+<script src="/ember_osf_web/assets/chunk.132.2f6c4e22b5144a7f5124.js"></script>
+<script src="/ember_osf_web/assets/chunk.143.bfc07b08f634f456536b.js"></script>
+    <script src="/ember_osf_web/assets/ember-osf-web-83ecc0a6400a73b1d77304829b0de3a6.js"></script>
+
+    <script src="https://cdn.ravenjs.com/3.22.1/ember/raven.min.js"></script>
+<script>
+    var encodedConfig = document.head.querySelector("meta[name$='/config/environment']").content;
+    var config = JSON.parse(unescape(encodedConfig));
+    if (config.sentryDSN) {
+        Raven.config(config.sentryDSN, config.sentryOptions || {}).install();
+    }
+</script>
+    <div id="ember-basic-dropdown-wormhole"></div>
+  
+
+<!---->
+
+<div class="_Application_avrgnx" data-test-application="">
+            <div id="ember4" class="ember-view">        <div id="ember5" class="ember-view"><div data-analytics-scope="Nav bar" class="osf-nav-wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="navbarScope">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="  _OsfLink_1diw4c navbar-brand" href="/" target="_self" rel="noopener noreferrer" data-test-nav-home-link="" data-analytics-name="Home" aria-label="Go home">
+                    <span class="osf-navbar-logo">
+                        <img src="/ember_osf_web/assets/images/global/cos-white2-81217c82c094af6555e80a4015f23163.png" alt="OSF logo">
+                    </span>
+                </a>
+                <div class="service-name">
+                    <a class="  _OsfLink_1diw4c" href="/" target="_self" rel="noopener noreferrer" data-analytics-name="HOME">
+                        <span class="hidden-xs"> OSF </span>
+                        <span class="current-service"><strong>HOME</strong></span>
+                    </a>
+                </div>
+
+                <div id="ember8" class="ember-view primary-nav" data-analytics-scope="Primary dropdown">    
+    
+                      <div id="ember10" class="ember-view ember-basic-dropdown-trigger
+      
+      
+      
+       btn-link _PrimaryNav__toggle_xzf9qv" tabindex="0" data-test-service-dropdown="" aria-label="Other OSF views" role="button" data-ebd-id="ember9-trigger" aria-owns="ember-basic-dropdown-content-ember9" aria-controls="ember-basic-dropdown-content-ember9" aria-expanded="false" aria-disabled="false">
+    
+                        <svg class="svg-inline--fa fa-caret-down fa-2x" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+                    
+  </div>
+
+                      <div id="ember-basic-dropdown-content-ember9" class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
+
+                
+
+
+</div>
+
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq navbar-toggle collapsed _NavbarToggleXS_xzf9qv" data-analytics-name="Toggle secondary nav xs" aria-label="Toggle secondary navigation" type="button">
+    
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                
+</button>
+
+            </div>
+
+                <div class="navbar-collapse navbar-right _secondary-navigation_xzf9qv">
+                    <ul class="nav navbar-nav _links_xzf9qv">
+                                            <li id="ember12" class="ember-view" data-test-nav-my-projects-link=""><!----></li>
+        <li data-test-nav-search-link="">
+            <a class=" active _OsfLink_1diw4c" href="/search" target="_self" rel="noopener noreferrer" data-analytics-name="Search" data-test-nav-search-link="">
+                Search
+            </a>
+        </li>
+        <li id="ember14" class="ember-view" data-test-nav-support-link="">        <a href="https://help.osf.io" id="ember15" class="ember-view" data-analytics-name="Support">
+                Support
+        
+</a>
+</li>
+        <li id="ember16" class="navbar-donate-button ember-view" data-test-nav-donate-link="">        <a href="https://cos.io/donate" id="ember17" class="ember-view" data-analytics-name="Donate">
+                Donate
+        
+</a>
+</li>
+
+                    </ul>
+                        <span class="sign-in">
+        <div class="button-container">
+            <a class="  _OsfLink_1diw4c btn btn-success btn-top-signup m-l-sm m-r-xs" href="/register?campaign=&amp;next=https%3A%2F%2Fosf.io%2Fsearch%3Fq%3D%26resourceType%3DPreprint%26subject%3Dbepress%257CSocial%2520and%2520Behavioral%2520Sciences%257CLinguistics" target="_self" rel="noopener noreferrer" data-test-ad-sign-up-button="" data-analytics-name="SignUp " role="button">
+                Sign Up
+            </a>
+            <button class="_Button_6kisxq _SmallButton_6kisxq _SecondaryButton_6kisxq btn-top-login" data-test-sign-in-button="" data-analytics-name="SignIn" role="button" type="button">
+    
+                Sign In
+            
+</button>
+
+        </div>
+    </span>
+
+                </div>
+        </div>
+    </nav>
+</div>
+<div class="_NavBarBuffer_xzf9qv"></div>
+</div>
+
+<div id="__secondaryOSFNavbar__"></div>
+<div id="ember20" class="_MaintenanceBanner_ojdyq4 ember-view"><!----></div>
+<div id="ember21" class="_StatusBanner_1vnszi ember-view"><!----></div>
+<div class="container _TosConsentBanner_14cv5w" data-test-tos-consent-alert="" data-analytics-scope="ToS consent banner">
+    <!---->
+</div>
+
+<div id="ember23" class="ember-view"><!---->
+</div>
+</div>
+        <div id="ember24" class="ember-view">
+    <!---->
+    <!---->
+    <!---->
+
+<!---->
+</div>
+    <div class="Application__page _Application__page_avrgnx">
+        
+
+
+    <div id="ember27" class="ember-view _heading-wrapper_fvrbco" data-test-heading-wrapper="" data-analytics-scope="Search page heading">
+            <label class="_heading-label_fvrbco" data-test-search-header="" for="search-box-0018106843796228622">
+                <h1>Search OSF</h1>
+            </label>
+                <span class="_search-input-wrapper_fvrbco" id="search-input-wrapper-06801486114190316">
+            <input placeholder="Enter search term(s) here" id="search-box-0018106843796228622" class="ember-text-field ember-view _search-input_fvrbco" data-test-search-input="" data-analytics-name="Search input" type="search">
+            <div class="_search-button-wrapper_fvrbco">
+                <button class="_Button_6kisxq _LargeButton_6kisxq _PrimaryButton_6kisxq _search-button_fvrbco" data-test-search-submit="" data-analytics-name="Search button" aria-label="Search" type="button">
+    
+                    <svg class="svg-inline--fa fa-search" data-prefix="fas" data-icon="search" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+    </svg>
+                
+</button>
+
+                <button class="_Button_6kisxq _LargeButton_6kisxq _PrimaryButton_6kisxq _help-button_fvrbco" data-test-start-help="" data-analytics-name="Search help button" aria-label="Help tutorial" type="button">
+    
+                    <svg class="svg-inline--fa fa-question" data-prefix="fas" data-icon="question" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path fill="currentColor" d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+        </span>
+<!---->    </div>
+    <!---->
+    <!---->
+
+
+    <!---->
+    <!---->
+    <!---->
+
+<div class="_search-page_fvrbco">
+    <div id="ember30" class="media-desktop _Container_uhlelr ember-view _GutterContainer_cj6za6">
+    
+        
+    <!---->
+    <div data-gutter-closed="true" data-gutter-mode="column" id="ember31" class="_LeftGutter_cj6za6 ember-view _left-panel_fvrbco" data-analytics-scope="Search page left panel">
+    
+            <p class="_search-count_fvrbco" data-test-left-search-count="">
+                10,000+ results
+            </p>
+        <h2 class="_left-panel-header_fvrbco" id="left-panel-header-08469818171270729">Refine</h2>
+<!----><!---->                    <div class="_facet-wrapper_13c61c" data-analytics-scope="Search page filter facet wrapper" data-test-filter-facet="" id="first-filter-08763499540100168">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_13c61c" data-analytics-name="Filter facet toggle Creator" data-test-filter-facet-toggle="Creator" aria-controls="creator-025885951174485533" title="Creator" type="button">
+    
+                <span>Creator</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+                <ul class="_facet-list_13c61c _collapsed_13c61c" id="creator-025885951174485533">
+<!----><!---->                </ul>
+                        
+                <!---->
+                <!---->
+                <!---->
+            
+<!---->
+    </div>
+
+                    <div class="_facet-wrapper_13c61c" data-analytics-scope="Search page filter facet wrapper" data-test-filter-facet="">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_13c61c" data-analytics-name="Filter facet toggle Date created" data-test-filter-facet-toggle="Date created" aria-controls="dateCreated-08556739363327552" title="Date created" type="button">
+    
+                <span>Date created</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+                <ul class="_facet-list_13c61c _collapsed_13c61c" id="dateCreated-08556739363327552">
+<!----><!---->                </ul>
+                        
+                <!---->
+                <!---->
+                <!---->
+            
+<!---->
+    </div>
+
+                    <div class="_facet-wrapper_13c61c" data-analytics-scope="Search page filter facet wrapper" data-test-filter-facet="">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_13c61c" data-analytics-name="Filter facet toggle Subject" data-test-filter-facet-toggle="Subject" aria-controls="subject-00903876490956892" title="Subject" type="button">
+    
+                <span>Subject</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+                <ul class="_facet-list_13c61c _collapsed_13c61c" id="subject-00903876490956892">
+<!----><!---->                </ul>
+                        
+                <!---->
+                <!---->
+                <!---->
+            
+<!---->
+    </div>
+
+                    <div class="_facet-wrapper_13c61c" data-analytics-scope="Search page filter facet wrapper" data-test-filter-facet="">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_13c61c" data-analytics-name="Filter facet toggle License" data-test-filter-facet-toggle="License" aria-controls="rights-08424679750992616" title="License" type="button">
+    
+                <span>License</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+                <ul class="_facet-list_13c61c _collapsed_13c61c" id="rights-08424679750992616">
+<!----><!---->                </ul>
+                        
+                <!---->
+                <!---->
+                <!---->
+            
+<!---->
+    </div>
+
+                    <div class="_facet-wrapper_13c61c" data-analytics-scope="Search page filter facet wrapper" data-test-filter-facet="">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_13c61c" data-analytics-name="Filter facet toggle Provider" data-test-filter-facet-toggle="Provider" aria-controls="publisher-07946608607549877" title="Provider" type="button">
+    
+                <span>Provider</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+                <ul class="_facet-list_13c61c _collapsed_13c61c" id="publisher-07946608607549877">
+<!----><!---->                </ul>
+                        
+                <!---->
+                <!---->
+                <!---->
+            
+<!---->
+    </div>
+
+                    <div class="_facet-wrapper_13c61c" data-analytics-scope="Search page filter facet wrapper" data-test-filter-facet="">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_13c61c" data-analytics-name="Filter facet toggle Institution" data-test-filter-facet-toggle="Institution" aria-controls="creator.affiliation-001869810747387901" title="Institution" type="button">
+    
+                <span>Institution</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+                <ul class="_facet-list_13c61c _collapsed_13c61c" id="creator.affiliation-001869810747387901">
+<!----><!---->                </ul>
+                        
+                <!---->
+                <!---->
+                <!---->
+            
+<!---->
+    </div>
+
+                    <div class="_facet-wrapper_1k1ltd" data-analytics-scope="Search page boolean filters wrapper" data-test-boolean-filter-list="">
+            <button class="_Button_6kisxq _FakeLink_6kisxq _facet-expand-button_1k1ltd" data-analytics-name="Toggle boolean filters" data-test-filter-boolean-filters="" aria-controls="boolean-filters-06501646534722301" type="button">
+    
+                <span>Has related resource</span>
+                <svg class="svg-inline--fa fa-caret-down" data-prefix="fas" data-icon="caret-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path>
+    </svg>
+            
+</button>
+
+            <ul class="_facet-list_1k1ltd _collapsed_1k1ltd" id="boolean-filters-06501646534722301">
+                    <li class="_facet-value_1k1ltd" data-test-filter-boolean-value="Supplemental materials">
+                        <button class="_Button_6kisxq _FakeLink_6kisxq _facet-link_1k1ltd" data-analytics-name="Toggle boolean value Supplemental materials" title="Supplemental materials" type="button">
+    
+                            Supplemental materials
+                        
+</button>
+
+                        <span class="_facet-count_1k1ltd">
+                            56488
+                        </span>
+                    </li>
+                    <li class="_facet-value_1k1ltd" data-test-filter-boolean-value="Data">
+                        <button class="_Button_6kisxq _FakeLink_6kisxq _facet-link_1k1ltd" data-analytics-name="Toggle boolean value Data" title="Data" type="button">
+    
+                            Data
+                        
+</button>
+
+                        <span class="_facet-count_1k1ltd">
+                            23175
+                        </span>
+                    </li>
+                    <li class="_facet-value_1k1ltd" data-test-filter-boolean-value="Preregistered analysis plan">
+                        <button class="_Button_6kisxq _FakeLink_6kisxq _facet-link_1k1ltd" data-analytics-name="Toggle boolean value Preregistered analysis plan" title="Preregistered analysis plan" type="button">
+    
+                            Preregistered analysis plan
+                        
+</button>
+
+                        <span class="_facet-count_1k1ltd">
+                            7412
+                        </span>
+                    </li>
+                    <li class="_facet-value_1k1ltd" data-test-filter-boolean-value="Preregistered study design">
+                        <button class="_Button_6kisxq _FakeLink_6kisxq _facet-link_1k1ltd" data-analytics-name="Toggle boolean value Preregistered study design" title="Preregistered study design" type="button">
+    
+                            Preregistered study design
+                        
+</button>
+
+                        <span class="_facet-count_1k1ltd">
+                            7301
+                        </span>
+                    </li>
+            </ul>
+    </div>
+
+<!---->    
+
+</div>
+
+    <div id="ember33" class="_GutterBody_cj6za6 ember-view _Main_1830zi _search-main_fvrbco" data-analytics-scope="Search page main">
+    
+            <div class="_topbar_fvrbco _flex-column-tablet_fvrbco" data-test-topbar-wrapper="">
+                    <nav class="_object-type-nav_fvrbco" data-test-topbar-object-type-nav="">
+                        <ul>
+                                <li>
+                                    <a href="/search?q=" id="first-topbar-object-type-link-06104223859089695" class="ember-view _object-type-filter-link_fvrbco" data-analytics-name="Object type filter=All" data-test-topbar-object-type-link="All">
+                                        All
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/search?q=&amp;resourceType=Project%2CProjectComponent" class="ember-view _object-type-filter-link_fvrbco" data-analytics-name="Object type filter=Projects" data-test-topbar-object-type-link="Projects">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/search?q=&amp;resourceType=Registration%2CRegistrationComponent" class="ember-view _object-type-filter-link_fvrbco" data-analytics-name="Object type filter=Registrations" data-test-topbar-object-type-link="Registrations">
+                                        Registrations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/search?q=&amp;resourceType=Preprint" class="active ember-view _object-type-filter-link_fvrbco" data-analytics-name="Object type filter=Preprints" data-test-topbar-object-type-link="Preprints">
+                                        Preprints
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/search?q=&amp;resourceType=File" class="ember-view _object-type-filter-link_fvrbco" data-analytics-name="Object type filter=Files" data-test-topbar-object-type-link="Files">
+                                        Files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/search?q=&amp;resourceType=Agent" class="ember-view _object-type-filter-link_fvrbco" data-analytics-name="Object type filter=Users" data-test-topbar-object-type-link="Users">
+                                        Users
+                                    </a>
+                                </li>
+                        </ul>
+                    </nav>
+                <div class="_sort-dropdown_fvrbco" data-test-topbar-sort-dropdown="">
+                        
+      <div class="ember-view ember-basic-dropdown-trigger
+      
+      
+      
+       ember-power-select-trigger " tabindex="0" aria-controls="ember-basic-dropdown-content-ember40" aria-haspopup="listbox" aria-owns="ember-basic-dropdown-content-ember40" role="button" data-ebd-id="ember40-trigger" aria-expanded="false" aria-disabled="false">
+    
+            <span class="ember-power-select-selected-item">
+          
+                        <p>Relevance</p>
+                    
+        </span>
+<!----><span class="ember-power-select-status-icon"></span>
+
+    
+  </div>
+
+      <div id="ember-basic-dropdown-content-ember40" class="ember-basic-dropdown-content-placeholder" style="display: none;"></div>
+
+
+
+
+                </div>
+            </div>
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="05671028138997509" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/bj2yq" target="_blank" rel="noopener noreferrer"> Agreement attraction in native and non-native speakers of German </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/vg3ew" target="_blank" rel="noopener noreferrer"> Claudia Felser </a>
+                     and 
+                            <a href="https://osf.io/5eg5c" target="_blank" rel="noopener noreferrer"> Sol Lago </a>
+                    
+
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2017-11-14</span>
+                        <span>Date modified: 2018-12-14</span>
+            </div>
+<!----><!---->        </div>
+        <div id="05671028138997509" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember67" class="cp-Panel-body ember-view">
+  <div id="ember69" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="004344191973279443" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/vghct" target="_blank" rel="noopener noreferrer"> The Edinburgh cognitive and behavioral amyotrophic lateral sclerosis screen (ECAS): sensitivity in differentiating between ALS and Alzheimer’s disease in a Greek population </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/gns74" target="_blank" rel="noopener noreferrer"> Christina Demenega </a>
+                    , <!---->
+                            <a href="https://osf.io/62fn4" target="_blank" rel="noopener noreferrer"> Sharon Abrahams </a>
+                    , 
+                            <a href="https://osf.io/xufzb" target="_blank" rel="noopener noreferrer"> Foteini Christidi </a>
+                    , 
+                            <a href="https://osf.io/2q8zr" target="_blank" rel="noopener noreferrer"> Mihail Rentzos </a>
+                    , 
+                            <a href="https://osf.io/jpw59" target="_blank" rel="noopener noreferrer"> Panagiotis Kourtesis </a>
+                    , and 
+                            2 more
+                                            
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2021-01-14</span>
+                        <span>Date modified: 2023-09-05</span>
+            </div>
+<!----><!---->        </div>
+        <div id="004344191973279443" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember73" class="cp-Panel-body ember-view">
+  <div id="ember75" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="09055199017217317" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/kgzvj" target="_blank" rel="noopener noreferrer"> Applying Many-Facet Rasch Modeling in the Assessment of Creativity </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/bce5i" target="_blank" rel="noopener noreferrer"> Mathias Benedek </a>
+                    , <!---->
+                            <a href="https://osf.io/htp7e" target="_blank" rel="noopener noreferrer"> Emanuel Jauk </a>
+                    , 
+                            <a href="https://osf.io/ykup5" target="_blank" rel="noopener noreferrer"> Paul Silvia </a>
+                    , and 
+                            <a href="https://osf.io/2n3h7" target="_blank" rel="noopener noreferrer"> Ricardo Primi </a>
+                    
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2018-05-29</span>
+                        <span>Date modified: 2018-12-14</span>
+            </div>
+<!----><!---->        </div>
+        <div id="09055199017217317" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember79" class="cp-Panel-body ember-view">
+  <div id="ember81" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="00739041558193998" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/qczb7" target="_blank" rel="noopener noreferrer"> Understanding ‘How’: Two kinds of mechanistic explanations underlie known explanation preferences </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/2hbt9" target="_blank" rel="noopener noreferrer"> Sami Ryan Yousif </a>
+                    , <!---->
+                            <a href="https://osf.io/c4vkr" target="_blank" rel="noopener noreferrer"> Sehrang Joo </a>
+                    , and 
+                            <a href="https://osf.io/edzjk" target="_blank" rel="noopener noreferrer"> Frank Keil </a>
+                    
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2021-04-21</span>
+                        <span>Date modified: 2021-04-21</span>
+            </div>
+<!----><!---->        </div>
+        <div id="00739041558193998" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember85" class="cp-Panel-body ember-view">
+  <div id="ember87" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="06242682239593995" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/vq7bd" target="_blank" rel="noopener noreferrer"> Differential expression of 6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 1 in cancers of the breast. </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/cds47" target="_blank" rel="noopener noreferrer"> Shahan Mamoor </a>
+                    
+
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2021-11-24</span>
+                        <span>Date modified: 2021-11-24</span>
+            </div>
+<!----><!---->        </div>
+        <div id="06242682239593995" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember91" class="cp-Panel-body ember-view">
+  <div id="ember93" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="06370284772408594" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/dnkg2" target="_blank" rel="noopener noreferrer"> Natural Infant-Directed Speech Facilitates Neural Tracking of Prosody </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/75seq" target="_blank" rel="noopener noreferrer"> Claudia Männel </a>
+                    , <!---->
+                            <a href="https://osf.io/yq8mj" target="_blank" rel="noopener noreferrer"> Christine Michel </a>
+                    , 
+                            <a href="https://osf.io/95n7w" target="_blank" rel="noopener noreferrer"> Lars Meyer </a>
+                    , 
+                            <a href="https://osf.io/25kp4" target="_blank" rel="noopener noreferrer"> Stefanie Hoehl </a>
+                    , and 
+                            <a href="https://osf.io/as8wm" target="_blank" rel="noopener noreferrer"> Katharina Menn </a>
+                    
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2021-12-20</span>
+                        <span>Date modified: 2021-12-21</span>
+            </div>
+<!----><!---->        </div>
+        <div id="06370284772408594" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember97" class="cp-Panel-body ember-view">
+  <div id="ember99" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="07144236015741385" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/ryf3g" target="_blank" rel="noopener noreferrer"> Analisis dan Perancangan Aplikasi Construction Progress Calculation (CPC) for Piping Discipline Pada PT. IKPT </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/vchgm" target="_blank" rel="noopener noreferrer"> Siyono </a>
+                     and 
+                            <a href="https://osf.io/mpag6" target="_blank" rel="noopener noreferrer"> Andi Susilo </a>
+                    
+
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2018-05-13</span>
+                        <span>Date modified: 2018-12-14</span>
+            </div>
+<!----><!---->        </div>
+        <div id="07144236015741385" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember103" class="cp-Panel-body ember-view">
+  <div id="ember105" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="006939065652050802" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/auyeh" target="_blank" rel="noopener noreferrer"> ANOTASI BIBLIOGRAFI PERAN GURU DALAM PEMANFAATAN MEDIA PEMBELAJARAN BERBASIS TEKNOLOGI SEBAGAI BENTUK IMPLEMENTASI KURIKULUM 2013 TERHADAP PEMBELAJARAN SEJARAH </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/q7tj4" target="_blank" rel="noopener noreferrer"> raihani sawitri  </a>
+                    
+
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2021-01-14</span>
+                        <span>Date modified: 2021-01-14</span>
+            </div>
+<!----><!---->        </div>
+        <div id="006939065652050802" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember109" class="cp-Panel-body ember-view">
+  <div id="ember111" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="08234316659724668" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/xmnpw" target="_blank" rel="noopener noreferrer"> NEGARA MAJU, PERKEMBANGAN IPTEK PESAT TETAPI MEMBAWA MALAPETAKA DILIHAT DARI SUDUT PANDANG TEORI NIETZSCHE DAN ARISTOTELES </a>
+<!----><!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/5g2zr" target="_blank" rel="noopener noreferrer"> Jois Siane Kesia </a>
+                    
+
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2019-07-04</span>
+                        <span>Date modified: 2019-07-04</span>
+            </div>
+<!----><!---->        </div>
+        <div id="08234316659724668" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember115" class="cp-Panel-body ember-view">
+  <div id="ember117" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+                <div class="_result-card-container_qeqpmj" data-test-search-result-card="">
+        <div class="_primary-metadata-container_qeqpmj">
+            <div class="_header_qeqpmj">
+                <div class="_type-label_qeqpmj">
+                    Preprint
+                </div>
+                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" aria-label="Show additional metadata" aria-controls="015132878986132847" type="button">
+    
+                        <svg class="svg-inline--fa fa-angle-down" data-prefix="fas" data-icon="angle-down" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+    </svg>
+                
+</button>
+
+            </div>
+            <h4>
+                <a data-test-search-result-card-title="" href="https://osf.io/b3uxn" target="_blank" rel="noopener noreferrer"> A fault slip model to study earthquakes due to pore pressure perturbations </a>
+                    <span class="_withdrawn-label_qeqpmj">Withdrawn</span>
+<!---->            </h4>
+            
+                <div class="">
+                    
+    
+                            <a href="https://osf.io/rqnu2" target="_blank" rel="noopener noreferrer"> Saumik Dana </a>
+                     and 
+                            <a href="https://osf.io/tdv2j" target="_blank" rel="noopener noreferrer"> Birendra Jha </a>
+                    
+
+
+                </div>
+<!----><!---->            <div class="_date-fields_qeqpmj">
+                        <span>Date created: 2021-04-04</span>
+                        <span>Date modified: 2021-04-13</span>
+            </div>
+<!----><!---->        </div>
+        <div id="015132878986132847" class="cp-Panel cp-is-closed ember-view _cp-panel_qeqpmj">
+            <div id="ember121" class="cp-Panel-body ember-view">
+  <div id="ember123" class="liquid-container ember-view">
+    <!---->
+  </div>
+
+</div>
+        
+</div>
+</div>
+
+        <div class="_pagination-buttons_fvrbco">
+<!----><!---->                <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" type="button">
+    
+                    Next
+                
+</button>
+
+        </div>
+    
+
+</div>
+
+
+    
+
+</div>
+
+</div>
+
+<!----><!----><!---->
+
+    </div>
+    <div id="ember43" class="ember-view"><footer class="_footer_6dyfei" data-analytics-scope="Footer">
+    <div class="container _row_6dyfei">
+        <p>
+            <span>
+                Copyright © 2011-2024
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://cos.io" target="_self" rel="noopener noreferrer" data-analytics-name="cos_io">
+                Center for Open Science
+            </a>
+            <span>
+                 | 
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://github.com/CenterForOpenScience/centerforopenscience.org/blob/master/TERMS_OF_USE.md" target="_self" rel="noopener noreferrer" data-analytics-name="terms">
+                Terms&nbsp;of&nbsp;Use
+            </a>
+            <span>
+                 | 
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://github.com/CenterForOpenScience/centerforopenscience.org/blob/master/PRIVACY_POLICY.md" target="_self" rel="noopener noreferrer" data-analytics-name="privacy">
+                Privacy&nbsp;Policy
+            </a>
+            <span>
+                 | 
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://status.cos.io/" target="_self" rel="noopener noreferrer" data-analytics-name="status">
+                Status
+            </a>
+            <span>
+                 | 
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://developer.osf.io/" target="_self" rel="noopener noreferrer" data-analytics-name="api_docs">
+                API
+            </a>
+            <br>
+            <a class="  _OsfLink_1diw4c" href="http://cos.io/top/" target="_self" rel="noopener noreferrer" data-analytics-name="top">
+                TOP Guidelines
+            </a>
+            <span>
+                 | 
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://osf.io/ezcuj/wiki/home/" target="_self" rel="noopener noreferrer" data-analytics-name="rpp">
+                Reproducibility&nbsp;Project: Psychology
+            </a>
+            <span>
+                 | 
+            </span>
+            <a class="  _OsfLink_1diw4c" href="https://osf.io/collections/rpcb/discover" target="_self" rel="noopener noreferrer" data-analytics-name="rpcb">
+                Reproducibility&nbsp;Project: Cancer Biology
+            </a>
+        </p>
+        <p>
+            <a class="  _OsfLink_1diw4c" href="http://twitter.com/OSFramework" target="_self" rel="noopener noreferrer" data-analytics-name="social_twitter" aria-label="Twitter">
+                <svg class="svg-inline--fa fa-twitter fa-2x" data-prefix="fab" data-icon="twitter" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+    </svg>
+            </a>
+            <a class="  _OsfLink_1diw4c" href="https://www.facebook.com/CenterForOpenScience/" target="_self" rel="noopener noreferrer" data-analytics-name="social_facebook" aria-label="Facebook">
+                <svg class="svg-inline--fa fa-facebook fa-2x" data-prefix="fab" data-icon="facebook" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+    </svg>
+            </a>
+            <a class="  _OsfLink_1diw4c" href="https://groups.google.com/forum/#!forum/openscienceframework" target="_self" rel="noopener noreferrer" data-analytics-name="social_google_group" aria-label="Google Group">
+                <svg class="svg-inline--fa fa-users fa-2x" data-prefix="fas" data-icon="users" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+        <path fill="currentColor" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path>
+    </svg>
+            </a>
+            <a class="  _OsfLink_1diw4c" href="https://www.github.com/centerforopenscience" target="_self" rel="noopener noreferrer" data-analytics-name="social_github" aria-label="GitHub">
+                <svg class="svg-inline--fa fa-github fa-2x" data-prefix="fab" data-icon="github" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+        <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+    </svg>
+            </a>
+        </p>
+    </div>
+</footer>
+</div>
+    <div id="ember56" class="ember-view">    <div class="_CookieBanner_1k6aw9">
+        <div class="_Warning_1k6aw9">
+            This website relies on cookies to help provide a better user experience. By clicking Accept or continuing to use the site, you agree. For more information, see our <a href="https://github.com/CenterForOpenScience/cos.io/blob/master/PRIVACY_POLICY.md">Privacy Policy</a> and information on <a href="https://github.com/CenterForOpenScience/cos.io/blob/master/PRIVACY_POLICY.md#7-types-of-information-we-collect">cookie use</a>.
+        </div>
+        <div class="_Accept_1k6aw9">
+            <button class="_Button_6kisxq _MediumButton_6kisxq _SecondaryButton_6kisxq" type="button">
+    
+                Accept
+            
+</button>
+
+        </div>
+    </div>
+</div>
+</div>
+<div></div>
+<div id="ember57" class="ember-view"><!----></div>
+</body></html>
