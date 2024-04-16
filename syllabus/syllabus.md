@@ -72,7 +72,7 @@ All assignments are posted [GitHub Repo](https://github.com/JamesMTucker/DATA_34
   - Problem set 3: Author prediction RNN and Transformer Models (b) - Federalist Papers
   - Problem set 4: Fine-tuning models for task-specific objectives
 
-- Final Project (40pts) - Demonstrate your mastery of NLP concepts with a topic of your choosing
+- [Final Project (40pts)](../Spring_2024/syllabus/09_Project.md) - Demonstrate your mastery of NLP concepts with a topic of your choosing
 
 ### Late time currency
 
